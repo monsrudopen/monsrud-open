@@ -7,7 +7,7 @@ Create as many branches as you want and feel free to experiment in the `dev` bra
 we simply just reset it to the `master` branch.
  
 In order to add a commit to the `master` branch you have to create a pull request from your branch and get it approved.
-The `master` branch is protected so that direct pushes are not allowed.
+The `master` branch is protected so that direct pushes are not allowed. (If you really need to merge a PR without being able to getting it approved by another contributor you can log into monsrudopenuser. That github account has admin rights.
 
 The domain http://www.monsrudopen.com/ should point to https://monsrud-open.herokuapp.com/.
 
