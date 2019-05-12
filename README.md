@@ -11,7 +11,7 @@ The `master` branch is protected so that direct pushes are not allowed.
 
 The domain http://www.monsrudopen.com/ should point to https://monsrud-open.herokuapp.com/.
 
-###Workflow:
+##### Workflow:
 
 1. Create a local branch by branching out of the master branch. Starting the branch name with `f-` for feature, `b-` for bugfix or `u-` for update is a great idea.
 2. Merge into dev, push code and test your code on https://monsrud-open-dev.herokuapp.com/
