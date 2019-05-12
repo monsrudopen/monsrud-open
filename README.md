@@ -1,3 +1,25 @@
+### Welcome to Monsrud Open's repository
+
+The `master` branch is automatically deployed to https://monsrud-open.herokuapp.com/ and 
+the `dev` branch is automatically deployed to https://monsrud-open-dev.herokuapp.com/.
+
+
+Create as many branches as you want and feel free to experiment in the `dev` branch. If we break the `dev` branch
+we simply just resets it to the `master` branch.
+ 
+ 
+In order to add a commit to the `master` branch you have to create a pull request from the branch you have.
+The `master` branch is protected so that direct pushes are not allowed.
+
+The domain http://www.monsrudopen.com/ should point to https://monsrud-open.herokuapp.com/.
+
+
+#####Workflow:
+
+1. Create a local branch by branching out of the master branch. Starting the branch name with `f-` for feature, `b-` for bugfix or `u-` for update is a great idea.
+2. Merge into dev, push code and test your code on https://monsrud-open-dev.herokuapp.com/
+3. Create a pull request from your branch into master. When it is approved and merged into master it will automatically be built and deployed to the production environment.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
