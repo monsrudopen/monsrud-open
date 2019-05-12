@@ -6,7 +6,7 @@ the `dev` branch is automatically deployed to https://monsrud-open-dev.herokuapp
 Create as many branches as you want and feel free to experiment in the `dev` branch. If we break the `dev` branch
 we simply just resets it to the `master` branch.
  
-In order to add a commit to the `master` branch you have to create a pull request from the branch you have.
+In order to add a commit to the `master` branch you have to create a pull request from your branch and get it approved.
 The `master` branch is protected so that direct pushes are not allowed.
 
 The domain http://www.monsrudopen.com/ should point to https://monsrud-open.herokuapp.com/.
