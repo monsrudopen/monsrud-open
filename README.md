@@ -16,6 +16,7 @@ The domain http://www.monsrudopen.com/ should point to https://monsrud-open.hero
 1. Create a local branch by branching out of the master branch. Starting the branch name with `f-` for feature, `b-` for bugfix or `u-` for update is a great idea.
 2. Merge into dev, push code and test your code on https://monsrud-open-dev.herokuapp.com/
 3. Create a pull request from your branch into master. When it is approved and merged into master it will automatically be built and deployed to the production environment.
+4. After merging the branch into master you should delete the branch from the github repo.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
