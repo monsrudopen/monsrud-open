@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
-
+import { Link } from 'react-router-dom';
+import './header.css';
 
 class Header extends Component {
   render() {
     return (
       <div className="header">
-      <Link to="/Rank" rel="noopener noreferrer">Rank</Link>
-      <Link to="/About" rel="noopener noreferrer">About</Link>
-      <Link to="/Donations" rel="noopener noreferrer">Donations</Link>
+        <Link to="/Rank" rel="noopener noreferrer">Rank</Link>
+        <Link to="/About" rel="noopener noreferrer">About</Link>
+        <Link to="/Donations" rel="noopener noreferrer">Donations</Link>
       </div>
     );
   }
