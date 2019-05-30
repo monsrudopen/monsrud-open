@@ -16,12 +16,8 @@ function App() {
     <BrowserRouter>
       <Header />
       <Route exact path="/Rank" component={Rank}/>
-<<<<<<< HEAD
-      <Route exact path="/About" component={About}/> 
-=======
       <Route exact path="/About" component={About}/>
       <Route exact path="/Donations" component={Donations}/>
->>>>>>> f-don
     </BrowserRouter>
     </div>
   );
