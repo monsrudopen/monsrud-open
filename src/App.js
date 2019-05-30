@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
+import Header from './components/Header/Header';
 import Rank from './components/Rank/Rank';
 import About from './components/About/About';
-import Header from './components/Header/Header';
+import Donations from './components/Donations/Donations';
 
 import {
   Route,
