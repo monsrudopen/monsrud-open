@@ -2,16 +2,22 @@
     width: 100%;
     padding: 1rem;
     text-align: left;
+    margin-left: 40px;
     transition: 200ms;
-  background-color: grey;
+
 }
 .footer-right {
     width: 100%;
     padding: 1rem;
     text-align: right;
+    margin-right: 40px;
     transition: 200ms;
   background-color: grey;
 }
 .box {
   display: flex;
+  background-color: grey;
+}
+.footer-image {
+  height: 40px;
 }
