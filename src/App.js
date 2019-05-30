@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
+import Header from './components/Header/Header';
 import Rank from './components/Rank/Rank';
 import About from './components/About/About';
-import Header from './components/Header/Header';
+import Donations from './components/Donations/Donations';
 
 import {
   Route,
@@ -13,9 +14,14 @@ function App() {
   return (
     <div className="App">
     <BrowserRouter>
-    <Header />
+      <Header />
       <Route exact path="/Rank" component={Rank}/>
+<<<<<<< HEAD
       <Route exact path="/About" component={About}/> 
+=======
+      <Route exact path="/About" component={About}/>
+      <Route exact path="/Donations" component={Donations}/>
+>>>>>>> f-don
     </BrowserRouter>
     </div>
   );
