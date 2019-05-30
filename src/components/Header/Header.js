@@ -8,7 +8,7 @@ class Header extends Component {
       <div className="header">
       <Link to="/Rank" rel="noopener noreferrer">Rank</Link>
       <Link to="/About" rel="noopener noreferrer">About</Link>
-
+      <Link to="/Donations" rel="noopener noreferrer">Donations</Link>
       </div>
     );
   }
