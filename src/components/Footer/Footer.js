@@ -14,7 +14,7 @@ class Footer extends Component {
           </div>
           <div className="footer-right">
               <div>
-                <a href="mailto:hello@monsrudopen.com" target="_blank"><img className="footer-image" src="http://chittagongit.com/download/96404" width="40"></img></a>
+                <a href="mailto:hello@monsrudopen.com" target="_blank"><img className="footer-image" src="https://cdn4.iconfinder.com/data/icons/basic-ui-elements/700/08_mail-512.png" width="40"></img></a>
               </div>
               <div>
                 <a href="www.twitter.com/monsrudopen" target="_blank"><img className="footer-image" src="https://image.flaticon.com/icons/svg/54/54300.svg" width="40"></img></a>
