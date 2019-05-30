@@ -1,3 +1,31 @@
-.header {
-  background-color: red;
+nav {
+  padding-top: 100px;
+  width: 100%;
+  margin: 0;
+  top: 0;
+  color: #ccc;
+  background: #212121;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  height: 100%;
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  transition: all 0.3s ease-in;
+}
+
+.fixed-nav {
+  padding-top: 0px;
+  position: fixed;
 }
