@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Footer.css';
-import instaBW from '../../img/icons/InstaBW.png';
+import instaBW from '../src/img/icons/instaBW.png';
 
 class Footer extends Component {
   render() {
@@ -18,7 +18,7 @@ class Footer extends Component {
               <a href="www.instagram.com/monsrudopen" target="_blank"><img className="footer-image" src="https://ui-ex.com/images250_/instagram-transparent-circular-4.png" width="40"></img></a>
           </div>
           <div>
-          <img className="footer-image" alt="InstaBW" src={instaBW} width="40"></img>
+          <img className="footer-image" alt="InstaBW" src="instaBW" width="40"></img>
           </div>
         </div>
       </div>
