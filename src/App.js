@@ -15,7 +15,7 @@ function App() {
     <BrowserRouter>
     <Header />
       <Route exact path="/Rank" component={Rank}/>
-      <Route exact path="/About" component={About}/>
+      <Route exact path="/About" component={About}/> 
     </BrowserRouter>
     </div>
   );
