@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import './Footer.css';
-import instaBW from '../src/img/icons/instaBW.png';
+import InstaBW from '../../img/icons/InstaBW.png';
+import InstaC from '../../img/icons/InstaC.png';
+import MailBW from '../../img/icons/MailBW.png';
+import MailC from '../../img/icons/MailC.png';
+import TwitterBW from '../../img/icons/TwitterBW.png';
+import TwitterC from '../../img/icons/TwitterC.png';
+import HoverImage from 'react-hover-image';
 
 class Footer extends Component {
   render() {
@@ -9,19 +15,28 @@ class Footer extends Component {
         <p>Monsrud Open &copy; {new Date().getFullYear()}</p>
         <div className="box">
           <div>
-              <a href="mailto:hello@monsrudopen.com" target="_blank"><img className="footer-image" src="https://cdn4.iconfinder.com/data/icons/basic-ui-elements/700/08_mail-512.png" width="40"></img></a>
+            <a href="mailto:hello@monsrudopen.com" target="_blank">
+            <HoverImage src={MailBW} hoverSrc={MailC} style={{width: 40}}>
+            </HoverImage>
+            </a>
           </div>
           <div>
-                <a href="www.twitter.com/monsrudopen" target="_blank"><img className="footer-image" src="https://image.flaticon.com/icons/svg/54/54300.svg" width="40"></img></a>
+            <a href="https://www.twitter.com/monsrudopen" target="_blank">
+            <HoverImage src={TwitterBW} hoverSrc={TwitterC} style={{width: 40}}>
+            </HoverImage>
+            </a>
           </div>
           <div>
-              <a href="www.instagram.com/monsrudopen" target="_blank"><img className="footer-image" src="https://ui-ex.com/images250_/instagram-transparent-circular-4.png" width="40"></img></a>
+            <a href="https://www.instagram.com/monsrudopen" target="_blank">
+              <HoverImage className="image" src={InstaBW} hoverSrc={InstaC} style={{width: 40}}>
+              </HoverImage>
+            </a>
           </div>
-          <div>
-          <img className="footer-image" alt="InstaBW" src="instaBW" width="40"></img>
           </div>
+            <a href="https://goo.gl/maps/udc6qp4q9tMbrJYB7" target="_blank"><p>Ruglandveien 107, 1359 Eiksmarka</p></a>
+            <p>Org.nr.: 918 707 611</p>
+            <p>Vipps: 109417</p>
         </div>
-      </div>
     );
   }
 }
