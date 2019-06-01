@@ -46,7 +46,6 @@ class Header extends Component {
                 Ranking
               </Link>
             </li>
-
             <li>
               <Link to="/Donations" rel="noopener noreferrer">
                 Tidligere donasjoner
