@@ -14,17 +14,25 @@ class Header extends Component {
   }
 
   componentDidMount() {
-    const el = document.querySelector('nav');
-    this.setState({ navHeight: el.offsetHeight });
+    const nav = document.querySelector('nav');
+    const header = document.querySelector('#header');
+    this.setState({
+      navHeight: nav.offsetHeight,
+      headerHeight: header.offsetHeight
+    });
     window.addEventListener('scroll', this.handleScroll);
+    console.log(nav.offsetHeight);
+    console.log(header.offsetHeight);
   }
 
   render() {
     return (
-      <div className="header">
+      <div id="header" className="header">
         <nav
           className={
-            this.state.scroll > this.state.navHeight ? 'fixed-nav' : ''
+            this.state.scroll > this.state.headerHeight - this.state.navHeight
+              ? 'fixed-nav'
+              : ''
           }
         >
           <ul>
@@ -35,17 +43,18 @@ class Header extends Component {
             </li>
             <li>
               <Link to="/Rank" rel="noopener noreferrer">
-                Rank
+                Ranking
+              </Link>
+            </li>
+
+            <li>
+              <Link to="/Donations" rel="noopener noreferrer">
+                Tidligere donasjoner
               </Link>
             </li>
             <li>
               <Link to="/About" rel="noopener noreferrer">
-                About
-              </Link>
-            </li>
-            <li>
-              <Link to="/Donations" rel="noopener noreferrer">
-                Donations
+                Om oss
               </Link>
             </li>
           </ul>

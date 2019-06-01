@@ -1,10 +1,18 @@
-nav {
+.header {
   padding-top: 100px;
+}
+
+nav,
+.header {
+  background: #212121;
+  height: 38px;
+}
+
+nav {
   width: 100%;
   margin: 0;
   top: 0;
   color: #ccc;
-  background: #212121;
 }
 
 ul {
@@ -26,6 +34,5 @@ li {
 }
 
 .fixed-nav {
-  padding-top: 0px;
   position: fixed;
 }
