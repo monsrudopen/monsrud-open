@@ -1,10 +1,10 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 class Donations extends Component {
-  render(){
+  render() {
     return (
       <div className="Main">
-      <p>Våre tidligere donasjoner</p>
+        <p>Våre tidligere donasjoner</p>
       </div>
     );
   }

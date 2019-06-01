@@ -10,35 +10,47 @@ class Header extends Component {
   }
 
   handleScroll() {
-    this.setState({scroll: window.scrollY});
+    this.setState({ scroll: window.scrollY });
   }
 
   componentDidMount() {
     const el = document.querySelector('nav');
-    this.setState({navHeight: el.offsetHeight});
+    this.setState({ navHeight: el.offsetHeight });
     window.addEventListener('scroll', this.handleScroll);
   }
 
   render() {
     return (
       <div className="header">
-          <nav className={this.state.scroll > this.state.navHeight ? "fixed-nav" : ""}>
-            <ul>
-              <li>
-                <Link to="/" rel="noopener noreferrer">Monsrud Open</Link>
-              </li>
-              <li>
-                <Link to="/Rank" rel="noopener noreferrer">Rank</Link>
-              </li>
-              <li>
-                <Link to="/About" rel="noopener noreferrer">About</Link>
-              </li>
-              <li>
-                <Link to="/Donations" rel="noopener noreferrer">Donations</Link>
-              </li>
-            </ul>
-          </nav>
-        </div>
+        <nav
+          className={
+            this.state.scroll > this.state.navHeight ? 'fixed-nav' : ''
+          }
+        >
+          <ul>
+            <li>
+              <Link to="/" rel="noopener noreferrer">
+                Monsrud Open
+              </Link>
+            </li>
+            <li>
+              <Link to="/Rank" rel="noopener noreferrer">
+                Rank
+              </Link>
+            </li>
+            <li>
+              <Link to="/About" rel="noopener noreferrer">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link to="/Donations" rel="noopener noreferrer">
+                Donations
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
     );
   }
 }
