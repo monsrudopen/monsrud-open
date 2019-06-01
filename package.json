@@ -8,6 +8,7 @@
     "prettier": "^1.17.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-hover-image": "^1.0.0",
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.1",
     "serve": "^11.0.0"
