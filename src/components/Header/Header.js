@@ -21,8 +21,6 @@ class Header extends Component {
       headerHeight: header.offsetHeight
     });
     window.addEventListener('scroll', this.handleScroll);
-    console.log(nav.offsetHeight);
-    console.log(header.offsetHeight);
   }
 
   render() {
