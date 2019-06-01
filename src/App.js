@@ -5,20 +5,17 @@ import Rank from './components/Rank/Rank';
 import About from './components/About/About';
 import Donations from './components/Donations/Donations';
 
-import {
-  Route,
-  BrowserRouter
-} from "react-router-dom";
+import { Route, BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-    <BrowserRouter>
-      <Header />
-      <Route exact path="/Rank" component={Rank}/>
-      <Route exact path="/About" component={About}/>
-      <Route exact path="/Donations" component={Donations}/>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Header />
+        <Route exact path="/Rank" component={Rank} />
+        <Route exact path="/About" component={About} />
+        <Route exact path="/Donations" component={Donations} />
+      </BrowserRouter>
     </div>
   );
 }
