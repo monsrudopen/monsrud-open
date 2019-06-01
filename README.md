@@ -20,6 +20,46 @@ The domain http://www.monsrudopen.com/ should point to https://monsrud-open.hero
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Git commands
+(Picked the most important commands from https://raw.githubusercontent.com/joshnh/Git-Commands)
+
+### Getting & Creating Projects
+
+| Command | Description |
+| ------- | ----------- |
+| `git init` | Initialize a local Git repository |
+| `git clone ssh://git@github.com/[username]/[repository-name].git` | Create a local copy of a remote repository |
+
+### Basic commands
+| Command | Description |
+| ------- | ----------- |
+| `git status` | Check status |
+| `git pull` | Update local repository to the newest commit |
+| `git push` | Push changes to remote repository (remembered branch) |
+| `git diff` | View changes |
+| `git log` | View commit history |
+
+### Staging and committing
+| Command | Description |
+| ------- | ----------- |
+| `git add [file-name.txt]` | Add a file to the staging area |
+| `git add .` | Add all files to the staging area |
+| `git commit -m "[commit message]"` | Commit staged files with message |
+| `git reset` | Unstage all files |
+| `git checkout .` | Warning: Discard all changes |
+
+### Branching & Merging
+| Command | Description |
+| ------- | ----------- |
+| `git branch` | List branches (the asterisk denotes the current branch) |
+| `git branch -a` | List all branches (local and remote/github) |
+| `git branch [branch name]` | Create a new branch |
+| `git branch -d [branch name]` | Delete a branch |
+| `git checkout [branch name]` | Switch to a branch |
+| `git merge [branch name]` | Merge a branch into the active branch |
+| `git merge --abort` | Abort merge in case of merge conflict (instead of solving merge conflict) |
+
+
 ## Available Scripts
 
 In the project directory, you can run:
