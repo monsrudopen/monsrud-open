@@ -21,7 +21,7 @@ The domain http://www.monsrudopen.com/ should point to https://monsrud-open.hero
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Git commands
-(Picked the most important commands from https://raw.githubusercontent.com/joshnh/Git-Commands)
+(Picked the most important commands from https://github.com/joshnh/Git-Commands)
 
 ### Getting & Creating Projects
 
