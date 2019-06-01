@@ -1,15 +1,13 @@
-import React, {Component} from 'react';
-
+import React, { Component } from 'react';
 
 class Rank extends Component {
-  render(){
+  render() {
     return (
       <div className="Main">
-      <p>Ranking</p>
+        <p>Ranking</p>
       </div>
     );
   }
-
 }
 
 export default Rank;
