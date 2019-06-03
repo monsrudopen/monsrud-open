@@ -6,10 +6,13 @@ class Header extends Component {
   constructor(props) {
     super(props);
     this.state = {};
-    this.handleScroll = this.handleScroll.bind(this);
+    this.handleScrollAndResize = this.handleScrollAndResize.bind(this);
   }
 
-  handleScroll() {
+  handleScrollAndResize() {
+    const nav = document.querySelector('nav');
+    const header = document.querySelector('#header');
+    header.style.height = nav.offsetHeight + 'px';
     this.setState({ scroll: window.scrollY });
   }
 
@@ -20,7 +23,8 @@ class Header extends Component {
       navHeight: nav.offsetHeight,
       headerHeight: header.offsetHeight
     });
-    window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener('scroll', this.handleScrollAndResize);
+    window.addEventListener('resize', this.handleScrollAndResize);
   }
 
   render() {
