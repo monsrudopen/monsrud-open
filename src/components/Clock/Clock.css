@@ -4,14 +4,11 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Lato', sans-serif;
-}
-
 h1 {
   letter-spacing: 2px;
   text-align: center;
   text-transform: uppercase;
+  font-family: 'Helvetica', sans-serif;
 }
 
 .countdown-wrapper {
@@ -24,6 +21,7 @@ h1 {
 .countdown-item {
   color: #111;
   font-size: 40px;
+  font-family: 'Helvetica', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,11 +37,13 @@ h1 {
 .countdown-item span {
   color: #333;
   font-size: 12px;
+  font-family: 'Helvetica', sans-serif;
   font-weight: 600;
   text-transform: uppercase;
 }
 .finished {
   color: black;
+  font-family: 'Helvetica', sans-serif;
   font-size: 20px;
   align-items: center;
 }
