@@ -58,11 +58,11 @@ class Clock extends React.Component {
             </div>
             <div className="countdown-item">
               {minutes}
-              <span>{days > 1 ? 'Minutter' : 'Minutt'}</span>
+              <span>{minutes > 1 ? 'Minutter' : 'Minutt'}</span>
             </div>
             <div className="countdown-item">
               {seconds}
-              <span>{days > 1 ? 'Sekunder' : 'Sekund'}</span>
+              <span>{seconds > 1 ? 'Sekunder' : 'Sekund'}</span>
             </div>
           </div>
         </div>
