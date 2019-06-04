@@ -1,3 +1,37 @@
 .header {
-  background-color: red;
+  padding-top: 100px;
+}
+
+nav,
+.header {
+  background: #212121;
+}
+
+nav {
+  width: 100%;
+  margin: 0;
+  top: 0;
+  color: #ccc;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  height: 100%;
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  transition: all 0.3s ease-in;
+}
+
+.fixed-nav {
+  position: fixed;
 }
