@@ -1,17 +1,8 @@
 import React, { Component } from 'react';
 import Clock from '../components/Clock/Clock';
 import MonsrudInfo from '../components/MonsrudInfo/MonsrudInfo';
-import {
-  TweenMax,
-  CSSPlugin,
-  ScrollToPlugin,
-  Draggable,
-  Elastic,
-  Power1,
-  TimelineMax
-} from 'gsap/all';
+
 import './homePage.css';
-import ScrollMagic from 'scrollmagic';
 
 class HomePage extends Component {
   render() {
