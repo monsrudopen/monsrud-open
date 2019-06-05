@@ -42,7 +42,6 @@ class Clock extends React.Component {
     if (now <= then) {
       return (
         <div>
-          <h1>Årets Monsrud Open er i gang om:</h1>
           <div className="countdown-wrapper">
             <div className="countdown-item">
               {months}

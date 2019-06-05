@@ -6,23 +6,21 @@ import About from './components/About/About';
 import Donations from './components/Donations/Donations';
 import Footer from './components/Footer/Footer';
 import Clock from './components/Clock/Clock';
+import HomePage from './screens/HomePage';
 
 import { Route, BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-    <BrowserRouter>
-      <Header />
-      <Route exact path="/Rank" component={Rank}/>
-      <Route exact path="/About" component={About}/>
-      <Route exact path="/Donations" component={Donations}/>
-      <Clock
-          timeTillDate="03 07 2019, 13:00"
-          timeFormat="DD MM YYYY, HH:mm"
-        />
-      <Footer />
-    </BrowserRouter>
+      <BrowserRouter>
+        <Header />
+        <Route exact path="/" component={HomePage} />
+        <Route exact path="/Rank" component={Rank} />
+        <Route exact path="/About" component={About} />
+        <Route exact path="/Donations" component={Donations} />
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }
