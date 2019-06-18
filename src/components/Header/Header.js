@@ -16,11 +16,13 @@ class Header extends Component {
         <div id="header" className="header">
           <div className="headerContainer">
             <div className="monsrudLogo">
-              <img
-                width="60"
-                height="60"
-                src={require('./../../img/icons/MonsrudLogo.png')}
-              />{' '}
+              <a href="/">
+                <img
+                  width="60"
+                  height="60"
+                  src={require('./../../img/icons/MonsrudLogo.png')}
+                />{' '}
+              </a>
             </div>
             <button className="hamburgerBar" onClick={this.toggleMenu}>
               Menu
@@ -38,10 +40,10 @@ class Header extends Component {
               <div className="menuLink">
                 <Link
                   style={{ color: 'white', textDecoration: 'none' }}
-                  to="/Rank"
+                  to="/Competitions"
                   rel="noopener noreferrer"
                 >
-                  <h6>Ranking</h6>
+                  <h6>Tidligere turneringer</h6>
                 </Link>
               </div>
               <div className="menuLink">
@@ -50,7 +52,7 @@ class Header extends Component {
                   to="/Donations"
                   rel="noopener noreferrer"
                 >
-                  <h6>Tidligere donasjoner</h6>
+                  <h6>Donasjoner</h6>
                 </Link>
               </div>
               <div className="menuLink">
