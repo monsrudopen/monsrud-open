@@ -1,5 +1,8 @@
+.header-padding {
+  padding-top: 70px;
+}
+
 .header {
-  margin: 0;
   top: 0;
   width: 100vw;
   height: 70px;
