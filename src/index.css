@@ -18,3 +18,11 @@ a:hover,
 a:active {
   color: inherit;
 }
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

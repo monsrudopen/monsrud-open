@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Clock from '../components/Clock/Clock';
-import MonsrudInfo from '../components/MonsrudInfo/MonsrudInfo';
 import Posts from '../components/Posts/Posts';
 
 import './homePage.css';
@@ -19,7 +18,6 @@ class HomePage extends Component {
           </div>
         </div>
         <div className="componentElements">
-          <MonsrudInfo />
           <Posts />
         </div>
       </div>

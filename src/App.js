@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Header from './components/Header/Header';
-import Rank from './components/Rank/Rank';
+import Competitions from './components/Competitions/Competitions';
 import About from './components/About/About';
 import Donations from './components/Donations/Donations';
 import Footer from './components/Footer/Footer';
@@ -16,7 +16,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <Route exact path="/" component={HomePage} />
-        <Route exact path="/Rank" component={Rank} />
+        <Route exact path="/Competitions" component={Competitions} />
         <Route exact path="/About" component={About} />
         <Route exact path="/Donations" component={Donations} />
         <Footer />

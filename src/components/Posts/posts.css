@@ -1,6 +1,6 @@
 .postContainer {
   width: 100vw;
-  height: 1000px;
+  height: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,14 +23,13 @@
   flex-direction: column;
 }
 .postTitle {
-  align-self: flex-start;
   width: 70%;
   font-style: normal;
   font-weight: normal;
   font-size: 25px;
   margin: 5%;
   margin-top: 10%;
-  margin-left: -13%;
+  text-align: left;
 }
 
 .postTexter {
