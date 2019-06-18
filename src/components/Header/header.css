@@ -15,15 +15,20 @@
 
 .headerContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   flex-direction: row;
   width: 55%;
-  max-width: 700px;
   margin-right: 30px;
+}
+.menuList {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
 
 .menuLink {
+  margin-left: 40px;
   text-decoration: none;
 }
 h6 {
@@ -35,4 +40,17 @@ h6 {
   margin: 10px;
   top: 0;
   left: 0;
+}
+.hamburgerBar {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .menuLink {
+    display: none;
+  }
+  .hamburgerBar {
+    display: block;
+    align-self: flex-start;
+  }
 }

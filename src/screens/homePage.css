@@ -21,6 +21,12 @@
   flex-direction: column;
   margin-bottom: 150px;
 }
+.componentElements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
 h1 {
   letter-spacing: 3px;
