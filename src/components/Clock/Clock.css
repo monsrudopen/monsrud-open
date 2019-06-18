@@ -4,13 +4,6 @@
   box-sizing: border-box;
 }
 
-h1 {
-  letter-spacing: 2px;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: 'Helvetica', sans-serif;
-}
-
 .countdown-wrapper {
   display: flex;
   align-items: center;
@@ -20,7 +13,7 @@ h1 {
 
 .countdown-item {
   color: #111;
-  font-size: 40px;
+  font-size: calc(1em + 1vw);
   font-family: 'Helvetica', sans-serif;
   display: flex;
   align-items: center;

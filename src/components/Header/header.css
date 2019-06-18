@@ -1,37 +1,59 @@
-.header {
-  padding-top: 100px;
+.header-padding {
+  padding-top: 70px;
 }
 
-nav,
 .header {
-  background: #212121;
-}
-
-nav {
-  width: 100%;
-  margin: 0;
   top: 0;
-  color: #ccc;
-}
-
-ul {
-  list-style: none;
+  width: 100vw;
+  height: 70px;
   display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  height: 100%;
-  flex: 1;
-  text-align: center;
-  display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  padding: 10px;
-  transition: all 0.3s ease-in;
+  font-size: calc(1em + 1vw);
+  position: fixed;
+  background-color: white;
+  opacity: 0.95;
+  z-index: 1;
 }
 
-.fixed-nav {
-  position: fixed;
+.headerContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  width: 55%;
+  margin-right: 30px;
+}
+.menuList {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.menuLink {
+  margin-left: 40px;
+  text-decoration: none;
+}
+h6 {
+  font-weight: normal;
+  color: black;
+}
+.monsrudLogo {
+  position: absolute;
+  margin: 10px;
+  top: 0;
+  left: 0;
+}
+.hamburgerBar {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .menuLink {
+    display: none;
+  }
+  .hamburgerBar {
+    display: block;
+    align-self: flex-start;
+  }
 }

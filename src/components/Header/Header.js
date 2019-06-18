@@ -5,61 +5,66 @@ import './header.css';
 class Header extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
-    this.handleScrollAndResize = this.handleScrollAndResize.bind(this);
+    this.state = { isActive: false };
   }
 
-  handleScrollAndResize() {
-    const nav = document.querySelector('nav');
-    const header = document.querySelector('#header');
-    header.style.height = nav.offsetHeight + 'px';
-    this.setState({ scroll: window.scrollY });
-  }
-
-  componentDidMount() {
-    const nav = document.querySelector('nav');
-    const header = document.querySelector('#header');
-    this.setState({
-      navHeight: nav.offsetHeight,
-      headerHeight: header.offsetHeight
-    });
-    window.addEventListener('scroll', this.handleScrollAndResize);
-    window.addEventListener('resize', this.handleScrollAndResize);
-  }
+  toggleMenu() {}
 
   render() {
     return (
-      <div id="header" className="header">
-        <nav
-          className={
-            this.state.scroll > this.state.headerHeight - this.state.navHeight
-              ? 'fixed-nav'
-              : ''
-          }
-        >
-          <ul>
-            <li>
-              <Link to="/" rel="noopener noreferrer">
-                Monsrud Open
-              </Link>
-            </li>
-            <li>
-              <Link to="/Rank" rel="noopener noreferrer">
-                Ranking
-              </Link>
-            </li>
-            <li>
-              <Link to="/Donations" rel="noopener noreferrer">
-                Tidligere donasjoner
-              </Link>
-            </li>
-            <li>
-              <Link to="/About" rel="noopener noreferrer">
-                Om oss
-              </Link>
-            </li>
-          </ul>
-        </nav>
+      <div className="header-padding">
+        <div id="header" className="header">
+          <div className="headerContainer">
+            <div className="monsrudLogo">
+              <img
+                width="60"
+                height="60"
+                src={require('./../../img/icons/MonsrudLogo.png')}
+              />{' '}
+            </div>
+            <button className="hamburgerBar" onClick={this.toggleMenu}>
+              Menu
+            </button>
+            <div className="menuList">
+              <div className="menuLink">
+                <Link
+                  style={{ color: 'white', textDecoration: 'none' }}
+                  to="/"
+                  rel="noopener noreferrer"
+                >
+                  <h6>Monsrud Open</h6>
+                </Link>
+              </div>
+              <div className="menuLink">
+                <Link
+                  style={{ color: 'white', textDecoration: 'none' }}
+                  to="/Rank"
+                  rel="noopener noreferrer"
+                >
+                  <h6>Ranking</h6>
+                </Link>
+              </div>
+              <div className="menuLink">
+                <Link
+                  style={{ color: 'white', textDecoration: 'none' }}
+                  to="/Donations"
+                  rel="noopener noreferrer"
+                >
+                  <h6>Tidligere donasjoner</h6>
+                </Link>
+              </div>
+              <div className="menuLink">
+                <Link
+                  style={{ color: 'white', textDecoration: 'none' }}
+                  to="/About"
+                  rel="noopener noreferrer"
+                >
+                  <h6>Om oss</h6>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
