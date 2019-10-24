@@ -1,6 +1,5 @@
 .postContainer {
   width: 100vw;
-  height: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,6 +32,7 @@
 }
 
 .postTexter {
+  overflow: hidden;
   text-align: justify;
   color: #696969;
   font-size: 15px;
