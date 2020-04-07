@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Clock from '../components/Clock/Clock';
 import Posts from '../components/Posts/Posts';
+import DonateButton from '../components/DonateButton/DonateButton';
 
 import './homePage.css';
 
@@ -16,6 +17,7 @@ class HomePage extends Component {
               timeTillDate="15 07 2020, 13:00"
               timeFormat="DD MM YYYY, HH:mm"
             />
+            <DonateButton />
           </div>
         </div>
         <div className="componentElements">
