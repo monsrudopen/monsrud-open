@@ -1,7 +1,7 @@
 ## Welcome to Monsrud Open's repository
 
-The `master` branch is automatically deployed to https://monsrud-open.herokuapp.com/ and 
-the `dev` branch is automatically deployed to https://monsrud-open-dev.herokuapp.com/.
+The `master` branch is automatically deployed to https://monsrudopen-15616.web.app/ and 
+the `dev` branch is automatically deployed to https://monsrudopendev.web.app/.
 
 Create as many branches as you want and feel free to experiment in the `dev` branch. If we break the `dev` branch
 we simply just reset it to the `master` branch.
@@ -9,12 +9,12 @@ we simply just reset it to the `master` branch.
 In order to add a commit to the `master` branch you have to create a pull request from your branch and get it approved.
 The `master` branch is protected so that direct pushes are not allowed. (If you really need to merge a PR without being able to getting it approved by another contributor you can log into monsrudopenuser. That github account has admin rights.
 
-The domain http://www.monsrudopen.com/ should point to https://monsrud-open.herokuapp.com/.
+The domain http://www.monsrudopen.com/ should point to https://monsrudopen-15616.web.app/.
 
 #### Workflow:
 
 1. Create a local branch by branching out of the master branch. Starting the branch name with `f-` for feature, `b-` for bugfix or `u-` for update is a great idea.
-2. Merge into dev, push code and test your code on https://monsrud-open-dev.herokuapp.com/
+2. Merge into dev, push code and test your code on https://monsrudopendev.web.app/
 3. Create a pull request from your branch into master. When it is approved and merged into master it will automatically be built and deployed to the production environment.
 4. After merging the branch into master you should delete the branch from the github repo.
 
