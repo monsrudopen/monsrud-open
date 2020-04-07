@@ -1,0 +1,40 @@
+
+name: Build and deploy to Firebase (dev)
+
+on:
+  push:
+    branches:
+      - dev
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@dev
+      - name: Install Dependencies
+        run: npm install
+      - name: Build
+        run: CI=false npm run build
+      - name: Archive Production Artifact
+        uses: actions/upload-artifact@dev
+        with:
+          name: build
+          path: build
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@dev
+      - name: Download Artifact
+        uses: actions/download-artifact@dev
+        with:
+          name: build
+      - name: Deploy to Firebase
+        uses: w9jds/firebase-action@dev
+        with:
+          args: deploy --only hosting
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN_DEV}}
