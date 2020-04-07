@@ -13,7 +13,7 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@master
       - name: Install Dependencies
-        run: install --only=dev && npm install
+        run: npm install --only=dev && npm install
       - name: Build
         run: npm run build
       - name: Archive Production Artifact
