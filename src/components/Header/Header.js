@@ -20,6 +20,7 @@ class Header extends Component {
                 <img
                   width="60"
                   height="60"
+                  alt="Monsrud Open Logo"
                   src={require('./../../img/icons/MonsrudLogo.png')}
                 />{' '}
               </a>
