@@ -17,11 +17,12 @@ const PostRow = ({ postItems, setSelectedItem }) => {
       <div className={styles.PostsRow}>
         {postItems.map((value, index) => (
           <Post
-            onClick={() => setSelectedItem(index)}
+            onClick={setSelectedItem ? () => setSelectedItem(index) : null}
             key={index}
             image={value.image}
             title={value.title}
             text={value.text}
+            link={value.link}
           ></Post>
         ))}
       </div>
