@@ -1,6 +1,6 @@
 import React from 'react';
 import Post from './Post';
-import './posts.css';
+import styles from './Posts.module.css';
 
 function Posts(props) {
   const tournaments = 'Les om de ulike årene og hvordan det gikk';
@@ -9,8 +9,8 @@ function Posts(props) {
   const about = 'Les om Monsrud Open';
 
   return (
-    <div className="postContainer">
-      <div className="postsRow">
+    <div className={styles.PostContainer}>
+      <div className={styles.PostsRow}>
         <Post
           title="Donasjoner"
           text={donations}

@@ -1,10 +1,11 @@
-.postContainer {
+.PostContainer {
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.postsRow {
+
+.PostsRow {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,7 +13,8 @@
   flex-wrap: wrap;
   width: 80vw;
 }
-.post {
+
+.Post {
   width: 330px;
   height: 450px;
   margin: 1%;
@@ -23,7 +25,7 @@
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
-.postTitle {
+.PostTitle {
   width: 70%;
   font-style: normal;
   font-weight: normal;
@@ -33,7 +35,7 @@
   text-align: left;
 }
 
-.postTexter {
+.PostTexter {
   overflow: hidden;
   text-align: justify;
   color: #696969;
@@ -43,29 +45,29 @@
   width: 70%;
 }
 
-.postImage {
+.PostImage {
   width: 100%;
   height: 50%;
 }
 
-a:link {
+.Post:link {
   text-decoration: none;
 }
 
-a:visited {
+.Post:visited {
   text-decoration: none;
 }
 
-a:hover {
+.Post:hover {
   text-decoration: none;
 
   transform: scale(1.05);
 }
 
-a:active {
+.Post:active {
   text-decoration: none;
 }
 
-a:hover .postImage {
+.Post:hover .PostImage {
   opacity: 0.9;
 }

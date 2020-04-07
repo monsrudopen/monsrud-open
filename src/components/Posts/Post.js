@@ -1,13 +1,12 @@
 import React from 'react';
-
-import './posts.css';
+import styles from './Posts.module.css';
 
 function Post(props) {
   return (
-    <a className="post" href={props.link}>
-      <img alt={props.title} className="postImage" src={props.image} />
-      <div className="postTitle">{props.title}</div>
-      <div className="postTexter">{props.text}</div>
+    <a className={styles.Post} href={props.link}>
+      <img alt={props.title} className={styles.PostImage} src={props.image} />
+      <div className={styles.PostTitle}>{props.title}</div>
+      <div className={styles.PostTexter}>{props.text}</div>
     </a>
   );
 }
