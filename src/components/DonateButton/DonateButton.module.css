@@ -8,4 +8,11 @@
   width: 165px;
   height: 75px;
   background-color: #c6a76a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #696969;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  hover: black;
 }

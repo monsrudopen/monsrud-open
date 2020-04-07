@@ -12,7 +12,7 @@ class HomePage extends Component {
         <div className="main">
           <div className="fronPageBannerContainer">
             <h1 className="mainTitle">Monsrud Open</h1>
-            <h4>Monsrud Open 2020 skjer 15. august 2020</h4>
+            <h4>15. august 2020</h4>
             <Clock
               timeTillDate="15 07 2020, 13:00"
               timeFormat="DD MM YYYY, HH:mm"
