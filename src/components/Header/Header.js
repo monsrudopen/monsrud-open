@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import './header.css';
+import styles from './Header.module.css';
 
 class Header extends Component {
   constructor(props) {
@@ -12,10 +12,10 @@ class Header extends Component {
 
   render() {
     return (
-      <div className="header-padding">
-        <div id="header" className="header">
-          <div className="headerContainer">
-            <div className="monsrudLogo">
+      <div className={styles.HeaderPadding}>
+        <div className={styles.Header}>
+          <div className={styles.HeaderContainer}>
+            <div className={styles.MonsrudLogo}>
               <a href="/">
                 <img
                   width="60"
@@ -24,44 +24,46 @@ class Header extends Component {
                 />{' '}
               </a>
             </div>
-            <button className="hamburgerBar" onClick={this.toggleMenu}>
+            <button className={styles.HamburgerBar} onClick={this.toggleMenu}>
               Menu
             </button>
-            <div className="menuList">
-              <div className="menuLink">
+            <div className={styles.MenuList}>
+              <div className={styles.MenuLink}>
                 <Link
                   style={{ color: 'white', textDecoration: 'none' }}
                   to="/"
                   rel="noopener noreferrer"
                 >
-                  <h6>Monsrud Open</h6>
+                  <h6 className={styles.HeaderNumberSix}>Monsrud Open</h6>
                 </Link>
               </div>
-              <div className="menuLink">
+              <div className={styles.MenuLink}>
                 <Link
                   style={{ color: 'white', textDecoration: 'none' }}
                   to="/Competitions"
                   rel="noopener noreferrer"
                 >
-                  <h6>Tidligere turneringer</h6>
+                  <h6 className={styles.HeaderNumberSix}>
+                    Tidligere turneringer
+                  </h6>
                 </Link>
               </div>
-              <div className="menuLink">
+              <div className={styles.MenuLink}>
                 <Link
                   style={{ color: 'white', textDecoration: 'none' }}
                   to="/Donations"
                   rel="noopener noreferrer"
                 >
-                  <h6>Donasjoner</h6>
+                  <h6 className={styles.HeaderNumberSix}>Donasjoner</h6>
                 </Link>
               </div>
-              <div className="menuLink">
+              <div className={styles.MenuLink}>
                 <Link
                   style={{ color: 'white', textDecoration: 'none' }}
                   to="/About"
                   rel="noopener noreferrer"
                 >
-                  <h6>Om oss</h6>
+                  <h6 className={styles.HeaderNumberSix}>Om oss</h6>
                 </Link>
               </div>
             </div>

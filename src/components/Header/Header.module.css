@@ -1,8 +1,8 @@
-.header-padding {
+.HeaderPadding {
   padding-top: 70px;
 }
 
-.header {
+.Header {
   top: 0;
   width: 100vw;
   height: 70px;
@@ -16,7 +16,7 @@
   z-index: 1;
 }
 
-.headerContainer {
+.HeaderContainer {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -24,35 +24,35 @@
   width: 55%;
   margin-right: 30px;
 }
-.menuList {
+.MenuList {
   display: flex;
   align-items: center;
   flex-direction: row;
 }
 
-.menuLink {
+.MenuLink {
   margin-left: 40px;
   text-decoration: none;
 }
-h6 {
+.HeaderNumberSix {
   font-weight: normal;
   color: black;
 }
-.monsrudLogo {
+.MonsrudLogo {
   position: absolute;
   margin: 10px;
   top: 0;
   left: 0;
 }
-.hamburgerBar {
+.HamburgerBar {
   display: none;
 }
 
 @media only screen and (max-width: 600px) {
-  .menuLink {
+  .MenuLink {
     display: none;
   }
-  .hamburgerBar {
+  .HamburgerBar {
     display: block;
     align-self: flex-start;
   }
