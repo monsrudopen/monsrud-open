@@ -13,9 +13,9 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@master
       - name: Install Dependencies
-        run: npm install --only=dev && npm install
+        run: npm install
       - name: Build
-        run: npm run build
+        run: CI=false npm run build
       - name: Archive Production Artifact
         uses: actions/upload-artifact@master
         with:
