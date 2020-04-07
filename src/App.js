@@ -4,7 +4,7 @@ import Header from './components/Header/Header';
 import Competitions from './components/Competitions/Competitions';
 import About from './components/About/About';
 import Footer from './components/Footer/Footer';
-import HomePage from './screens/HomePage';
+import HomePage from './HomePage/HomePage';
 
 import { Route, BrowserRouter } from 'react-router-dom';
 
