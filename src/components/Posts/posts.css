@@ -20,6 +20,8 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 .postTitle {
   width: 70%;
@@ -44,4 +46,26 @@
 .postImage {
   width: 100%;
   height: 50%;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+
+  transform: scale(1.05);
+}
+
+a:active {
+  text-decoration: none;
+}
+
+a:hover .postImage {
+  opacity: 0.9;
 }

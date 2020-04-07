@@ -4,13 +4,11 @@ import './posts.css';
 
 function Post(props) {
   return (
-    <div className="post">
+    <a className="post" href={props.link}>
       <img className="postImage" src={props.image} />
-      <div className="postTitle">
-        <a href={props.link}>{props.title}</a>
-      </div>
+      <div className="postTitle">{props.title}</div>
       <div className="postTexter">{props.text}</div>
-    </div>
+    </a>
   );
 }
 
