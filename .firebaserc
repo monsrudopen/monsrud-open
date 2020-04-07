@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "monsrudopen-15616"
+    "default": "monsrudopen-15616",
+    "dev": "monsrudopendev"
   }
 }
