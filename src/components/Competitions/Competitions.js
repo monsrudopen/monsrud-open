@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import TournamentPosts from '../Posts/TournamentPosts';
+import Tournament from '../Tournament/Tournament';
 
 class Competitions extends Component {
   render() {
     return (
       <div className="Main">
-        <TournamentPosts />
+        <Tournament />
       </div>
     );
   }
