@@ -1,12 +1,7 @@
-.DonateButton {
-  background-color: #c6a76a;
-  color: #696969;
-  font-size: 20px;
-}
 .Boxed {
   border-radius: 25px;
-  width: 165px;
-  height: 75px;
+  width: 110%;
+  height: 120%;
   background-color: #c6a76a;
   display: flex;
   justify-content: center;
@@ -14,5 +9,4 @@
   color: #696969;
   font-family: sans-serif;
   text-transform: capitalize;
-  hover: black;
 }
