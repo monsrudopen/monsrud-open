@@ -1,0 +1,42 @@
+.CompetitionView {
+  margin: 80px;
+}
+
+.TopBoxContainer {
+  display: flex;
+  max-width: 100vw;
+}
+
+.TopBoxImageContainer {
+  margin-bottom: 30px;
+  flex: 1;
+}
+
+.TopBoxImage {
+  max-width: 100%;
+}
+
+.TopBoxTextContainer {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.TopBoxText {
+  padding: 40px;
+}
+
+.TopBoxTextHeader {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.AboutBox {
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.ImageCarousel {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}

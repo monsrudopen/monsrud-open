@@ -20,6 +20,7 @@ class Header extends Component {
                 <img
                   width="60"
                   height="60"
+                  alt="Monsrud Open Logo"
                   src={require('./../../img/icons/MonsrudLogo.png')}
                 />{' '}
               </a>
@@ -46,15 +47,6 @@ class Header extends Component {
                   <h6 className={styles.HeaderNumberSix}>
                     Tidligere turneringer
                   </h6>
-                </Link>
-              </div>
-              <div className={styles.MenuLink}>
-                <Link
-                  style={{ color: 'white', textDecoration: 'none' }}
-                  to="/Donations"
-                  rel="noopener noreferrer"
-                >
-                  <h6 className={styles.HeaderNumberSix}>Donasjoner</h6>
                 </Link>
               </div>
               <div className={styles.MenuLink}>

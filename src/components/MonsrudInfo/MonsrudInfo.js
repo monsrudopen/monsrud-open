@@ -8,6 +8,7 @@ class MonsrudInfo extends Component {
         <div className="infoContainer">
           <div className="infoImgContainer">
             <img
+              alt="gruppebilde"
               className="image"
               src={require('./../../img/images/group2018.jpg')}
             />

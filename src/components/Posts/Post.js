@@ -1,15 +1,33 @@
-import React, { Component } from 'react';
+import React from 'react';
+import styles from './Posts.module.css';
 
-import './posts.css';
-
-function Post(props) {
+const Post = props => {
   return (
-    <a className="post" href={props.link}>
-      <img className="postImage" src={props.image} />
-      <div className="postTitle">{props.title}</div>
-      <div className="postTexter">{props.text}</div>
+    <a onClick={props.onClick} className={styles.Post} href={props.link}>
+      <img alt={props.title} className={styles.PostImage} src={props.image} />
+      <div className={styles.PostTitle}>{props.title}</div>
+      <div className={styles.PostTexter}>{props.text}</div>
     </a>
   );
-}
+};
 
-export default Post;
+const PostRow = ({ postItems, setSelectedItem }) => {
+  return (
+    <div className={styles.PostContainer}>
+      <div className={styles.PostsRow}>
+        {postItems.map((value, index) => (
+          <Post
+            onClick={setSelectedItem ? () => setSelectedItem(index) : null}
+            key={index}
+            image={value.image}
+            title={value.title}
+            text={value.text}
+            link={value.link}
+          ></Post>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default PostRow;

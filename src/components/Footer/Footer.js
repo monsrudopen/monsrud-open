@@ -15,12 +15,20 @@ class Footer extends Component {
         <p>Monsrud Open &copy; {new Date().getFullYear()}</p>
         <div className="box">
           <div>
-            <a href="mailto:hello@monsrudopen.com" target="_blank">
+            <a
+              href="mailto:hello@monsrudopen.com"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <HoverImage src={MailBW} hoverSrc={MailC} style={{ width: 40 }} />
             </a>
           </div>
           <div>
-            <a href="https://www.twitter.com/monsrudopen" target="_blank">
+            <a
+              href="https://www.twitter.com/monsrudopen"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <HoverImage
                 src={TwitterBW}
                 hoverSrc={TwitterC}
@@ -29,7 +37,11 @@ class Footer extends Component {
             </a>
           </div>
           <div>
-            <a href="https://www.instagram.com/monsrudopen" target="_blank">
+            <a
+              href="https://www.instagram.com/monsrudopen"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <HoverImage
                 className="image"
                 src={InstaBW}
@@ -40,7 +52,11 @@ class Footer extends Component {
           </div>
         </div>
         <p>
-          <a href="https://goo.gl/maps/udc6qp4q9tMbrJYB7" target="_blank">
+          <a
+            href="https://goo.gl/maps/udc6qp4q9tMbrJYB7"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             Ruglandveien 107, 1359 Eiksmarka
           </a>
         </p>
