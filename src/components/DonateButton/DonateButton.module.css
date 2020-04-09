@@ -1,12 +1,25 @@
 .Boxed {
   border-radius: 25px;
-  width: 110%;
-  height: 120%;
+  width: 420px;
+  height: 70px;
   background-color: #c6a76a;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #696969;
+  color: WHITE;
   font-family: sans-serif;
   text-transform: capitalize;
+  transition: 0.3s;
+}
+.Boxed:hover {
+  transform: scale(1);
+  background-color: #e3b052;
+  color: white;
+  transition: 0.3s;
+}
+.text {
+  text-decoration-line: none;
+}
+.text:hover {
+  text-decoration-line: none;
 }

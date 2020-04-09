@@ -5,7 +5,7 @@ const competitions = [
     winner: 'Ferdinand',
     attendees: '?',
     tournamentText:
-      '2019 var året Ferdinand Eide Rode kunne hente hjem sitt andre trofé fra Monsrud Open.',
+      '2019 var året Ferdinand Eide Rode kunne hente hjem sitt andre trofé fra Monsrud Open etter en gjevnspilt finale mot Marius Monsrud. ',
     donated: 17701.08,
     text:
       'I 2019 gikk innsamlingen til Plan Norges jentefond og det ble samlet inn hele 17 701,08 kroner. ',

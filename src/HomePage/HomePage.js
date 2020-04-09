@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Clock from '../components/Clock/Clock';
 import FrontPagePosts from '../components/Posts/FrontPagePosts';
+import DonateButton from '..//components/DonateButton/DonateButton';
 
 import './homePage.css';
 
