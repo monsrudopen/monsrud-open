@@ -6,7 +6,6 @@
   margin: 0;
   padding: 0;
   width: 100vw;
-  height: calc(100vh - 70px);
   margin-top: 70px;
   display: flex;
   justify-content: center;
@@ -35,5 +34,9 @@ h1 {
   font-size: calc(2em + 1vw);
   text-transform: uppercase;
   font-family: 'Helvetica', sans-serif;
-  height: 100px;
+  height: 60px;
+}
+h4 {
+  font-weight: 300;
+  height: 20px;
 }

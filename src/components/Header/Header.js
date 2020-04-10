@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
+import DonateButton from '../DonateButton/DonateButton';
 
 class Header extends Component {
   constructor(props) {
@@ -24,6 +25,9 @@ class Header extends Component {
                   src={require('./../../img/icons/MonsrudLogo.png')}
                 />{' '}
               </a>
+            </div>
+            <div className={styles.HeaderDonateButton}>
+              <DonateButton />
             </div>
             <button className={styles.HamburgerBar} onClick={this.toggleMenu}>
               Menu

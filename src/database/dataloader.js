@@ -2,10 +2,37 @@ const competitions = [
   {
     title: '2019 - Plans Jentefond',
     organization: 'Plan Norge',
-    winner: 'Ferdinand',
-    attendees: '?',
+    winner: 'Ferdinand Eide Rode',
+    attendees: [
+      'Ferdinand Eide Rode',
+      'Marius Monsrud',
+      'Jakob Hardersen Prydz',
+      'Erlend Solbakk Harbitz',
+      'Hanne L‘Orsa',
+      'Eli Marie Sagedal Hindahl',
+      'Daniel Milliam Müller',
+      'Ingvild Vøllo Eliassen',
+      'Ingrid Nelson Giæver',
+      'Øystein Hammersland',
+      'Therese Dolva',
+      'Tinius Kjær Torkildsen',
+      'Emma Haugen Rosland',
+      'Lisa Victoria Bergman',
+      'Kristine Sand Nielsen',
+      'Ane Fürst Juul',
+      'Sarah Tomine Johannessen',
+      'Ole-Tobias Torrisen',
+      'Erlend Kaurstad Morthen',
+      'Hanna Karoline Hegna Sæther',
+      'Mathias Woldseth Thorstensen',
+      'Falk Eidsvold Tøien',
+      'Marie Vormeland Langgård',
+      'Maren Kjelgaard Bredesen',
+      'Sondre Angard Siljehaug',
+      'Andreas Moser'
+    ],
     tournamentText:
-      '2019 var året Ferdinand Eide Rode kunne hente hjem sitt andre trofé fra Monsrud Open etter en gjevnspilt finale mot Marius Monsrud. ',
+      'For tredje gang var finalen mellom Ferdinand Eide Rode og Marius Monsrud, hvor begge kunne bli mestvinnende sammen med Jakob Hardersen Prydz, med to seiere. Seirende ut gikk Ferdinand, som vant med 2-1 i sett etter å ha hatt 5 mesterskapsballer mot seg. Erlend Solbakk Harbitz gikk seirende ut av bronsefinalen mot Hanne L‘Orsa, som samtidig ble første kvinne til å spille i en semifinale, og bronsefinale, noen gang. Turneringen satt rekord i antall deltakere, på hele 26 stk. Logistikken ble satt på prøve, men med positive spillere og stab ordnet alt seg.',
     donated: 17701.08,
     text:
       'I 2019 gikk innsamlingen til Plan Norges jentefond og det ble samlet inn hele 17 701,08 kroner. ',
@@ -15,12 +42,27 @@ const competitions = [
   },
   {
     title: '2018 - Redd Barna',
-    winner: 'Marius',
+    winner: 'Marius Monsrud',
     organization: 'Redd Barna',
     donated: 12669,
-    attendees: '?',
+    attendees: [
+      'Ferdinand Eide Rode',
+      'Sondre Angard Siljehaug',
+      'Thomas Dagsvik',
+      'Falk Eidsvold Tøien',
+      'Erik Skjeggedal',
+      'Ingrid Nelson Giæver',
+      'Erlend Solbakk Harbitz',
+      'Ingvild Vøllo Eliassen',
+      'Emma Haugen Rosland',
+      'Sarah Tomine Johannessen',
+      'Jonas Frium Opedal',
+      'Lisa Victoria Bergman',
+      'Hanne L‘Orsa',
+      'Kristine Huseby Hübert'
+    ],
     text:
-      'I 2018 samlet vi inn penger til Redd Barna. Tross noe færre deltakere enn året før klarte vi å samle inn kr 12 669. ',
+      'I 2018 vant Marius Monsrud etter at han fikk sin revansje mot Ferdinand Eide Rode i finalen med 2-1 seier i sett. Marius ble dermed første person til å ta med det nye vandretrofeet hjem, designet og laget av Sondre Angard Siljehaug, og var tydelig glad. I bronsefinalen ble det W.O. til førstegangs deltaker Thomas Dagsvik mot en annen førstegangs deltaker, Falk Eidsvold Tøien. Det var totalt 15 deltakere under turneringen i 2018.',
     tournamentText:
       'I 2018 var det endelig klart for hjemmeseier. Etter nok en tøff finale mot Ferdinand Eide Rode fikk han sin revansj. Etter to finaletap på rad var dette fortjent. Det skal nevnes at Marius hadde spilt badminton på NHH én gang i uken hele dette året og derfor kunne kalles favoritt. Noen gikk så langt som å kall det juks, men det stemmer ikke. Under Monsrud Open er det lov å være helt nybegynner, men det er også lov å være god! Ellers kunne Sondre Angard Siljehaug presentere et flokende nytt trofé. Dette flotte trofeet ble værende i Ruglandveien etter turneringen.',
     organizationInfo:
@@ -29,12 +71,33 @@ const competitions = [
   },
   {
     title: '2017 - Røde Kors',
-    winner: 'Erlend',
+    winner: 'Erlend Solbakk Harbitz',
     organization: 'Røde Kors',
     donated: 14756,
-    attendees: '?',
+    attendees: [
+      'Erlend Solbakk Harbitz',
+      'Ferdinand Eide Rode',
+      'Jakob Hardersen Prydz',
+      'Sondre Angard Siljehaug',
+      'Thomas Brantsæter',
+      'Ane Fürst Juul',
+      'Kari Hegtun',
+      'Marie Vormeland Langgård',
+      'Erik Skjeggedal',
+      'Ingvild Vøllo Eliassen',
+      'Marius Monsrud',
+      'Jonas Frium Opedal',
+      'Hanne L‘Orsa',
+      'Sarah Tomine Johannessen',
+      'Tormod Ongstad',
+      'Kristine Huseby Hübert',
+      'Tellef Bakken',
+      'Thomas Matthew Brown',
+      'Ingrid Nelson Giæver',
+      'Vilde Senje'
+    ],
     text:
-      'I 2017 satt vi fokus på rent vann. Vi samlet inn fantastiske kroner 14 756 til Røde Kors til vann for livet kampanje. ',
+      'I 2017 var det Erlend Solbakk Harbitz sin tur til å ta med vandretrofeet hjem etter seier i finalen mot Ferdinand Eide Rode som dermed gikk på sitt 3 finaletap på 4 år. Erlend hadde tidligere 4. plass som beste plassering og var naturlig nok veldig fornøyd. Dette året satte mørket tidsbegrensninger for bronsefinalen som gjorde at det ble en delt 3. plass mellom Jakob Hardersen Prydz og Sondre Angard Siljehaug. Turneringen talte utrolige 20 deltakere, noe som da var rekord for Monsrud Open. Årets store nyhet var svært flotte spillerkort laget av den kreative deltakeren Sondre Angard Siljehaug. Salg av disse bidro til økte inntekter til Røde Kors.',
     tournamentText:
       '2017 var året for de store overraskelsene. Årets vinner var noe overraskende styremedlem Erlend Solbakk Harbitz. Marius Monsrud ble denne gangen igjen slått i finalen. Årets store nyhet var svært flotte spillerkort laget av vår kreative deltaker og venn Sondre Angard Siljehaug. Salg av disse bidro til økte inntekter til Røde Kors. Disse kortene vil trolig stige mye i verdi i årene fremover. 2017 var også året Monsrud Open ble en offisiell organisasjon etter at stiftelsesmøte var avholdt på Gløshaugen i Trondheim i starten av mars. Til stede var hele nåværende styre ved styreleder Marius Monsrud, Erlend Solbakk Harbitz, Ferdinand Eide Rode og Øystein Hammersland. Vedtekter ble skrevet og alle dokumenter ble sendt inn til Brønnøysundregisteret. Dette ga oss tilgang til egen nettbank og Vipps. Dette gjorde oss mer åpne.',
     organizationInfo:
@@ -43,12 +106,25 @@ const competitions = [
   },
   {
     title: '2016 - NRC',
-    winner: 'Ferdinand',
+    winner: 'Ferdinand Eide Rode',
     organization: 'Flyktninghjelpen',
     donated: 6000,
-    attendees: '?',
+    attendees: [
+      'Andreas Dahlslett Ratvik',
+      'Erlend Solbakk Harbitz',
+      'Ferdinand Eide Rode',
+      'Hanne L‘Orsa',
+      'Ingrid Nelson Giæver',
+      'Jakob Hardersen Prydz',
+      'Jonas Frium Opedal',
+      'Marie Vormeland Langgård',
+      'Marius Monsrud',
+      'Sondre Angard Siljehaug',
+      'Thomas Matthew Brown',
+      'Øystein Hammersland'
+    ],
     text:
-      'I 2016 samlet vi inn 6 000 kroner til Flyktninghjelpen. Igjen doblet vi beløpet til store glede for alle sammen. ',
+      'I 2016 vant Ferdinand Eide Rode for første gang turneringen, i fraværet av Jakob Hardersen Prydz. Ferdinand seiret med 2-0 i sett i finalen mot Marius Monsrud, som tidligere hadde 5. plass som beste plassering og gjorde dermed stor fremgang. Ferdinand revansjerte dermed sitt tap mot Marius fra gruppespillet. Thomas Matthew Brown gikk seirende ut av Bronsefinalen mot Erlend Solbakk Harbitz i en jevnt kamp som endte 2-1 i sett til Thomas. I 2016 så turneringen en liten reduksjon i antall deltakere, med totalt 12 spillere. Under selve arrangementet sto Kristine Hubert og Erik Bjørgum for fremragende underholdning.',
     tournamentText:
       'Dette var året da den store favoritten, med mange års tenniserfaring endelig skulle lykkes. Ferdinand Eide Rode klarte endelig å hente hjem trofeet. Finalen var jevn og spennende mellom hjemmehåpet Marius Monsrud og Ferdinand. Etter tre jevne sett ble det hele avgjort. Ellers nytt av året var vårt flotte banner som har prydet bakgrunnen på de fleste bilder fra turneringen i etterkant. Styret fikk også flotte krus med logoen (selvfølgelig betalt av oss selv). Vi husker også den flotte promofilmen laget av Erlend Solbakk Harbitz som så flott satt sammen badminton og flyktninger. Under selve arrangementet sto Kristine Hubert og Erik Bjørgum for fremragende underholdning. Deres sang om Marius Monsrud på melodien til «kursiv» glemmes nok aldri. ',
     organizationInfo:
@@ -57,12 +133,28 @@ const competitions = [
   },
   {
     title: '2015 - Amnesty',
-    winner: 'Jakob',
+    winner: 'Jakob Hardersen Prydz',
     organization: 'Amnesty',
     donated: 3000,
-    attendees: '?',
+    attendees: [
+      'Erik Bjørgum',
+      'Erik Skjeggedal',
+      'Erlend Solbakk Harbitz',
+      'Ferdinand Eide Rode',
+      'Hanne L‘Orsa',
+      'Jakob Hardersen Prydz',
+      'Johannes Sand Bolstad',
+      'Jonas Frium Opedal',
+      'Kari Hegtun',
+      'Kristine Huseby Hübert',
+      'Marcus Nickelsen',
+      'Marie Vormeland Langgård',
+      'Marius Monsrud',
+      'Thomas Brantsæter',
+      'Thomas Matthew Brown'
+    ],
     tournamentText:
-      'Dette året var året Jakob Hardersen Prydz for alvor skulle markere sin posisjon. Året før kan nok noen ha ment at seieren var noe heldig, men i år var det mindre tvil. Jakob forsvarte tittelen og beholdt vandretrofeet. Prestasjonen ble enda bedre av at antallet deltakere i turneringen var fordoblet fra året før. Dette året var først året vi hadde en flott nettside. Underholdningen fra Kristine Hubert, vår egen huskomiker og gode venn, (kjent fra masse tv-programmer!) var dagens absolutte høydepunkt. Stand-up av ypperste klasse!',
+      'Antall spillere ble nesten doblet i 2015 til 15 deltakere, hvor det ble åpnet for kvinnelige deltakere også. Alle konkurrerte i åpen klasse, som igjen ble vunnet av Jakob Hardersen Prydz som sikret seg sin andre seier på like mange år.  Også i 2015 vant han finalen mot Ferdinand Eide Rode, men denne gangen med 2-0 i sett. Tredjeplassen gikk til Johannes Sand Bolstad som slo Thomas Brantsæter på w.o.Nytt av året var pauseunderholdning mellom gruppespill og sluttspill, hvor deltaker Kristine Huseby Hübert underholdt både spillere og tilskuere.',
     text:
       'I 2015 samlet vi inn kr 3 000 til Amnesty. Dette var mer enn en dobling fra det første året noe vi var svært fornøyd med.',
     organizationInfo:
@@ -71,12 +163,21 @@ const competitions = [
   },
   {
     title: '2014 - UNICEF',
-    winner: 'Jakob',
+    winner: 'Jakob Hardersen Prydz',
     organization: 'UNICEF',
     donated: 1200,
-    attendees: '?',
+    attendees: [
+      'Erlend Solbakk Harbitz',
+      'Ferdinand Eide Rode',
+      'Jakob Hardersen Prydz',
+      'Marius Monsrud',
+      'Ole-Tobias Torrissen',
+      'Sondre Angard Siljehaug',
+      'Thomas Matthew Brown',
+      'Øystein Hammersland'
+    ],
     text:
-      'Det første året valgte vi å sette fokus på barns rettigheter. Vi samlet inn kr 1 200 til UNICEF noe vi den gangen var fornøyd med.',
+      'Historiens første vinner av Monsrud Open ble Jakob Hardersen Prydz som gikk seirende ut i finalen mot Ferdinand Eide Rode etter at begge to gikk ubeseiret gjennom hver sin gruppe og slo henholdsvis Sondre Angard Siljehaug og Thomas Matthew Brown 2-1 i sett i hver sin semifinale. Jakob ble dermed første person til å ta med seg vandretrofeet hjem til odel og eie frem til neste års turnering.',
     tournamentText:
       'Denne første offisielle turneringen ble vunnet av Jakob Hardersen Prydz. I finalen slo han forhåndsfavoritten Ferdinand Eide Rode noe overraskende for mange. Hjemmehåpet Marius Monsrud skuffet og røk ut allerede i gruppespillet etter tap mot noe svakere rangerte Thomas Matthew Brown. Han tapte også en svært jevn kamp mot vinnende Jakob Hardersen Prydz. ',
     organizationInfo:

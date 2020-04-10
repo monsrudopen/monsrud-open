@@ -1,7 +1,7 @@
 .Boxed {
   border-radius: 25px;
-  width: 420px;
-  height: 70px;
+  width: 240px;
+  height: 60px;
   background-color: #c6a76a;
   display: flex;
   justify-content: center;
@@ -10,6 +10,7 @@
   font-family: sans-serif;
   text-transform: capitalize;
   transition: 0.3s;
+  font-size: 20px;
 }
 .Boxed:hover {
   transform: scale(1);

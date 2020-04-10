@@ -21,13 +21,14 @@ class MonsrudInfo extends Component {
               <div className="infoTextBlock">
                 Monsrud Open startet som en badmintonturnering i hagen til
                 Marius Monsrud i Ruglandveien, hvor det opp gjennom årene har
-                blirr arrangert mange uformelle turneringer. Den første
+                blitt arrangert flere uformelle turneringer. Den første
                 offisielle turneringen i dagens format, med innsamling til et
-                veldeig formål, ble holdt i 2014. Kombinasjonen badminton,
-                samhold og veldedighet har vært viktig siden starten. I løpet av
-                den fem første årene samlet inn penger til UNICEF, Amnesty,
-                Flyktninghjelpen, Røde Kors og Redd Barna. Interesserte kan lese
-                mer om hver enkelt innsamling under tidligere turneringer.
+                veldedig formål, ble arrangert i 2014. Kombinasjonen av
+                badminton, samhold og veldedighet har vært viktig siden starten.
+                I løpet av den fem første årene samlet inn penger til UNICEF,
+                Amnesty, Flyktninghjelpen, Røde Kors og Redd Barna. Interesserte
+                kan lese mer om hver enkelt innsamling under tidligere
+                turneringer.
                 <br />
                 <br />
                 Organisasjonen ble formelt stiftet som en frivillig organisasjon
