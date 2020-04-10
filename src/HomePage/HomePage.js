@@ -16,7 +16,7 @@ class HomePage extends Component {
               timeTillDate="15 07 2020, 13:00"
               timeFormat="DD MM YYYY, HH:mm"
             />
-            <div>
+            <div className="videobox">
               <video width="800" height="auto" controls>
                 <source src={MO2020promov2} type="video/mp4"></source>
               </video>

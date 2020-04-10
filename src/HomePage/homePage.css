@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   width: 100vw;
-  margin-top: 70px;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,4 +39,10 @@ h1 {
 h4 {
   font-weight: 300;
   height: 20px;
+}
+.videobox {
+  width: 1000px;
+  height: 600px;
+  background-color: black;
+  border-radius: 25px;
 }
