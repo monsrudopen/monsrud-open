@@ -6,7 +6,7 @@ function Donatebutton(props) {
   return (
     <a
       className={styles.text}
-      href="http://www.vg.no"
+      href=""
       target="_blank"
       rel="noopener noreferrer"
     >

@@ -11,15 +11,16 @@ class HomePage extends Component {
       <div className="mainContainer">
         <div className="main">
           <div className="fronPageBannerContainer">
-            <h1 className="mainTitle">Monsrud Open</h1>
-            <video width="800" height="auto" controls>
-              <source src={MO2020promov2} type="video/mp4"></source>
-            </video>
             <h4>15. august 2020</h4>
             <Clock
               timeTillDate="15 07 2020, 13:00"
               timeFormat="DD MM YYYY, HH:mm"
             />
+            <div>
+              <video width="800" height="auto" controls>
+                <source src={MO2020promov2} type="video/mp4"></source>
+              </video>
+            </div>
           </div>
         </div>
         <div className="componentElements">
