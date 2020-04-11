@@ -25,10 +25,10 @@ class MonsrudInfo extends Component {
                 offisielle turneringen i dagens format, med innsamling til et
                 veldedig formål, ble arrangert i 2014. Kombinasjonen av
                 badminton, samhold og veldedighet har vært viktig siden starten.
-                I løpet av den fem første årene samlet inn penger til UNICEF,
-                Amnesty, Flyktninghjelpen, Røde Kors og Redd Barna. Interesserte
-                kan lese mer om hver enkelt innsamling under tidligere
-                turneringer.
+                I løpet av de fem første årene har vi samlet inn penger til
+                UNICEF, Amnesty, Flyktninghjelpen, Røde Kors og Redd Barna.
+                Interesserte kan lese mer om hver enkelt innsamling under
+                tidligere turneringer.
                 <br />
                 <br />
                 Organisasjonen ble formelt stiftet som en frivillig organisasjon
