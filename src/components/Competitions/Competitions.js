@@ -27,7 +27,11 @@ const CompetitionView = ({ competition, setSelectedYear }) => {
           </div>
           <div className={styles.TopBoxText}>
             <div className={styles.TopBoxTextHeader}>Deltakere</div>
-            <div>{competition.attendees}</div>
+            <div>
+              {competition.attendees.sort().map(a => (
+                <div>{a}</div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

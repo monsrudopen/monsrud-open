@@ -57,3 +57,9 @@
     align-self: flex-start;
   }
 }
+.HeaderDonateButton {
+  position: absolute;
+  left: 80px;
+  margin: 10px;
+  top: 0;
+}
