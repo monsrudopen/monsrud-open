@@ -62,7 +62,7 @@ const competitions = [
       'Hanne L‘Orsa',
       'Kristine Huseby Hübert'
     ],
-    tournamenttext:
+    tournamentText:
       'I 2018 vant Marius Monsrud etter at han fikk sin revansje mot Ferdinand Eide Rode i finalen med 2-1 seier i sett. Marius ble dermed første person til å ta med det nye vandretrofeet hjem, designet og laget av Sondre Angard Siljehaug, og var tydelig glad. I bronsefinalen ble det W.O. til førstegangs deltaker Thomas Dagsvik mot en annen førstegangs deltaker, Falk Eidsvold Tøien. Det var totalt 15 deltakere under turneringen i 2018.',
     organization: 'Redd Barna',
     organizationInfo:
