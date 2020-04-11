@@ -43,6 +43,7 @@ const Header = () => {
               className={menuVisible ? styles.MenuLinkMobile : styles.MenuLink}
             >
               <Link
+                onClick={() => setMenuVisible(false)}
                 style={{ color: 'white', textDecoration: 'none' }}
                 to="/"
                 rel="noopener noreferrer"
@@ -54,6 +55,7 @@ const Header = () => {
               className={menuVisible ? styles.MenuLinkMobile : styles.MenuLink}
             >
               <Link
+                onClick={() => setMenuVisible(false)}
                 style={{ color: 'white', textDecoration: 'none' }}
                 to="/Competitions"
                 rel="noopener noreferrer"
@@ -67,6 +69,7 @@ const Header = () => {
               className={menuVisible ? styles.MenuLinkMobile : styles.MenuLink}
             >
               <Link
+                onClick={() => setMenuVisible(false)}
                 style={{ color: 'white', textDecoration: 'none' }}
                 to="/About"
                 rel="noopener noreferrer"
