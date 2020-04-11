@@ -17,7 +17,7 @@ class HomePage extends Component {
               timeFormat="DD MM YYYY, HH:mm"
             />
             <div className="videobox">
-              <video width="800" height="auto" controls>
+              <video width="75%" height="auto" controls>
                 <source src={MO2020promov2} type="video/mp4"></source>
               </video>
             </div>
