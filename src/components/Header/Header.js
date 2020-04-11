@@ -21,8 +21,8 @@ const Header = () => {
             </a>
           </div>
           {/* <div className={styles.HeaderDonateButton}>
-              <DonateButton />
-            </div> */}
+            <DonateButton />
+          </div> */}
           <button
             className={styles.HamburgerBar}
             onClick={() => setMenuVisible(!menuVisible)}

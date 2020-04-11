@@ -4,7 +4,7 @@ const competitions = [
     text:
       'I 2019 gikk innsamlingen til Plan Norges jentefond og det ble samlet inn hele 17 701,08 kroner. ',
     winner: 'Ferdinand Eide Rode',
-    donated: 17701.08,
+    donated: 'Kr 17701.08',
     attendees: [
       'Ferdinand Eide Rode',
       'Marius Monsrud',
@@ -25,7 +25,7 @@ const competitions = [
       'Sarah Tomine Johannessen',
       'Ole-Tobias Torrisen',
       'Erlend Kaurstad Morthen',
-      'Hanna Karoline Hegna Sæther',
+      'Hanna K. Hegna Sæther',
       'Mathias Woldseth Thorstensen',
       'Falk Eidsvold Tøien',
       'Marie Vormeland Langgård',
@@ -45,7 +45,7 @@ const competitions = [
     text:
       'I 2018 samlet vi inn penger til Redd Barna. Tross noe færre deltakere enn året før klarte vi å samle inn kr 12 669.',
     winner: 'Marius Monsrud',
-    donated: 12669,
+    donated: 'Kr 12669',
     attendees: [
       'Ferdinand Eide Rode',
       'Sondre Angard Siljehaug',
@@ -74,7 +74,7 @@ const competitions = [
     text:
       'I 2017 satt vi fokus på rent vann. Vi samlet inn fantastiske kr 14 756 til Røde Kors‘ vann for livet kampanje.',
     winner: 'Erlend Solbakk Harbitz',
-    donated: 14756,
+    donated: 'Kr 14756',
     attendees: [
       'Erlend Solbakk Harbitz',
       'Ferdinand Eide Rode',
@@ -109,7 +109,7 @@ const competitions = [
     text:
       'I 2016 samlet vi inn kr 6 000 til Flyktninghjelpen. Igjen doblet vi beløpet til stor glede for alle sammen.',
     winner: 'Ferdinand Eide Rode',
-    donated: 6000,
+    donated: 'Kr 6000',
     attendees: [
       'Andreas Dahlslett Ratvik',
       'Erlend Solbakk Harbitz',
@@ -136,7 +136,7 @@ const competitions = [
     text:
       'I 2015 samlet vi inn kr 3 000 til Amnesty. Dette var mer enn en dobling fra det første året noe vi var svært fornøyd med.',
     winner: 'Jakob Hardersen Prydz',
-    donated: 3000,
+    donated: 'Kr 3000',
     attendees: [
       'Erik Bjørgum',
       'Erik Skjeggedal',
@@ -166,7 +166,7 @@ const competitions = [
     text:
       'Det første året valgte vi å sette fokus på barns rettigheter. Vi samlet inn kr 1 200 til UNICEF, noe vi den gangen var fornøyd med..',
     winner: 'Jakob Hardersen Prydz',
-    donated: 1200,
+    donated: 'Kr 1200',
     attendees: [
       'Erlend Solbakk Harbitz',
       'Ferdinand Eide Rode',
