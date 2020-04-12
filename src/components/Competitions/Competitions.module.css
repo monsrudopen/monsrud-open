@@ -45,6 +45,7 @@
 }
 
 .AboutBox {
+  text-align: justify;
   text-align-last: left;
   word-wrap: break-word;
   width: 52%;
