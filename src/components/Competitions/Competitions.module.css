@@ -45,7 +45,7 @@
 }
 
 .AboutBox {
-  text-align: left;
+  text-align-last: left;
   word-wrap: break-word;
   width: 52%;
   display: inline-block;
