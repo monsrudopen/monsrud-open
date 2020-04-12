@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
-//import DonateButton from '../DonateButton/DonateButton';
+import DonateButton from '../DonateButton/DonateButton';
 
 const Header = () => {
   const [menuVisible, setMenuVisible] = useState(false);
@@ -20,9 +20,9 @@ const Header = () => {
               />{' '}
             </a>
           </div>
-          {/* <div className={styles.HeaderDonateButton}>
+          <div className={styles.HeaderDonateButton}>
             <DonateButton />
-          </div> */}
+          </div>
           <button
             className={styles.HamburgerBar}
             onClick={() => setMenuVisible(!menuVisible)}

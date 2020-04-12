@@ -1,100 +1,257 @@
 .CompetitionView {
   margin: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.CompetitionViewWrapper {
+  width: 80vw;
 }
 
 .TopBoxContainer {
   display: flex;
-  max-width: 100vw;
-  justify-content: center;
+  flex-direction: column;
+  width: 40vw;
+  justify-content: space-between;
+  height: 600px;
 }
 
 .TopBoxImageContainer {
-  margin-bottom: 0px;
   justify-content: center;
+  height: 600px;
+  max-width: 40vw;
 }
 
 .TopBoxImage {
-  max-width: 800px;
+  max-height: 600px;
+  width: 40vw;
 }
 
 .TopBoxTextContainer {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-
+.TopBoxWinnerDonation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 200px;
+}
 .TopBoxText {
-  padding: 40px;
 }
-
+.TopBoxTextWinner {
+  font-size: 46px;
+  color: #c6a76a;
+}
+.TopBoxTextDonation {
+  font-size: 40px;
+  color: #c6a76a;
+}
 .TopBoxTextHeader {
   font-weight: bold;
-  padding-bottom: 10px;
+  padding: 15px;
+  font-size: 25px;
+  color: #696969;
 }
-
+.TopBoxParticipants {
+  display: flex;
+  align-self: center;
+  height: 300px;
+}
+.MiddleBox {
+  display: flex;
+  flex-direction: row;
+}
+.BottomBox {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+}
+.BottomBoxOrganization {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 .TopBoxParticipantsHeader {
   font-weight: bold;
-  justify-content: center;
-  border-bottom-width: 100%;
+  border-bottom-width: 1px;
   border-bottom-color: black;
   border-bottom-style: solid;
+  font-size: 25px;
+  color: #696969;
 }
 .TopBoxParticipantsText {
-  columns: 4 auto;
+  columns: 3 auto;
   width: 100%;
-  display: center;
 }
-
+.TopBoxWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  max-width: 80vw;
+  height: 600px;
+}
+.AboutTournamentBox {
+  text-align: justify;
+  text-align-last: left;
+  word-wrap: break-word;
+  display: inline-block;
+  width: 900px;
+}
+.BottomBoxSponsor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.BottomBoxSponsorText {
+  color: black;
+  font-size: 20px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.BottomBoxSponsorImage {
+  width: 10vw;
+  height: auto;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
 .AboutBox {
   text-align: justify;
   text-align-last: left;
   word-wrap: break-word;
-  width: 52%;
   display: inline-block;
+  width: 50vw;
 }
-
+.OrganizationPicture {
+  width: 30vw;
+  height: auto;
+  padding: 30px;
+}
 .ImageCarousel {
   margin-top: 100px;
   margin-bottom: 100px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 .ReturnButton {
-  padding-left: 40px;
-  padding-right: 40px;
-  border-radius: 25px;
-  width: 5.5%;
-  height: auto;
+  border-radius: 20px;
+  width: 65px;
+  height: 25px;
   background-color: #7a7a7a;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   color: white;
   text-transform: capitalize;
   transition: 0.3s;
   font-size: 75%;
+}
+
+.YearButton {
+  border-radius: 20px;
+  width: 65px;
+  height: 25px;
+  background-color: #7a7a7a;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-transform: capitalize;
+  transition: 0.3s;
+  font-size: 75%;
+}
+.ReturnButtonSticky {
   position: sticky;
   position: -webkit-sticky;
-  top: 3%;
+  top: 25px;
   z-index: 1000;
-  margin-left: 15%;
+  flex-direction: row;
+  display: flex;
+  width: 600px;
+  justify-content: space-evenly;
 }
 
 @media only screen and (max-width: 768px) {
   [class*='ReturnButton'] {
-    width: 17%;
-    margin-left: 10%;
-    top: 3.6%;
+    top: 4%;
+  }
+  [class*='ReturnButtonSticky'] {
+    top: 4%;
+    width: 90%;
   }
   [class*='TopBoxImage'] {
-    width: 100%;
     justify-content: center;
   }
   [class*='TopBoxParticipantsText'] {
-    width: 115%;
     columns: 2 auto;
-    justify-content: center;
-    text-align: left;
+    width: 120vw;
   }
-  [class*='AboutBox'] {
-    width: 100%;
+  [class*='CompetitionViewWrapper'] {
+    width: 80vw;
+  }
+  [class*='YearButton'] {
+    display: none;
+  }
+  .BottomBoxSponsorImage {
+    width: 50vw;
+  }
+  .BottomBoxSponsor {
+    margin-top: 7vw;
+  }
+  .TopBoxWrapper {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .TopBoxContainer {
+    flex-direction: column;
+    width: 80vw;
+    height: auto;
+    justify-content: space-around;
+  }
+  .TopBoxWinnerDonation {
+    flex-direction: row;
+  }
+  .TopBoxText {
+    transform: scale(0.5);
+  }
+  .BottomBoxOrganization {
+    flex-direction: column;
+  }
+  .AboutBox {
+    width: 80vw;
+  }
+  .MiddleBox {
+    flex-direction: column;
+    width: 80vw;
+  }
+  .AboutTournamentBox {
+    width: 80vw;
+  }
+  .TopBoxImageContainer {
+    width: 80vw;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .TopBoxImage {
+    width: 80vw;
+  }
+  .OrganizationPicture {
+    width: 50vw;
+    padding: 1px;
+  }
+  h1 {
+    transform: scale(0.6);
   }
 }
 .ReturnButton:hover {
@@ -103,10 +260,16 @@
   color: white;
   transition: 0.3s;
 }
+.ReturnButton:active {
+  background-color: teal;
+}
 
 a:hover,
 a:active,
 a:visited,
 a:link {
   text-decoration: none;
+}
+h1 {
+  color: #c6a76a;
 }

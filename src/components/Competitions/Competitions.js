@@ -10,47 +10,95 @@ export const CompetitionView = () => {
 
   return (
     <div className={styles.CompetitionView}>
-      <Link to="/Competitions">
-        <div className={styles.ReturnButton}>Tilbake</div>
-      </Link>
+      <div className={styles.ReturnButtonSticky}>
+        <Link to="/Competitions">
+          <div className={styles.ReturnButton}>Tilbake</div>
+        </Link>
+        <Link to="/Competitions/2019">
+          <div className={styles.YearButton}>2019</div>
+        </Link>
+        <Link to="/Competitions/2018">
+          <div className={styles.YearButton}>2018</div>
+        </Link>
+        <Link to="/Competitions/2017">
+          <div className={styles.YearButton}>2017</div>
+        </Link>
+        <Link to="/Competitions/2016">
+          <div className={styles.YearButton}>2016</div>
+        </Link>
+        <Link to="/Competitions/2015">
+          <div className={styles.YearButton}>2015</div>
+        </Link>
+        <Link to="/Competitions/2014">
+          <div className={styles.YearButton}>2014</div>
+        </Link>
+      </div>
       <h1>{competition.title}</h1>
-      <div className={styles.TopBoxContainer}>
-        <div className={styles.TopBoxText}>
-          <div className={styles.TopBoxTextHeader}>Vinner</div>
-          <div>{competition.winner}</div>
-        </div>
-        <div className={styles.TopBoxText}>
-          <div className={styles.TopBoxTextHeader}>Innsamlet</div>
-          <div>Kr {competition.donated}</div>
-        </div>
-      </div>
-      <div className={styles.TopBoxImageContainer}>
-        <img
-          className={styles.TopBoxImage}
-          alt={competition.title}
-          src={competition.image}
-        ></img>
-      </div>
-      <div className={styles.TopBoxTextContainer}>
-        <div className={styles.TopBoxText}>
-          <div className={styles.TopBoxParticipantsHeader}>Deltakere</div>
-          <div className={styles.TopBoxParticipantsText}>
-            {competition.attendees.sort().map(a => (
-              <div key={a}>{a}</div>
-            ))}
+      <div className={styles.CompetitionViewWrapper}>
+        {' '}
+        <div className={styles.TopBoxWrapper}>
+          <div className={styles.TopBoxImageContainer}>
+            <img
+              className={styles.TopBoxImage}
+              alt={competition.title}
+              src={competition.image}
+            ></img>
+          </div>{' '}
+          <div className={styles.TopBoxContainer}>
+            <div className={styles.TopBoxWinnerDonation}>
+              <div className={styles.TopBoxText}>
+                <div className={styles.TopBoxTextHeader}>Vinner</div>
+                <div className={styles.TopBoxTextWinner}>
+                  {competition.winner}
+                </div>
+              </div>
+              <div className={styles.TopBoxText}>
+                <div className={styles.TopBoxTextHeader}>Innsamlet</div>
+                <div className={styles.TopBoxTextDonation}>
+                  Kr {competition.donated}
+                </div>
+              </div>
+            </div>
+            <div className={styles.TopBoxParticipants}>
+              <div className={styles.TopBoxText}>
+                <div className={styles.TopBoxParticipantsHeader}>Deltakere</div>
+                <div className={styles.TopBoxParticipantsText}>
+                  {competition.attendees.sort().map(a => (
+                    <div key={a}>{a}</div>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div className={styles.AboutBox}>
-        <h3>Hvordan gikk turneringen?</h3>
-        <div>{competition.tournamentText}</div>
-      </div>
-
-      <div className={styles.ImageCarousel}>Bilder kommer her...</div>
-      <div className={styles.AboutBox}>
-        <h3>Om {competition.organization}</h3>
-        <div>{competition.organizationInfo}</div>
+        <div className={styles.MiddleBox}>
+          <div className={styles.AboutTournamentBox}>
+            <h3>Hvordan gikk turneringen?</h3>
+            <div>{competition.tournamentText}</div>
+          </div>
+          <div className={styles.ImageCarousel}>Bilder kommer her...</div>
+        </div>
+        <div className={styles.BottomBox}>
+          <div className={styles.BottomBoxOrganization}>
+            <img
+              className={styles.OrganizationPicture}
+              src={competition.organizationpicture}
+            ></img>
+            <div className={styles.AboutBox}>
+              <h3>Om {competition.organization}</h3>
+              <div>{competition.organizationInfo}</div>
+            </div>
+          </div>{' '}
+          <div className={styles.BottomBoxSponsor}>
+            <div className={styles.BottomBoxSponsorText}>
+              Turneringen var sponset av
+            </div>
+            <img
+              className={styles.BottomBoxSponsorImage}
+              src={competition.sponsimage}
+            ></img>
+          </div>
+        </div>
       </div>
     </div>
   );
