@@ -48,7 +48,7 @@
   display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .MenuList {
     display: block;
     position: absolute;
@@ -152,4 +152,12 @@
   left: 80px;
   margin: 10px;
   top: 0;
+}
+@media only screen and (max-width: 768px) {
+  [class*='HeaderDonateButton'] {
+    transform: scale(0.5);
+    left: 65px;
+    position: relative;
+    margin: 7px;
+  }
 }

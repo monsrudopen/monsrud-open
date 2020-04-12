@@ -6,32 +6,37 @@ import competitions from './../../database/dataloader';
 const CompetitionView = ({ competition, setSelectedYear }) => {
   return (
     <div className={styles.CompetitionView}>
-      <button onClick={() => setSelectedYear(null)}>Tilbake</button>
+      <div
+        className={styles.ReturnButton}
+        onClick={() => setSelectedYear(null)}
+      >
+        Tilbake
+      </div>
       <h1>{competition.title}</h1>
       <div className={styles.TopBoxContainer}>
-        <div className={styles.TopBoxImageContainer}>
-          <img
-            className={styles.TopBoxImage}
-            alt={competition.title}
-            src={competition.image}
-          ></img>
+        <div className={styles.TopBoxText}>
+          <div className={styles.TopBoxTextHeader}>Vinner</div>
+          <div>{competition.winner}</div>
         </div>
-        <div className={styles.TopBoxTextContainer}>
-          <div className={styles.TopBoxText}>
-            <div className={styles.TopBoxTextHeader}>Vinner</div>
-            <div>{competition.winner}</div>
-          </div>
-          <div className={styles.TopBoxText}>
-            <div className={styles.TopBoxTextHeader}>Innsamlet</div>
-            <div>{competition.donated}</div>
-          </div>
-          <div className={styles.TopBoxText}>
-            <div className={styles.TopBoxTextHeader}>Deltakere</div>
-            <div>
-              {competition.attendees.sort().map(a => (
-                <div>{a}</div>
-              ))}
-            </div>
+        <div className={styles.TopBoxText}>
+          <div className={styles.TopBoxTextHeader}>Innsamlet</div>
+          <div>Kr {competition.donated}</div>
+        </div>
+      </div>
+      <div className={styles.TopBoxImageContainer}>
+        <img
+          className={styles.TopBoxImage}
+          alt={competition.title}
+          src={competition.image}
+        ></img>
+      </div>
+      <div className={styles.TopBoxTextContainer}>
+        <div className={styles.TopBoxText}>
+          <div className={styles.TopBoxParticipantsHeader}>Deltakere</div>
+          <div className={styles.TopBoxParticipantsText}>
+            {competition.attendees.sort().map(a => (
+              <div>{a}</div>
+            ))}
           </div>
         </div>
       </div>

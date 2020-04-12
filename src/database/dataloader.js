@@ -25,7 +25,7 @@ const competitions = [
       'Sarah Tomine Johannessen',
       'Ole-Tobias Torrisen',
       'Erlend Kaurstad Morthen',
-      'Hanna Karoline Hegna Sæther',
+      'Hanna K. Hegna Sæther',
       'Mathias Woldseth Thorstensen',
       'Falk Eidsvold Tøien',
       'Marie Vormeland Langgård',
