@@ -113,9 +113,10 @@
   justify-content: center;
   display: flex;
   align-items: center;
+  margin-bottom: 1vh;
 }
 .BottomBoxSponsorImage {
-  width: 10vw;
+  width: 12.5vw;
   height: auto;
   justify-content: center;
   display: flex;
@@ -126,16 +127,15 @@
   text-align-last: left;
   word-wrap: break-word;
   display: inline-block;
-  width: 50vw;
+  width: 68vw;
 }
 .OrganizationPicture {
-  width: 30vw;
+  width: 10vw;
   height: auto;
-  padding: 30px;
+  margin: 2vw;
 }
 .ImageCarousel {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin: 2vw;
   justify-content: center;
   align-items: center;
   display: flex;

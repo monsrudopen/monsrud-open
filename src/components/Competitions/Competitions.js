@@ -91,7 +91,7 @@ export const CompetitionView = () => {
           </div>{' '}
           <div className={styles.BottomBoxSponsor}>
             <div className={styles.BottomBoxSponsorText}>
-              Turneringen var sponset av
+              {competition.spons}
             </div>
             <img
               className={styles.BottomBoxSponsorImage}
