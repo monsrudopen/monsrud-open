@@ -57,6 +57,8 @@
   margin-bottom: 100px;
 }
 .ReturnButton {
+  padding-left: 40px;
+  padding-right: 40px;
   border-radius: 25px;
   width: 5.5%;
   height: auto;
@@ -100,4 +102,11 @@
   background-color: #5f5f5f;
   color: white;
   transition: 0.3s;
+}
+
+a:hover,
+a:active,
+a:visited,
+a:link {
+  text-decoration: none;
 }
