@@ -1,5 +1,6 @@
 const competitions = [
   {
+    year: 2019,
     title: '2019 - Plans Jentefond',
     text:
       'I 2019 gikk innsamlingen til Plan Norges jentefond og det ble samlet inn hele 17 701,08 kroner. ',
@@ -41,6 +42,7 @@ const competitions = [
     image: require('./../img/images/y2019.jpg')
   },
   {
+    year: 2018,
     title: '2018 - Redd Barna',
     text:
       'I 2018 samlet vi inn penger til Redd Barna. Tross noe færre deltakere enn året før klarte vi å samle inn kr 12 669.',
@@ -70,6 +72,7 @@ const competitions = [
     image: require('./../img/images/group2018.jpg')
   },
   {
+    year: 2017,
     title: '2017 - Røde Kors',
     text:
       'I 2017 satt vi fokus på rent vann. Vi samlet inn fantastiske kr 14 756 til Røde Kors‘ vann for livet kampanje.',
@@ -105,6 +108,7 @@ const competitions = [
     image: require('./../img/images/postImage3.png')
   },
   {
+    year: 2016,
     title: '2016 - NRC',
     text:
       'I 2016 samlet vi inn kr 6 000 til Flyktninghjelpen. Igjen doblet vi beløpet til stor glede for alle sammen.',
@@ -132,6 +136,7 @@ const competitions = [
     image: require('./../img/images/y2016.jpeg')
   },
   {
+    year: 2015,
     title: '2015 - Amnesty',
     text:
       'I 2015 samlet vi inn kr 3 000 til Amnesty. Dette var mer enn en dobling fra det første året noe vi var svært fornøyd med.',
@@ -162,6 +167,7 @@ const competitions = [
     image: require('./../img/images/y2015.jpeg')
   },
   {
+    year: 2014,
     title: '2014 - UNICEF',
     text:
       'Det første året valgte vi å sette fokus på barns rettigheter. Vi samlet inn kr 1 200 til UNICEF, noe vi den gangen var fornøyd med..',

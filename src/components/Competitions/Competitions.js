@@ -1,12 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PostRow from './../Posts/Post';
 import styles from './Competitions.module.css';
 import competitions from './../../database/dataloader';
+import { useParams, Link } from 'react-router-dom';
 
-const CompetitionView = ({ competition, setSelectedYear }) => {
+export const CompetitionView = () => {
+  const { year } = useParams();
+  const competition = competitions.find(c => c.year.toString() === year);
+
   return (
     <div className={styles.CompetitionView}>
-      <button onClick={() => setSelectedYear(null)}>Tilbake</button>
+      <Link to="/Competitions">Tilbake</Link>
       <h1>{competition.title}</h1>
       <div className={styles.TopBoxContainer}>
         <div className={styles.TopBoxImageContainer}>
@@ -29,7 +33,7 @@ const CompetitionView = ({ competition, setSelectedYear }) => {
             <div className={styles.TopBoxTextHeader}>Deltakere</div>
             <div>
               {competition.attendees.sort().map(a => (
-                <div>{a}</div>
+                <div key={a}>{a}</div>
               ))}
             </div>
           </div>
@@ -50,26 +54,10 @@ const CompetitionView = ({ competition, setSelectedYear }) => {
   );
 };
 
-const CompetitionPage = () => {
-  const [selectedYear, setSelectedYear] = useState(null);
+export const CompetitionPage = () => {
+  const competitionsWithLinks = competitions.map(c => {
+    return { ...c, link: 'Competitions/' + c.year };
+  });
 
-  const selectYear = year => {
-    setSelectedYear(year);
-    window.scrollTo(0, 0);
-  };
-
-  if (selectedYear === null) {
-    return (
-      <PostRow postItems={competitions} setSelectedItem={selectYear}></PostRow>
-    );
-  } else {
-    return (
-      <CompetitionView
-        competition={competitions[selectedYear]}
-        setSelectedYear={selectYear}
-      ></CompetitionView>
-    );
-  }
+  return <PostRow postItems={competitionsWithLinks}></PostRow>;
 };
-
-export default CompetitionPage;
