@@ -1,0 +1,25 @@
+.MatchTitle {
+  font-size: 40px;
+  font-weight: 400;
+  color: #696969;
+  margin: 50px;
+}
+.NextMatch {
+  display: flex;
+  font-size: 25px;
+  color: #696969;
+  font-weight: 600;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.prevMatch {
+  display: flex;
+  font-size: 25px;
+  color: #696969;
+  font-weight: 600;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
