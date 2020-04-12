@@ -20,7 +20,7 @@ const CompetitionView = ({ competition, setSelectedYear }) => {
         </div>
         <div className={styles.TopBoxText}>
           <div className={styles.TopBoxTextHeader}>Innsamlet</div>
-          <div>{competition.donated}</div>
+          <div>Kr {competition.donated}</div>
         </div>
       </div>
       <div className={styles.TopBoxImageContainer}>
