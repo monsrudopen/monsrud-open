@@ -48,12 +48,116 @@
   display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
+  .MenuList {
+    display: block;
+    position: absolute;
+    top: 69px;
+    background-color: white;
+    width: 100%;
+    left: 0;
+  }
   .MenuLink {
     display: none;
   }
   .HamburgerBar {
+    margin-top: 10px;
+    background-color: inherit;
+    border: none;
     display: block;
     align-self: flex-start;
+  }
+
+  .HamburgerMenu,
+  .HamburgerMenuOpen {
+    width: 40px;
+    height: 30px;
+    position: relative;
+    margin: 10px auto;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+
+  .HamburgerMenu span,
+  .HamburgerMenuOpen span {
+    display: block;
+    position: absolute;
+    height: 6px;
+    width: 100%;
+    background: black;
+    border-radius: 6px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+  }
+
+  .HamburgerMenu span:nth-child(1) {
+    top: 0px;
+  }
+
+  .HamburgerMenu span:nth-child(2),
+  .HamburgerMenu span:nth-child(3),
+  .HamburgerMenuOpen span:nth-child(2),
+  .HamburgerMenuOpen span:nth-child(3) {
+    top: 12px;
+  }
+
+  .HamburgerMenu span:nth-child(4),
+  .HamburgerMenuOpen span:nth-child(4) {
+    top: 24px;
+  }
+
+  .HamburgerMenuOpen span:nth-child(1) {
+    top: 12px;
+    width: 0%;
+    left: 50%;
+  }
+
+  .HamburgerMenuOpen span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .HamburgerMenuOpen span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  .HamburgerMenuOpen span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+}
+.HeaderDonateButton {
+  position: absolute;
+  left: 80px;
+  margin: 10px;
+  top: 0;
+}
+@media only screen and (max-width: 768px) {
+  [class*='HeaderDonateButton'] {
+    transform: scale(0.5);
+    left: 65px;
+    position: relative;
+    margin: 7px;
   }
 }

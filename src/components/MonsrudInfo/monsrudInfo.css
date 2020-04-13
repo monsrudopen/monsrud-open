@@ -1,9 +1,9 @@
 .infoMain {
   width: 100vw;
-  height: 100vh;
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .infoContainer {
@@ -28,7 +28,7 @@
 .infoTextContainer {
   width: 50%;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
 }
 .textAlignBox {

@@ -1,0 +1,26 @@
+.Boxed {
+  border-radius: 25px;
+  width: 240px;
+  height: 60px;
+  background-color: #c6a76a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: WHITE;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  transition: 0.3s;
+  font-size: 20px;
+}
+.Boxed:hover {
+  transform: scale(1);
+  background-color: #e3b052;
+  color: white;
+  transition: 0.3s;
+}
+.text {
+  text-decoration-line: none;
+}
+.text:hover {
+  text-decoration-line: none;
+}

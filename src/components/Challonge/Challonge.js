@@ -82,7 +82,7 @@ const Challonge = () => {
         {prevMathces.length !== 0 ? (
           prevMathces.map((match, index) => {
             return (
-              <div key={index}>
+              <div key={index} className="previousMatchWrapper">
                 <div className="prevMatch">
                   <div className="Player">{match.player1}</div>
                   <div className="PlayerScore">{match.score}</div>

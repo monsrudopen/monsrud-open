@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Clock.css';
 import moment from 'moment';
 
@@ -45,23 +45,23 @@ class Clock extends React.Component {
           <div className="countdown-wrapper">
             <div className="countdown-item">
               {months}
-              <span>{months > 1 ? 'Måneder' : 'Måned'}</span>
+              <span>{months !== 1 ? 'Måneder' : 'Måned'}</span>
             </div>
             <div className="countdown-item">
               {days}
-              <span>{days > 1 ? 'Dager' : 'Dag'}</span>
+              <span>{days !== 1 ? 'Dager' : 'Dag'}</span>
             </div>
             <div className="countdown-item">
               {hours}
-              <span>{hours > 1 ? 'Timer' : 'Time'}</span>
+              <span>{hours !== 1 ? 'Timer' : 'Time'}</span>
             </div>
             <div className="countdown-item">
               {minutes}
-              <span>{minutes > 1 ? 'Minutter' : 'Minutt'}</span>
+              <span>{minutes !== 1 ? 'Minutter' : 'Minutt'}</span>
             </div>
             <div className="countdown-item">
               {seconds}
-              <span>{seconds > 1 ? 'Sekunder' : 'Sekund'}</span>
+              <span>{seconds !== 1 ? 'Sekunder' : 'Sekund'}</span>
             </div>
           </div>
         </div>

@@ -14,6 +14,7 @@
 }
 .NextMatchWrapper {
   margin-bottom: 10px;
+  width: 100%;
 }
 .NextMatch {
   display: flex;
@@ -21,17 +22,20 @@
   margin-bottom: 10px;
   color: #696969;
   font-weight: 200;
-  width: 500px;
+  width: 100%;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+.PreviousMatches {
+  width: 100%;
 }
 .prevMatch {
   display: flex;
   font-size: 20px;
   color: #696969;
   font-weight: 200;
-  width: 500px;
+  width: 100%;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -46,12 +50,39 @@
   width: inherit;
   margin-bottom: 20px;
 }
-.MatchLineNext {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-  margin-bottom: 20px;
-  width: 100px;
-}
+
 .PlayerScore {
   text-align: center;
   width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .ChallongeContainer {
+    justify-content: center;
+    align-items: center;
+  }
+  .NextMatch {
+    font-size: 15px;
+    padding-left: 20px;
+  }
+  .prevMatch {
+    font-size: 15px;
+    justify-content: space-evenly;
+    padding-left: 20px;
+  }
+  .NextMatchWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .previousMatchWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .MatchLine {
+    width: 90%;
+  }
 }
