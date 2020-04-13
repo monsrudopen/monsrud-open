@@ -1,7 +1,7 @@
 import React from 'react';
 import PostRow from './../Posts/Post';
 import styles from './Competitions.module.css';
-import competitions from './../../database/dataloader';
+import { competitions } from './../../database/dataloader';
 import { useParams, Link } from 'react-router-dom';
 
 export const CompetitionView = () => {
@@ -14,28 +14,12 @@ export const CompetitionView = () => {
         <Link to="/Competitions">
           <div className={styles.ReturnButton}>Tilbake</div>
         </Link>
-        <Link to="/Competitions/2019">
-          <div className={styles.YearButton}>2019</div>
-        </Link>
-        <Link to="/Competitions/2018">
-          <div className={styles.YearButton}>2018</div>
-        </Link>
-        <Link to="/Competitions/2017">
-          <div className={styles.YearButton}>2017</div>
-        </Link>
-        <Link to="/Competitions/2016">
-          <div className={styles.YearButton}>2016</div>
-        </Link>
-        <Link to="/Competitions/2015">
-          <div className={styles.YearButton}>2015</div>
-        </Link>
-        <Link to="/Competitions/2014">
-          <div className={styles.YearButton}>2014</div>
-        </Link>
+        {competitions.map(c => (
+          <Link to={'/Competitions/' + c.year}>{c.year}</Link>
+        ))}
       </div>
       <h1>{competition.title}</h1>
       <div className={styles.CompetitionViewWrapper}>
-        {' '}
         <div className={styles.TopBoxWrapper}>
           <div className={styles.TopBoxImageContainer}>
             <img
@@ -43,7 +27,7 @@ export const CompetitionView = () => {
               alt={competition.title}
               src={competition.image}
             ></img>
-          </div>{' '}
+          </div>
           <div className={styles.TopBoxContainer}>
             <div className={styles.TopBoxWinnerDonation}>
               <div className={styles.TopBoxText}>
@@ -55,7 +39,7 @@ export const CompetitionView = () => {
               <div className={styles.TopBoxText}>
                 <div className={styles.TopBoxTextHeader}>Innsamlet</div>
                 <div className={styles.TopBoxTextDonation}>
-                  Kr {competition.donated}
+                  Kr {competition.donated.toString().replace('.', ',')}
                 </div>
               </div>
             </div>
@@ -81,6 +65,7 @@ export const CompetitionView = () => {
         <div className={styles.BottomBox}>
           <div className={styles.BottomBoxOrganization}>
             <img
+              alt={competition.organization}
               className={styles.OrganizationPicture}
               src={competition.organizationpicture}
             ></img>
@@ -94,6 +79,7 @@ export const CompetitionView = () => {
               {competition.spons}
             </div>
             <img
+              alt={competition.spons}
               className={styles.BottomBoxSponsorImage}
               src={competition.sponsimage}
             ></img>

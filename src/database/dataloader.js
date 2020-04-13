@@ -1,4 +1,4 @@
-const competitions = [
+export const competitions = [
   {
     year: 2019,
     title: '2019 - Plans Jentefond',
@@ -200,4 +200,76 @@ const competitions = [
   }
 ];
 
-export default competitions;
+export const news = [
+  {
+    title: 'Arrangementsdato for årets turnering',
+    date: '13. april 2020',
+    text:
+      'Arrangementsdato for Monsrud Open 2020 er 15. august. Styret ønsker å presisere at det tas høyde for at årets arrangement kan bli berørt av regjeringens tiltak mot koronaviruset. Dersom det skulle skje vil vi komme tilbake angående hva som skjer med arrangementet.'
+  },
+  {
+    title: 'Lansering av ny nettside',
+    date: '13. april 2020',
+    text:
+      'Vi har gleden av å lansere en ny nettside, med mange nye funksjoner. Den vil fortsette å få tilført komponenter frem mot årets turnering. Vi vil samtidig igjen beklage for at nettsiden ikke var fungerende under fjorårets turnering, men håper at den nye turneringen vil gjøre opp for det.'
+  },
+  {
+    title: 'Endringer i styrets sammensetting',
+    date: '7. april 2020',
+    text:
+      ' Under styremøtet 7/4 fikk styremedlem Øystein Hammersland støtte i sitt forslag om å trekke seg fra styret. Styret består nå av styreleder Marius Monsrud, Erlend Solbakk Harbitz og Ferdinand Eide Rode'
+  },
+  {
+    title: 'Endelig opptelling',
+    date: '1. oktober 2019',
+    text:
+      'Det er gledelig å kunne annonsere at det ble samlet inn kr 17 701,08. Dette er ny rekord og styret vil rette en takk til alle deltakere, tilskuere, givere og andre personer som har engasjert seg på ulike måter.'
+  },
+  {
+    title: 'Vinner av Monsrud Open 2019',
+    date: '3. august 2019',
+    text:
+      'Ferdinand Eide Rode gikk av med seieren i år etter seier over Marius Monsrud i finalen. Han blir da den andre personen som har vunnet turneringen 2 ganger, etter Jakob Hardersen Prydz.'
+  },
+  {
+    title: 'Annonsering av sponsor',
+    date: '30. juli 2019',
+    text:
+      'Vi er strålende fornøyde over å kunne annonsere at Kiwi er sponsor av årets turnering. Vi takker for bidraget.'
+  },
+  {
+    title: 'Annonsering av årets mottakerorganisasjon',
+    date: '29. juli 2019',
+    text:
+      "Plan Norge's Jentefond er valgt ut som organisasjon for 2019. Vi gleder oss til å samle inn penger med dere."
+  },
+  {
+    title: 'Grasrotandel',
+    date: '29. juli 2019',
+    text:
+      'Det er nå mulig å velge Monsrud Open som grasrotmottaker hos Norsk Tipping. SØk opp "Monsrud Open" eller vårt organisasjonsnummer: 918 707 611'
+  },
+  {
+    title: 'Dato for Monsurd Open 2019',
+    date: '6. mai 2019',
+    text:
+      'Monsrud Open 2019 vil bli avholdt 3. august. Vi anbefaler at du setter av datoen.'
+  },
+  {
+    title: 'Endelig innsamlingssum',
+    date: '1. september 2018',
+    text:
+      'Sammen klarte vi å samle inn kr 12 669 til Redd Barna. Vi er henrykt over at så mange vil være med og bidra.'
+  },
+  {
+    title: 'Vinner av Monsrud Open 2018',
+    date: '11. august 2018',
+    text:
+      'Marius Monsrud gikk seirende ut av finalen i Monsrud Open 2018 mot Ferdinand Eide Rode. Han fikk sin revansje fra 2016 og tok dermed sin første seier i turneringen.'
+  },
+  {
+    title: 'Mottakerorganisasjon 2018',
+    date: '8. august 2018',
+    text: 'Redd Barna er valgt ut til å motta midlene fra årets turnering.'
+  }
+];
