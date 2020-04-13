@@ -1,7 +1,7 @@
 import React from 'react';
 import PostRow from './../Posts/Post';
 import styles from './Competitions.module.css';
-import competitions from './../../database/dataloader';
+import { competitions } from './../../database/dataloader';
 import { useParams, Link } from 'react-router-dom';
 
 export const CompetitionView = () => {
@@ -65,6 +65,7 @@ export const CompetitionView = () => {
         <div className={styles.BottomBox}>
           <div className={styles.BottomBoxOrganization}>
             <img
+              alt={competition.organization}
               className={styles.OrganizationPicture}
               src={competition.organizationpicture}
             ></img>
@@ -78,6 +79,7 @@ export const CompetitionView = () => {
               {competition.spons}
             </div>
             <img
+              alt={competition.spons}
               className={styles.BottomBoxSponsorImage}
               src={competition.sponsimage}
             ></img>
