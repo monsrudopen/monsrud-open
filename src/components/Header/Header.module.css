@@ -49,6 +49,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .MonsrudLogo {
+    left: 10px;
+  }
+
   .MenuList {
     display: block;
     position: absolute;
