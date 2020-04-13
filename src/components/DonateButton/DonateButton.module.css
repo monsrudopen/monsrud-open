@@ -1,26 +1,33 @@
 .Boxed {
-  border-radius: 25px;
-  width: 240px;
-  height: 60px;
-  background-color: #c6a76a;
+  border-radius: 0px;
+  width: 300px;
+  height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: WHITE;
-  font-family: sans-serif;
-  text-transform: capitalize;
+  color: #c6a76a;
+  text-transform: uppercase;
   transition: 0.3s;
   font-size: 20px;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-color: white;
 }
 .Boxed:hover {
-  transform: scale(1);
-  background-color: #e3b052;
-  color: white;
   transition: 0.3s;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-color: #c6a76a;
 }
 .text {
   text-decoration-line: none;
 }
 .text:hover {
   text-decoration-line: none;
+}
+@media only screen and (max-width: 768px) {
+  .Boxed {
+    width: 20px;
+    font-size: 20px;
+  }
 }

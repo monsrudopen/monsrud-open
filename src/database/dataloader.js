@@ -42,7 +42,7 @@ export const competitions = [
       'I 2019 gikk innsamlingen til Plan Norges jentefond og det ble samlet inn hele 17 701,08 kroner. Plan Norge jobber særlig med jenters rettigheter og likestilling. Jenter opplever diskriminering og urettferdighet i store deler av verden. Rundt 130 millioner jenter mellom 6 og 17 år går ikke på skolen i verden. Jenter faller fra, særlig i tenårene, fordi familien ikke har råd eller fordi deres arbeidskraft trengs hjemme. Andre viktige årsaker er barneekteskap og tidlig graviditet. Dagens tempo må åttedobles skal FNs bærekraftsmål om likestilling og målet om avskaffelse av barneekteskap nås innen 2030. Plan gir barn og unge kunnskap om sine rettigheter, bygger skoler, jobber for å stoppe barneekteskap, skaper holdningsendringer og driver påvirkningsarbeid. Et eksempel på kunnskapsspredning kommer fra Malawi der gamle norske FM radioer deles for å enkelt kunne spre kunnskap. Pengene fra fondet har tidligere blitt brukt til å gjøre byen tryggere for jenter i India, kampen mote barneekteskap in Vietnam, i Zimbabwe har de jobbet for å øke jenters tilgang til utdanning, og de har arbeidet mot vold i skolen i Malawi.',
     image: require('./../img/images/y2019.jpg'),
     spons: 'Turneringen var sponset av',
-    sponsimage: require('./../img/icons/KIWILogo.jpg')
+    sponsimage: require('./../img/icons/KIWILogo.png')
   },
   {
     year: 2018,

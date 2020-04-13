@@ -141,45 +141,6 @@
   align-items: center;
   display: flex;
 }
-.ReturnButton {
-  border-radius: 20px;
-  width: 65px;
-  height: 25px;
-  background-color: #7a7a7a;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-transform: capitalize;
-  transition: 0.3s;
-  font-size: 75%;
-}
-
-.YearButton {
-  border-radius: 20px;
-  width: 65px;
-  height: 25px;
-  background-color: #7a7a7a;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-transform: capitalize;
-  transition: 0.3s;
-  font-size: 75%;
-}
-.ReturnButtonSticky {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 25px;
-  z-index: 1000;
-  flex-direction: row;
-  display: flex;
-  width: 600px;
-  justify-content: space-evenly;
-}
 
 @media only screen and (max-width: 768px) {
   .ReturnButton {
@@ -206,8 +167,8 @@
     width: 120vw;
   }
   .CompetitionViewWrapper {
-    margin-top: 200px;
     width: 80vw;
+    margin-top: 100px;
   }
   .YearButton {
     display: none;
@@ -230,7 +191,6 @@
     justify-content: space-around;
   }
   .TopBoxWinnerDonation {
-    flex-direction: row;
   }
   .TopBoxText {
     transform: scale(0.5);
@@ -265,18 +225,7 @@
     transform: scale(0.6);
   }
 }
-.ReturnButton:hover {
-  transform: scale(1);
-  background-color: #5f5f5f;
-  color: white;
-  transition: 0.3s;
-}
-.YearButton:hover {
-  transform: scale(1);
-  background-color: #5f5f5f;
-  color: white;
-  transition: 0.3s;
-}
+
 a:hover,
 a:active,
 a:visited,

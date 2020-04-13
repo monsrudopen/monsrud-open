@@ -19,12 +19,12 @@ class HomePage extends Component {
             />
             <div className="HomePageBox">
               <div className="videobox">
-                <video width="70%" height="600px" controls>
+                <video className="video" controls>
                   <source src={MO2020promov2} type="video/mp4"></source>
                 </video>
               </div>
               <div className="News">
-                {news.map(n => (
+                {news.slice(1, 5).map(n => (
                   <div>
                     <div className="NewsHeadline"> {n.title} </div>
                     <div className="NewsHeadlineDate">{n.date}</div>

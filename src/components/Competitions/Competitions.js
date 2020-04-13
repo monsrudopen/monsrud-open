@@ -10,14 +10,6 @@ export const CompetitionView = () => {
 
   return (
     <div className={styles.CompetitionView}>
-      <div className={styles.ReturnButtonSticky}>
-        <Link to="/Competitions">
-          <div className={styles.ReturnButton}>Tilbake</div>
-        </Link>
-        {competitions.map(c => (
-          <Link to={'/Competitions/' + c.year}>{c.year}</Link>
-        ))}
-      </div>
       <h1>{competition.title}</h1>
       <div className={styles.CompetitionViewWrapper}>
         <div className={styles.TopBoxWrapper}>
