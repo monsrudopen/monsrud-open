@@ -182,24 +182,34 @@
 }
 
 @media only screen and (max-width: 768px) {
-  [class*='ReturnButton'] {
+  .ReturnButton {
     top: 4%;
   }
-  [class*='ReturnButtonSticky'] {
+  .ReturnButtonSticky {
     top: 4%;
     width: 90%;
   }
-  [class*='TopBoxImage'] {
+
+  .ReturnButtonSticky a {
+    display: none;
+  }
+
+  .ReturnButtonSticky a:first-child {
+    display: block;
+  }
+
+  .TopBoxImage {
     justify-content: center;
   }
-  [class*='TopBoxParticipantsText'] {
+  .TopBoxParticipantsText {
     columns: 2 auto;
     width: 120vw;
   }
-  [class*='CompetitionViewWrapper'] {
+  .CompetitionViewWrapper {
+    margin-top: 200px;
     width: 80vw;
   }
-  [class*='YearButton'] {
+  .YearButton {
     display: none;
   }
   .BottomBoxSponsorImage {
