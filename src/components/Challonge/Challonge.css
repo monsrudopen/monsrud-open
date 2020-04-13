@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  height: 450px;
 }
 
 .MatchTitle {
@@ -11,10 +12,13 @@
   color: #696969;
   margin-bottom: 40px;
 }
+.NextMatchWrapper {
+  margin-bottom: 10px;
+}
 .NextMatch {
   display: flex;
   font-size: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   color: #696969;
   font-weight: 200;
   width: 500px;

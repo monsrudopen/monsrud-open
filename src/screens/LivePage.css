@@ -51,6 +51,7 @@
   align-items: center;
   height: 700px;
   width: 100%;
+  margin-top: 20px;
 }
 .LiveTitleWrapper {
   display: flex;
@@ -72,8 +73,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 40%;
-  height: 80%;
+  width: 30%;
+  height: 90%;
 }
 .ChallongeTitle {
   display: flex;
@@ -86,6 +87,7 @@
 .TwitterTitle {
   display: flex;
   justify-content: flex-start;
+  margin-bottom: 15px;
   font-size: 40px;
   font-weight: 400;
   color: #c6a76a;
@@ -93,10 +95,9 @@
 .TwitterContainer {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  height: 80%;
-  width: 40%;
+  align-items: flex-end;
+  height: 90%;
+  width: 30%;
 }
 .LiveTitleWrapper {
   display: flex;

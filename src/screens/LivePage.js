@@ -21,7 +21,6 @@ class LivePage extends Component {
               <Challonge />
             </div>
             <div className="TwitterContainer">
-              <div className="TwitterTitle">Twitter</div>
               <Twitter />
             </div>
           </div>
