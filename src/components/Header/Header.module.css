@@ -36,13 +36,13 @@
 }
 .HeaderNumberSix {
   font-weight: normal;
-  color: black;
+  color: white;
 }
 .MonsrudLogo {
   position: absolute;
-  margin: 10px;
   top: 0;
-  left: 0;
+  left: 120px;
+  margin: 2px;
 }
 .HamburgerBar {
   display: none;
@@ -149,8 +149,8 @@
 }
 .HeaderDonateButton {
   position: absolute;
-  left: 80px;
-  margin: 10px;
+  left: 210px;
+  margin: 6px;
   top: 0;
 }
 @media only screen and (max-width: 768px) {

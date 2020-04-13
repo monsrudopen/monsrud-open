@@ -93,6 +93,7 @@
   justify-content: space-evenly;
   max-width: 80vw;
   height: 600px;
+  margin-bottom: 40px;
 }
 .AboutTournamentBox {
   text-align: justify;
@@ -260,10 +261,12 @@
   color: white;
   transition: 0.3s;
 }
-.ReturnButton:active {
-  background-color: teal;
+.YearButton:hover {
+  transform: scale(1);
+  background-color: #5f5f5f;
+  color: white;
+  transition: 0.3s;
 }
-
 a:hover,
 a:active,
 a:visited,

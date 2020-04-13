@@ -13,10 +13,10 @@ const Header = () => {
           <div className={styles.MonsrudLogo}>
             <a href="/">
               <img
-                width="60"
-                height="60"
+                width="65"
+                height="65"
                 alt="Monsrud Open Logo"
-                src={require('./../../img/icons/MonsrudLogo.png')}
+                src={require('./../../img/icons/MonsrudLogo2.png')}
               />{' '}
             </a>
           </div>
@@ -39,18 +39,6 @@ const Header = () => {
             </div>
           </button>
           <div className={styles.MenuList}>
-            <div
-              className={menuVisible ? styles.MenuLinkMobile : styles.MenuLink}
-            >
-              <Link
-                onClick={() => setMenuVisible(false)}
-                style={{ color: 'white', textDecoration: 'none' }}
-                to="/"
-                rel="noopener noreferrer"
-              >
-                <h6 className={styles.HeaderNumberSix}>Monsrud Open</h6>
-              </Link>
-            </div>
             <div
               className={menuVisible ? styles.MenuLinkMobile : styles.MenuLink}
             >
