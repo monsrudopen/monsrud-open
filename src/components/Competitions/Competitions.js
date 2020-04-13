@@ -20,7 +20,6 @@ export const CompetitionView = () => {
       </div>
       <h1>{competition.title}</h1>
       <div className={styles.CompetitionViewWrapper}>
-        {' '}
         <div className={styles.TopBoxWrapper}>
           <div className={styles.TopBoxImageContainer}>
             <img
@@ -28,7 +27,7 @@ export const CompetitionView = () => {
               alt={competition.title}
               src={competition.image}
             ></img>
-          </div>{' '}
+          </div>
           <div className={styles.TopBoxContainer}>
             <div className={styles.TopBoxWinnerDonation}>
               <div className={styles.TopBoxText}>
@@ -40,7 +39,7 @@ export const CompetitionView = () => {
               <div className={styles.TopBoxText}>
                 <div className={styles.TopBoxTextHeader}>Innsamlet</div>
                 <div className={styles.TopBoxTextDonation}>
-                  Kr {competition.donated}
+                  Kr {competition.donated.toString().replace('.', ',')}
                 </div>
               </div>
             </div>
