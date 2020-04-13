@@ -14,24 +14,9 @@ export const CompetitionView = () => {
         <Link to="/Competitions">
           <div className={styles.ReturnButton}>Tilbake</div>
         </Link>
-        <Link to="/Competitions/2019">
-          <div className={styles.YearButton}>2019</div>
-        </Link>
-        <Link to="/Competitions/2018">
-          <div className={styles.YearButton}>2018</div>
-        </Link>
-        <Link to="/Competitions/2017">
-          <div className={styles.YearButton}>2017</div>
-        </Link>
-        <Link to="/Competitions/2016">
-          <div className={styles.YearButton}>2016</div>
-        </Link>
-        <Link to="/Competitions/2015">
-          <div className={styles.YearButton}>2015</div>
-        </Link>
-        <Link to="/Competitions/2014">
-          <div className={styles.YearButton}>2014</div>
-        </Link>
+        {competitions.map(c => (
+          <Link to={'/Competitions/' + c.year}>{c.year}</Link>
+        ))}
       </div>
       <h1>{competition.title}</h1>
       <div className={styles.CompetitionViewWrapper}>
