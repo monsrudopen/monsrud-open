@@ -1,25 +1,53 @@
+.ChallongeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
 .MatchTitle {
-  font-size: 40px;
+  font-size: 23px;
   font-weight: 400;
   color: #696969;
-  margin: 50px;
+  margin-bottom: 40px;
 }
 .NextMatch {
   display: flex;
-  font-size: 25px;
+  font-size: 20px;
+  margin-bottom: 30px;
   color: #696969;
-  font-weight: 600;
+  font-weight: 200;
+  width: 500px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 .prevMatch {
   display: flex;
-  font-size: 25px;
+  font-size: 20px;
   color: #696969;
-  font-weight: 600;
+  font-weight: 200;
+  width: 500px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10px;
+}
+.Player {
+  width: 100%;
+  text-align: start;
+}
+.MatchLine {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  width: inherit;
   margin-bottom: 20px;
+}
+.MatchLineNext {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
+  width: 100px;
+}
+.PlayerScore {
+  text-align: center;
+  width: 100%;
 }

@@ -13,8 +13,8 @@ const Twitter = () => {
         <a
           className="twitter-timeline"
           data-theme="light"
-          data-height="480px"
-          data-width="320px"
+          data-height="450px"
+          data-width="420px"
           data-chrome="noheader nofooter noborders noscrollbar"
           href="https://twitter.com/MonsrudOpen?ref_src=twsrc%5Etfw"
         >

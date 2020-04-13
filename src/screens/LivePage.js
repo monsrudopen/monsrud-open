@@ -9,16 +9,22 @@ class LivePage extends Component {
       <div className="LiveContainer">
         <div className="InfoHeader">
           <div className="TitleText">Monsrud Open 2020</div>
-          <div className="SubTitle">LIVE FEED</div>
+          <div className="LiveTitleWrapper">
+            <div className="SubTitle">LIVE FEED</div>
+            <div className="LiveCircle"></div>
+          </div>
           <div className="Line" />
           <div className="DonateButton">Doner til Lånekassen</div>
-          <Challonge />
-        </div>
-        <div className="SocialMediaContainer">
-          <div className="TwitterContainer">
-            <Twitter />
+          <div className="LiveInfoWrapper">
+            <div className="ChallongeWrapper">
+              <div className="ChallongeTitle">Kampoversikt</div>
+              <Challonge />
+            </div>
+            <div className="TwitterContainer">
+              <div className="TwitterTitle">Twitter</div>
+              <Twitter />
+            </div>
           </div>
-          <div className="InstagramContainer" />
         </div>
       </div>
     );

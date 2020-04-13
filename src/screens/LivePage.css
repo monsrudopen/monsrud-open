@@ -1,6 +1,5 @@
 .LiveContainer {
-  height: calc(100vh - 70px);
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -28,7 +27,7 @@
 .Line {
   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
   height: 20px;
-  width: 90vw;
+  width: 90%;
   margin-bottom: 30px;
 }
 .DonateButton {
@@ -44,6 +43,21 @@
   transition: all 0.3s ease-in-out;
 }
 
+.LiveInfoWrapper {
+  display: flex;
+  flex-direction: row;
+  width: inherit;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 700px;
+  width: 100%;
+}
+.LiveTitleWrapper {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
 .DonateButton:hover {
   transform: scale(1.03);
 }
@@ -54,6 +68,60 @@
   padding-right: 100px;
   align-items: center;
 }
+.ChallongeWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+  height: 80%;
+}
+.ChallongeTitle {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 40px;
+  font-weight: 400;
+  color: #c6a76a;
+}
+
+.TwitterTitle {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 40px;
+  font-weight: 400;
+  color: #c6a76a;
+}
 .TwitterContainer {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 80%;
+  width: 40%;
+}
+.LiveTitleWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.LiveCircle {
+  margin-top: 5px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  align-self: flex-start;
+  background-color: #c6a76a;
+  animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.43);
+  }
+  80%,
+  100% {
+    opacity: 0;
+  }
 }
