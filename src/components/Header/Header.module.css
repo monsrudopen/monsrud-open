@@ -36,7 +36,7 @@
 }
 .HeaderNumberSix {
   font-weight: normal;
-  color: white;
+  color: #696969;
 }
 .MonsrudLogo {
   position: absolute;
@@ -156,8 +156,12 @@
 @media only screen and (max-width: 768px) {
   [class*='HeaderDonateButton'] {
     transform: scale(0.5);
-    left: 65px;
+    left: 0vw;
     position: relative;
-    margin: 7px;
+    margin-top: 4vw;
+  }
+  .MonsrudLogo {
+    left: 5vw;
+    margin-top: 2vw;
   }
 }
