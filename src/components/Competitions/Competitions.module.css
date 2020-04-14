@@ -137,7 +137,10 @@
 }
 
 .ImageCarousel {
-  margin: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  max-width: 720px;
 }
 
 @media only screen and (max-width: 768px) {

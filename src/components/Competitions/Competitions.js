@@ -55,7 +55,7 @@ export const CompetitionView = () => {
           </div>
         </div>
         <div className={styles.ImageCarousel}>
-          <ImageCarousel></ImageCarousel>
+          <ImageCarousel year={competition.year}></ImageCarousel>
         </div>
         <div className={styles.BottomBox}>
           <div className={styles.BottomBoxOrganization}>
