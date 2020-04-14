@@ -1,22 +1,22 @@
 .footer-center {
-    width: 10%;
-    padding: 1rem;
-    text-align: center;
-    transition: 200ms;
+  width: 10%;
+  padding: 1rem;
+  text-align: center;
+  transition: 200ms;
 }
 .footer-left {
-    width: 100%;
-    padding: 1rem;
-    text-align: left;
-    margin-left: 235px;
-    transition: 200ms;
+  width: 100%;
+  padding: 1rem;
+  text-align: left;
+  margin-left: 235px;
+  transition: 200ms;
 }
 .footer-right {
-    width: 10%;
-    padding: 1rem;
-    text-align: right;
-    margin-right: 0px;
-    transition: 200ms;
+  width: 10%;
+  padding: 1rem;
+  text-align: right;
+  margin-right: 0px;
+  transition: 200ms;
 }
 .box {
   display: flex;
@@ -25,4 +25,7 @@
 }
 .footer-image {
   height: 40px;
+}
+.footer {
+  background-color: white;
 }

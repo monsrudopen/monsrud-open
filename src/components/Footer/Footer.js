@@ -11,7 +11,7 @@ import HoverImage from 'react-hover-image';
 class Footer extends Component {
   render() {
     return (
-      <div>
+      <div className="footer">
         <p>Monsrud Open &copy; {new Date().getFullYear()}</p>
         <div className="box">
           <div>
