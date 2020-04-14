@@ -33,7 +33,7 @@ const Header = () => {
                 <div className={styles.ReturnButton}>Tilbake</div>
               </Link>
               {competitions.map(c => (
-                <Link to={'/Competitions/' + c.year}>
+                <Link key={c.year} to={'/Competitions/' + c.year}>
                   <div className={styles.YearButton}>{c.year}</div>
                 </Link>
               ))}

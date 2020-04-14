@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import './Footer.css';
 
-import MailBW from '../../img/icons/MailBW.png';
-import MailC from '../../img/icons/MailC.png';
-
-import HoverImage from 'react-hover-image';
 import { Link } from 'react-router-dom';
 
 class Footer extends Component {
