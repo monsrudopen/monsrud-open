@@ -6,7 +6,7 @@ import { competitions } from './../../database/dataloader';
 
 const Header = () => {
   const [menuVisible, setMenuVisible] = useState(false);
-  const location = useLocation();
+  const location = useLocation().pathname.split('/');
 
   return (
     <div className={styles.HeaderPadding}>
@@ -27,7 +27,7 @@ const Header = () => {
               <DonateButton />
             </div>
           </div>
-          {location.pathname.split('/')[1] === 'Competitions' && (
+          {location[1] === 'Competitions' && location[2] > 0 && (
             <div className={styles.ReturnButtonSticky}>
               <Link to="/Competitions">
                 <div className={styles.ReturnButton}>Tilbake</div>
