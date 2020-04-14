@@ -59,8 +59,6 @@
   border-color: #c6a76a;
   transition: 0.3s;
 }
-.MonsrudLogo {
-}
 
 .HamburgerBar {
   display: none;
@@ -164,8 +162,7 @@
     left: 50%;
   }
 }
-.HeaderDonateButton {
-}
+
 .ReturnButton {
   width: 65px;
   height: 90px;
@@ -216,21 +213,14 @@
   border-color: #c6a76a;
   transition: 0.3s;
 }
-@media only screen and (max-width: 768px) {
-  .MonsrudLogo {
-  }
+@media only screen and (max-width: 1440px) {
   .YearButton {
     display: none;
-    width: 0px;
   }
   .HeaderContainerLeft {
     align-items: flex-start;
     display: flex;
     width: 40%;
-  }
-  .HeaderDonateButton {
-  }
-  .MonsrudLogo {
   }
   .ReturnButtonSticky {
     width: 10px;

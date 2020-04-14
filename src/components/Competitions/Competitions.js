@@ -2,7 +2,7 @@ import React from 'react';
 import PostRow from './../Posts/Post';
 import styles from './Competitions.module.css';
 import { competitions } from './../../database/dataloader';
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 export const CompetitionView = () => {
   const { year } = useParams();
