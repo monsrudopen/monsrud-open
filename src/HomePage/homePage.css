@@ -17,7 +17,6 @@
   margin-bottom: 150px;
 }
 .componentElements {
-  margin-top: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,7 +89,7 @@ h4 {
 .HomePageBox {
   display: flex;
   flex-direction: row;
-  margin: 50px;
+  margin-top: 50px;
   width: 80vw;
 }
 
