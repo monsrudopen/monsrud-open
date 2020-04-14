@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styles from './Header.module.css';
-import DonateButton from '../DonateButton/DonateButton';
+// import DonateButton from '../DonateButton/DonateButton';
 import { competitions } from './../../database/dataloader';
 
 const Header = () => {
   const [menuVisible, setMenuVisible] = useState(false);
-  const location = useLocation();
+  const location = useLocation().pathname.split('/');
 
   return (
     <div className={styles.HeaderPadding}>
@@ -23,11 +23,11 @@ const Header = () => {
                 />{' '}
               </a>
             </div>
-            <div className={styles.HeaderDonateButton}>
+            {/* <div className={styles.HeaderDonateButton}>
               <DonateButton />
-            </div>
+            </div> */}
           </div>
-          {location.pathname.split('/')[1] === 'Competitions' && (
+          {location[1] === 'Competitions' && location[2] > 0 && (
             <div className={styles.ReturnButtonSticky}>
               <Link to="/Competitions">
                 <div className={styles.ReturnButton}>Tilbake</div>
