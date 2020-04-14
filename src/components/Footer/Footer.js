@@ -1,67 +1,112 @@
 import React, { Component } from 'react';
 import './Footer.css';
-import InstaBW from '../../img/icons/InstaBW.png';
-import InstaC from '../../img/icons/InstaC.png';
+
 import MailBW from '../../img/icons/MailBW.png';
 import MailC from '../../img/icons/MailC.png';
-import TwitterBW from '../../img/icons/TwitterBW.png';
-import TwitterC from '../../img/icons/TwitterC.png';
+
 import HoverImage from 'react-hover-image';
+import { Link } from 'react-router-dom';
 
 class Footer extends Component {
   render() {
     return (
-      <div>
-        <p>Monsrud Open &copy; {new Date().getFullYear()}</p>
-        <div className="box">
-          <div>
-            <a
-              href="mailto:hello@monsrudopen.com"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <HoverImage src={MailBW} hoverSrc={MailC} style={{ width: 40 }} />
-            </a>
+      <div className="FooterContainer">
+        <div className="FooterTitle">Monsrud Open</div>
+        <div className="FooterContent">
+          <div className="LeftWrapper">
+            <div className="LinkWrapper">
+              <div className="FooterContentTitle">Snarveier</div>
+              <div className="FooterLink">
+                <Link to="/" rel="noopener noreferrer">
+                  <div className="LinkText">Forside</div>
+                </Link>
+              </div>
+              <div className="FooterLink">
+                <Link to="/Competitions" rel="noopener noreferrer">
+                  <div className="LinkText">Turneringer</div>
+                </Link>
+              </div>
+              <div className="FooterLink">
+                <Link to="/About" rel="noopener noreferrer">
+                  <div className="LinkText">Om Oss</div>
+                </Link>
+              </div>
+            </div>
+            <div className="LinkWrapper">
+              <div className="FooterContentTitle">Sosialt</div>
+              <div className="socialMediaContent">
+                <div className="FooterLink">
+                  <a
+                    href="https://www.instagram.com/monsrudopen"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Instagram
+                  </a>
+                </div>
+                <div className="FooterLink">
+                  <a
+                    href="https://www.twitter.com/monsrudopen"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Twitter
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div>
-            <a
-              href="https://www.twitter.com/monsrudopen"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <HoverImage
-                src={TwitterBW}
-                hoverSrc={TwitterC}
-                style={{ width: 40 }}
-              />
-            </a>
+          <div className="FooterLogo">
+            <img
+              width="70"
+              height="70"
+              alt="Monsrud Open Logo"
+              src={require('./../../img/icons/MonsrudLogo.png')}
+            />{' '}
           </div>
-          <div>
-            <a
-              href="https://www.instagram.com/monsrudopen"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <HoverImage
-                className="image"
-                src={InstaBW}
-                hoverSrc={InstaC}
-                style={{ width: 40 }}
-              />
-            </a>
+
+          <div className="OrgInfo">
+            <div className="FooterContentTitle">Kontakt</div>
+            <div className="OrgInfoContainer">
+              <div className="OrgInfoContent">
+                <div className="listTitle">Vipps nr:</div>
+                <div className="FooterLink">109417</div>
+              </div>
+              <div className="OrgInfoContent">
+                <div className="listTitle">Org.nr </div>
+                <div className="FooterLink"> 918 707 611</div>
+              </div>
+
+              <div className="OrgInfoContent">
+                <div className="listTitle">Mail:</div>
+                <div className="FooterLink">
+                  <a
+                    href="mailto:hello@monsrudopen.com"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    hello@monsrudopen.com
+                  </a>
+                </div>
+              </div>
+              <div className="OrgInfoContent address">
+                <div className="listTitle">Adresse: </div>
+                <div className="FooterLink address">
+                  <a
+                    href="https://goo.gl/maps/udc6qp4q9tMbrJYB7"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Ruglandveien 107, 1359 Eiksmarka
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <p>
-          <a
-            href="https://goo.gl/maps/udc6qp4q9tMbrJYB7"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Ruglandveien 107, 1359 Eiksmarka
-          </a>
-        </p>
-        <p>Org.nr.: 918 707 611</p>
-        <p>Vipps: 109417</p>
+        <div className="tradeMark">
+          <p>Monsrud Open &copy; {new Date().getFullYear()}</p>
+        </div>
       </div>
     );
   }
