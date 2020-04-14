@@ -110,7 +110,9 @@ export const competitions = [
     organizationpicture: require('./../img/icons/RodeKorsLogo.png'),
     organizationInfo:
       'I 2017 satt vi fokus på rent vann. Vi samlet inn fantastiske kroner 14 756 til Røde Kors til vann for livet kampanje. Dette ble da tredje året med en dobling av det innsamlede beløpet. Rent vann er et stort problem i mange deler av verden. Så mange som én milliard mennesker mangler tilgang til rent vann. Dette fører til at mer enn 6 000 mennesker dør daglig. De fleste av disse er barn. Tid som kunne vært brukt til å arbeide og skape en fremtid blir brukt til å hente vann. Det er ofte kvinner som må gå mange timer hver dag for å hente vann. Barn som skulle ha gått på skole kan også måtte slutte på skolen for å bidra til å hente rent vann. Dette skaper en ond sirkel av fattigdom for altfor mange. Røde Kors har prosjekter i Mosambik, Lesotho, Sudan, Rwanda, Kenya og Burundi. 1000 mennesker får rent vann ved å sette opp én brønn! Monsrud Open er stolte av å ha bidratt til dette arbeidet.',
-    image: require('./../img/images/postImage3.png')
+    image: require('./../img/images/group2017.jpg'),
+    spons: 'Turneringen var sponset av',
+    sponsimage: require('./../img/icons/ØsteråsblomsterLogo.svg')
   },
   {
     year: 2016,
@@ -168,10 +170,12 @@ export const competitions = [
     tournamentText:
       'Antall spillere ble nesten doblet i 2015 til 15 deltakere, hvor det ble åpnet for kvinnelige deltakere. Alle konkurrerte i åpen klasse, som igjen ble vunnet av Jakob Hardersen Prydz som sikret seg sin andre seier på like mange år.  Også i 2015 vant han finalen mot Ferdinand Eide Rode, men denne gangen med 2-0 i sett. Tredjeplassen gikk til Johannes Sand Bolstad som slo Thomas Brantsæter på w.o.Nytt av året var pauseunderholdning mellom gruppespill og sluttspill, hvor deltaker Kristine Huseby Hübert underholdt både spillere og tilskuere.',
     organization: 'Amnesty',
-    organizationpicture: require('./../img/icons/AmnestyLogo.jpg'),
+    organizationpicture: require('./../img/icons/AmnestyLogo.png'),
     organizationInfo:
       'I 2015 samlet vi inn kr 3 000 til Amnesty. Dette var mer enn en dobling fra det første året noe vi var svært fornøyd med. Amnesty International er verdens største menneskerettighetsorganisasjon. De er en bevegelse som kjemper for ytringsfrihet og mot diskriminering og overgrep. De etterforsker og avslører brudd på menneskerettighetene, de aksjonerer for enkeltmennesker i fare, og for å skape varige endringer. Amnesty er uavhengig. Det gjør at de kan si sannheten om enhver regjering og makthaver. Amnesty har utallige resultater å vise til. Hvis man vil lese mer om Amnesty kan man gå til deres nettsider.',
-    image: require('./../img/images/y2015.jpeg')
+    image: require('./../img/images/y2015.jpeg'),
+    spons: 'Turneringen var sponset av',
+    sponsimage: require('./../img/icons/ØsteråsblomsterLogo.svg')
   },
   {
     year: 2014,

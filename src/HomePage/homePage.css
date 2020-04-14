@@ -8,7 +8,6 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  margin-top: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +22,6 @@
   flex-direction: column;
 }
 .componentElements {
-  margin-top: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,8 +124,6 @@ h4 {
   height: 20px;
 }
 .videobox {
-  width: 50vw;
-  height: 600px;
   background-color: black;
   border-radius: 25px;
   margin-right: 20px;
@@ -136,7 +132,6 @@ h4 {
 }
 .video {
   width: 90%;
-  height: 600px;
 }
 .HomePageBox {
   display: flex;
@@ -159,13 +154,10 @@ a.more-news-link {
     flex-direction: column;
   }
   .videobox {
-    width: 80vw;
-    height: auto;
-    margin-bottom: 20px;
+    width: 100%;
   }
   .video {
-    width: 85%;
-    height: auto;
+    width: 80%;
   }
 
   .NewsWrapper {

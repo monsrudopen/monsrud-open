@@ -1,46 +1,105 @@
-.News {
-  border-image: linear-gradient(to bottom, #696969, white) 1 100%;
-  border-left-style: solid;
-  border-left-width: 2px;
-  width: 60vw;
+.NewsSiteContainer {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  align-items: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.NewsContentWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+}
+.DateWrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-right: 70px;
+  width: 200px;
+}
+
+.News {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  align-items: flex-start;
   overflow: auto;
-  margin: auto;
+  margin-top: 70px;
+  padding: 2px;
+  padding-left: 15px;
+  height: 100%;
+  border-color: rgba(0, 0, 0, 0.1);
+  border-left-style: solid;
+  border-left-width: 1px;
 }
 .NewsHeadline {
-  border-image: linear-gradient(to right, #696969, white) 1 100%;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  font-size: 23px;
-  text-align: justify;
+  margin-bottom: 30px;
+  height: 35px;
+  font-size: 20px;
   text-align-last: left;
   word-wrap: break-word;
+  text-align: start;
+  font-weight: bolder;
+  color: #696969;
 }
 .NewsHeadlineDate {
   font-size: 12px;
   text-align: justify;
   text-align-last: left;
   word-wrap: break-word;
+  color: #696969;
+  margin-bottom: 10px;
+  display: none;
+}
+.NewsDate {
+  color: #696969;
+  font-size: 25px;
 }
 .NewsIndex {
-  font-size: 15px;
-  text-align: left;
+  font-size: 14px;
+  color: #696969;
+  text-align: justify;
   text-align-last: left;
   word-wrap: break-word;
   display: inline-block;
-  margin-bottom: 20px;
-  display: block;
 }
 
 .NewsTitle {
   padding-top: 30px;
   color: #c3aa77;
+  width: 80%;
+  display: flex;
+}
+.TotalWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .NewsContainer {
-  padding-left: 15px;
+  background-color: white;
+  height: auto;
+  width: 60%;
+  padding: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+.Line {
+  border-color: rgba(0, 0, 0, 0.1);
+  border-left-style: solid;
+  border-left-width: 1px;
+  margin: 30px;
+  height: inherit;
+  width: 30px;
 }
 
 @media only screen and (max-width: 768px) {
