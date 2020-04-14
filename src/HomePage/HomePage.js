@@ -8,11 +8,39 @@ import './homePage.css';
 import { news } from '../database/dataloader';
 
 class HomePage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      fromId: 0,
+      toId: 3
+    };
+    // This binding is necessary to make `this` work in the callback
+    this.HandleLeft = this.HandleLeft.bind(this);
+    this.HandleRight = this.HandleRight.bind(this);
+  }
+
+  HandleRight() {
+    if (this.state.toId <= news.length) {
+      this.setState(state => ({
+        fromId: this.state.fromId + 1,
+        toId: this.state.toId + 1
+      }));
+    }
+  }
+  HandleLeft() {
+    if (this.state.fromId > 0) {
+      this.setState(state => ({
+        fromId: this.state.fromId - 1,
+        toId: this.state.toId - 1
+      }));
+    }
+  }
+
   render() {
     return (
       <div className="mainContainer">
         <div className="main">
-          <div className="fronPageBannerContainer">
+          <div className="frontPageBannerContainer">
             <h4>15. august 2020</h4>
             <Clock
               timeTillDate="15 07 2020, 13:00"
@@ -25,15 +53,39 @@ class HomePage extends Component {
                 </video>
               </div>
               <div className="News">
-                {news.slice(0, 3).map(n => (
-                  <div className="NewsContainer">
-                    <div className="NewsHeadline"> {n.title} </div>
-                    <div className="NewsHeadlineDate">{n.date}</div>
-                    <div className="NewsIndex">{n.text}</div>
-                  </div>
-                ))}
+                <div className="NewsTitle">Nyheter</div>
+                <div className="NewsWrapper">
+                  <button
+                    style={{
+                      visibility: this.state.fromId !== 0 ? 'visible' : 'hidden'
+                    }}
+                    className="ButtonSlider"
+                    onClick={this.HandleLeft}
+                  >
+                    <i className="ArrowLeft"></i>
+                  </button>
+
+                  {news.slice(this.state.fromId, this.state.toId).map(n => (
+                    <div className="NewsContainer">
+                      <div className="NewsHeadline"> {n.title} </div>
+                      <div className="NewsHeadlineDate">{n.date}</div>
+                      <div className="NewsIndex">{n.text}</div>
+                    </div>
+                  ))}
+                  <button
+                    style={{
+                      visibility:
+                        this.state.toId !== news.length ? 'visible' : 'hidden'
+                    }}
+                    className="ButtonSlider"
+                    onClick={this.HandleRight}
+                  >
+                    <i className="ArrowRight"></i>
+                  </button>
+                </div>
+
                 <Link className="more-news-link" to="/News">
-                  Se tidligere oppdateringer
+                  Se alle oppdateringer
                 </Link>
               </div>
             </div>
