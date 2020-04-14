@@ -1,28 +1,44 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import styles from './Header.module.css';
-//import DonateButton from '../DonateButton/DonateButton';
+// import DonateButton from '../DonateButton/DonateButton';
+import { competitions } from './../../database/dataloader';
 
 const Header = () => {
   const [menuVisible, setMenuVisible] = useState(false);
+  const location = useLocation().pathname.split('/');
 
   return (
     <div className={styles.HeaderPadding}>
       <div className={styles.Header}>
         <div className={styles.HeaderContainer}>
-          <div className={styles.MonsrudLogo}>
-            <a href="/">
-              <img
-                width="60"
-                height="60"
-                alt="Monsrud Open Logo"
-                src={require('./../../img/icons/MonsrudLogo.png')}
-              />{' '}
-            </a>
+          <div className={styles.HeaderContainerLeft}>
+            <div className={styles.MonsrudLogo}>
+              <a href="/">
+                <img
+                  width="65"
+                  height="65"
+                  alt="Monsrud Open Logo"
+                  src={require('./../../img/icons/MonsrudLogo2.png')}
+                />{' '}
+              </a>
+            </div>
+            {/* <div className={styles.HeaderDonateButton}>
+              <DonateButton />
+            </div> */}
           </div>
-          {/* <div className={styles.HeaderDonateButton}>
-            <DonateButton />
-          </div> */}
+          {location[1] === 'Competitions' && location[2] > 0 && (
+            <div className={styles.ReturnButtonSticky}>
+              <Link to="/Competitions">
+                <div className={styles.ReturnButton}>Tilbake</div>
+              </Link>
+              {competitions.map(c => (
+                <Link to={'/Competitions/' + c.year}>
+                  <div className={styles.YearButton}>{c.year}</div>
+                </Link>
+              ))}
+            </div>
+          )}
           <button
             className={styles.HamburgerBar}
             onClick={() => setMenuVisible(!menuVisible)}
@@ -45,24 +61,12 @@ const Header = () => {
               <Link
                 onClick={() => setMenuVisible(false)}
                 style={{ color: 'white', textDecoration: 'none' }}
-                to="/"
-                rel="noopener noreferrer"
-              >
-                <h6 className={styles.HeaderNumberSix}>Monsrud Open</h6>
-              </Link>
-            </div>
-            <div
-              className={menuVisible ? styles.MenuLinkMobile : styles.MenuLink}
-            >
-              <Link
-                onClick={() => setMenuVisible(false)}
-                style={{ color: 'white', textDecoration: 'none' }}
                 to="/Competitions"
                 rel="noopener noreferrer"
               >
-                <h6 className={styles.HeaderNumberSix}>
+                <div className={styles.HeaderNumberSix}>
                   Tidligere turneringer
-                </h6>
+                </div>
               </Link>
             </div>
             <div
@@ -74,7 +78,7 @@ const Header = () => {
                 to="/About"
                 rel="noopener noreferrer"
               >
-                <h6 className={styles.HeaderNumberSix}>Om oss</h6>
+                <div className={styles.HeaderNumberSix}>Om oss</div>
               </Link>
             </div>
           </div>

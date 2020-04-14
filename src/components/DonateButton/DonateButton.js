@@ -11,7 +11,12 @@ function Donatebutton(props) {
       rel="noopener noreferrer"
     >
       <div className={styles.Boxed}>
-        <b>Doner til årets formål</b>
+        <b>
+          <span>Doner </span>
+          <span className={styles.LongerTextForBigScreens}>
+            til årets formål
+          </span>
+        </b>
       </div>
     </a>
   );
