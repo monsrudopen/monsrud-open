@@ -75,7 +75,7 @@ h4 {
 }
 .videobox {
   width: 50vw;
-  height: 600px;
+  max-height: 600px;
   background-color: black;
   border-radius: 25px;
   margin-right: 20px;
@@ -84,7 +84,6 @@ h4 {
 }
 .video {
   width: 90%;
-  height: 600px;
 }
 .HomePageBox {
   display: flex;
@@ -106,12 +105,10 @@ a.more-news-link {
   }
   .videobox {
     width: 80vw;
-    height: auto;
     margin-bottom: 20px;
   }
   .video {
     width: 85%;
-    height: auto;
   }
   .News {
     width: 80vw;
