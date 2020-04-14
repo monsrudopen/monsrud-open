@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import styles from './Header.module.css';
 import DonateButton from '../DonateButton/DonateButton';
 import { competitions } from './../../database/dataloader';
 
 const Header = () => {
   const [menuVisible, setMenuVisible] = useState(false);
+  const location = useLocation();
 
   return (
     <div className={styles.HeaderPadding}>
@@ -26,16 +27,18 @@ const Header = () => {
               <DonateButton />
             </div>
           </div>
-          <div className={styles.ReturnButtonSticky}>
-            <Link to="/Competitions">
-              <div className={styles.ReturnButton}>Tilbake</div>
-            </Link>
-            {competitions.map(c => (
-              <Link to={'/Competitions/' + c.year}>
-                <div className={styles.YearButton}>{c.year}</div>
+          {location.pathname.split('/')[1] === 'Competitions' && (
+            <div className={styles.ReturnButtonSticky}>
+              <Link to="/Competitions">
+                <div className={styles.ReturnButton}>Tilbake</div>
               </Link>
-            ))}
-          </div>
+              {competitions.map(c => (
+                <Link to={'/Competitions/' + c.year}>
+                  <div className={styles.YearButton}>{c.year}</div>
+                </Link>
+              ))}
+            </div>
+          )}
           <button
             className={styles.HamburgerBar}
             onClick={() => setMenuVisible(!menuVisible)}
