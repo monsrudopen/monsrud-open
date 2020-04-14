@@ -102,6 +102,15 @@
   width: 30px;
 }
 
+.ErlendsLine {
+  position: absolute;
+  left: 350px;
+  height: 500px;
+  border-color: red;
+  border-left-style: solid;
+  border-left-width: 10px;
+}
+
 @media only screen and (max-width: 768px) {
   .News {
     width: 80vw;

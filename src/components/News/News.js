@@ -9,6 +9,7 @@ const News = () => {
         <h2>Nyheter</h2>
       </div>
       <div className={styles.NewsContentWrapper}>
+        <div className={styles.ErlendsLine}> </div>
         <div className={styles.News}>
           {news.map(n => (
             <div className={styles.TotalWrapper}>
