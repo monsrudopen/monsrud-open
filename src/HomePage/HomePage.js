@@ -21,7 +21,7 @@ class HomePage extends Component {
             <div className="HomePageBox">
               <div className="videobox">
                 <video className="video" controls>
-                  <source src={MO2020promov2} type="video/mp4"></source>
+                  <source src={MO2020promov169} type="video/mp4"></source>
                 </video>
               </div>
               <div className="News">
