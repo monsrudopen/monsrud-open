@@ -168,7 +168,7 @@ export const competitions = [
     tournamentText:
       'Antall spillere ble nesten doblet i 2015 til 15 deltakere, hvor det ble åpnet for kvinnelige deltakere. Alle konkurrerte i åpen klasse, som igjen ble vunnet av Jakob Hardersen Prydz som sikret seg sin andre seier på like mange år.  Også i 2015 vant han finalen mot Ferdinand Eide Rode, men denne gangen med 2-0 i sett. Tredjeplassen gikk til Johannes Sand Bolstad som slo Thomas Brantsæter på w.o.Nytt av året var pauseunderholdning mellom gruppespill og sluttspill, hvor deltaker Kristine Huseby Hübert underholdt både spillere og tilskuere.',
     organization: 'Amnesty',
-    organizationpicture: require('./../img/icons/AmnestyLogo.jpg'),
+    organizationpicture: require('./../img/icons/AmnestyLogo.png'),
     organizationInfo:
       'I 2015 samlet vi inn kr 3 000 til Amnesty. Dette var mer enn en dobling fra det første året noe vi var svært fornøyd med. Amnesty International er verdens største menneskerettighetsorganisasjon. De er en bevegelse som kjemper for ytringsfrihet og mot diskriminering og overgrep. De etterforsker og avslører brudd på menneskerettighetene, de aksjonerer for enkeltmennesker i fare, og for å skape varige endringer. Amnesty er uavhengig. Det gjør at de kan si sannheten om enhver regjering og makthaver. Amnesty har utallige resultater å vise til. Hvis man vil lese mer om Amnesty kan man gå til deres nettsider.',
     image: require('./../img/images/y2015.jpeg')
