@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Clock from '../components/Clock/Clock';
 import FrontPagePosts from '../components/Posts/FrontPagePosts';
-import MO2020promov2 from '../img/vid/MO2020promov2.mp4';
+import MO2020promo169 from '../img/vid/MO2020promo169.mp4';
 import { Link } from 'react-router-dom';
 
 import './homePage.css';
@@ -21,7 +21,7 @@ class HomePage extends Component {
             <div className="HomePageBox">
               <div className="videobox">
                 <video className="video" controls>
-                  <source src={MO2020promov2} type="video/mp4"></source>
+                  <source src={MO2020promo169} type="video/mp4"></source>
                 </video>
               </div>
               <div className="News">
