@@ -10,6 +10,7 @@ import Footer from './components/Footer/Footer';
 import HomePage from './HomePage/HomePage';
 
 import { Route, BrowserRouter } from 'react-router-dom';
+import News from './components/News/News';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/Competitions" component={CompetitionPage} />
           <Route exact path="/Competitions/:year" component={CompetitionView} />
           <Route exact path="/About" component={About} />
+          <Route exact path="/News" component={News} />
         </div>
         <Footer />
       </BrowserRouter>
