@@ -3,6 +3,7 @@ import PostRow from './../Posts/Post';
 import styles from './Competitions.module.css';
 import { competitions } from './../../database/dataloader';
 import { useParams } from 'react-router-dom';
+import ImageCarousel from '../ImageCarousel/ImageCarousel';
 
 export const CompetitionView = () => {
   const { year } = useParams();
@@ -52,7 +53,9 @@ export const CompetitionView = () => {
             <h3>Hvordan gikk turneringen?</h3>
             <div>{competition.tournamentText}</div>
           </div>
-          <div className={styles.ImageCarousel}>Bilder kommer her...</div>
+        </div>
+        <div className={styles.ImageCarousel}>
+          <ImageCarousel></ImageCarousel>
         </div>
         <div className={styles.BottomBox}>
           <div className={styles.BottomBoxOrganization}>
