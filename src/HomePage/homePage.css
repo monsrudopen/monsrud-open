@@ -24,8 +24,15 @@
 .componentElements {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
+  margin-top: 60px;
+  width: 80%;
+}
+.NavigationTitle {
+  font-size: calc(1em + 1vw);
+  margin-bottom: 20px;
+  color: #c6a76a;
 }
 .News {
   width: 100%;
@@ -108,7 +115,7 @@
   display: flex;
   flex-direction: column;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 h1 {
@@ -128,6 +135,7 @@ h4 {
   border-radius: 25px;
   margin-right: 20px;
   justify-content: center;
+  align-items: center;
   display: flex;
 }
 .video {

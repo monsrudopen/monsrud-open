@@ -92,6 +92,7 @@ class HomePage extends Component {
           </div>
         </div>
         <div className="componentElements">
+          <div className="NavigationTitle">Snarveier</div>
           <FrontPagePosts />
         </div>
       </div>
