@@ -1,0 +1,11 @@
+.carousel .slide img {
+  max-height: 400px;
+  width: auto !important;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 780px) {
+  .carousel .slide img {
+    max-height: 300px;
+  }
+}
