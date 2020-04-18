@@ -54,6 +54,7 @@ const ImageCarousel = ({ year }) => {
         emulateTouch={true}
         dynamicHeight={true}
         showThumbs={false}
+        showStatus={false}
       >
         {images.map(image => (
           <div key={image}>
