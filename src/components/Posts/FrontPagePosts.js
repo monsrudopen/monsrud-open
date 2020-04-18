@@ -1,5 +1,6 @@
 import React from 'react';
 import PostRow from './Post';
+import styles from './FrontPagePosts.module.css';
 
 const FrontPagePosts = () => {
   const postItems = [
@@ -11,7 +12,7 @@ const FrontPagePosts = () => {
     },
     {
       title: 'Turneringer',
-      text: 'Les om de ulike årene og hvordan det gikk',
+      text: 'Les om de ulike årene',
       image: require('./../../img/images/postImage2.png'),
       link: '/Competitions'
     },
@@ -23,7 +24,25 @@ const FrontPagePosts = () => {
     }
   ];
 
-  return <PostRow postItems={postItems}></PostRow>;
+  return (
+    <div className={styles.LinkContainer}>
+      {postItems.map((value, index) => (
+        <div key={index} className={styles.LinkWrapper}>
+          <a href={value.link}>
+            <div className={styles.ImageContainer}>
+              <div className={styles.LinkText}>{value.text}</div>
+              <div className={styles.LinkTitle}>{value.title}</div>
+              <img
+                alt={value.title}
+                className={styles.PostImage}
+                src={value.image}
+              />
+            </div>
+          </a>
+        </div>
+      ))}
+    </div>
+  );
 };
 
 export default FrontPagePosts;
