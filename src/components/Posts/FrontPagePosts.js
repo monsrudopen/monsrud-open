@@ -1,6 +1,6 @@
 import React from 'react';
 import PostRow from './Post';
-import styles from './FrontPagePosts.module.css';
+//import styles from './FrontPagePosts.module.css';
 
 const FrontPagePosts = () => {
   const postItems = [
@@ -24,25 +24,7 @@ const FrontPagePosts = () => {
     }
   ];
 
-  return (
-    <div className={styles.LinkContainer}>
-      {postItems.map((value, index) => (
-        <div key={index} className={styles.LinkWrapper}>
-          <a href={value.link}>
-            <div className={styles.ImageContainer}>
-              <div className={styles.LinkText}>{value.text}</div>
-              <div className={styles.LinkTitle}>{value.title}</div>
-              <img
-                alt={value.title}
-                className={styles.PostImage}
-                src={value.image}
-              />
-            </div>
-          </a>
-        </div>
-      ))}
-    </div>
-  );
+  return <PostRow postItems={postItems}></PostRow>;
 };
 
 export default FrontPagePosts;
