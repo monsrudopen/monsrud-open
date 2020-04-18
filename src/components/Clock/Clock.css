@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
-
 * {
   box-sizing: border-box;
 }
@@ -14,14 +12,15 @@
 .countdown-item {
   color: #111;
   font-size: calc(1em + 1vw);
-  font-family: 'Helvetica', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   line-height: 30px;
   margin: 10px;
-  padding-top: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0px;
   position: relative;
   width: 100px;
   height: 100px;
@@ -30,13 +29,11 @@
 .countdown-item span {
   color: #333;
   font-size: 12px;
-  font-family: 'Helvetica', sans-serif;
   font-weight: 600;
   text-transform: uppercase;
 }
 .finished {
   color: black;
-  font-family: 'Helvetica', sans-serif;
   font-size: 20px;
   align-items: center;
 }
