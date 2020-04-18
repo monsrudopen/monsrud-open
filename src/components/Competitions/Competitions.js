@@ -68,17 +68,15 @@ export const CompetitionView = () => {
               <h3>Om {competition.organization}</h3>
               <div>{competition.organizationInfo}</div>
             </div>
-          </div>{' '}
-          <div className={styles.BottomBoxSponsor}>
-            <div className={styles.BottomBoxSponsorText}>
-              {competition.spons}
-            </div>
-            <img
-              alt={competition.spons}
-              className={styles.BottomBoxSponsorImage}
-              src={competition.sponsimage}
-            ></img>
           </div>
+        </div>
+        <div className={styles.BottomBoxSponsor}>
+          <div className={styles.BottomBoxSponsorText}>{competition.spons}</div>
+          <img
+            alt={competition.spons}
+            className={styles.BottomBoxSponsorImage}
+            src={competition.sponsimage}
+          ></img>
         </div>
       </div>
     </div>

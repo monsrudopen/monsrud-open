@@ -67,12 +67,12 @@
 .BottomBox {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  margin-bottom: 100px;
 }
 .BottomBoxOrganization {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 .TopBoxParticipantsHeader {
@@ -104,6 +104,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
 }
 .BottomBoxSponsorText {
   color: black;
@@ -128,7 +129,7 @@
   width: 68%;
 }
 .OrganizationPicture {
-  width: 10%;
+  width: 12%;
   height: auto;
   margin: 2%;
 }
