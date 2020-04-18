@@ -39,29 +39,30 @@ class Clock extends React.Component {
     const then = moment(timeTillDate, timeFormat);
     const now = moment();
 
+    console.log(typeof seconds);
     if (now <= then) {
       return (
         <div>
           <div className="countdown-wrapper">
             <div className="countdown-item">
               {months}
-              <span>{months !== 1 ? 'Måneder' : 'Måned'}</span>
+              <span>{months !== '01' ? 'Måneder' : 'Måned'}</span>
             </div>
             <div className="countdown-item">
               {days}
-              <span>{days !== 1 ? 'Dager' : 'Dag'}</span>
+              <span>{days !== '01' ? 'Dager' : 'Dag'}</span>
             </div>
             <div className="countdown-item">
               {hours}
-              <span>{hours !== 1 ? 'Timer' : 'Time'}</span>
+              <span>{hours !== '01' ? 'Timer' : 'Time'}</span>
             </div>
             <div className="countdown-item">
               {minutes}
-              <span>{minutes !== 1 ? 'Minutter' : 'Minutt'}</span>
+              <span>{minutes !== '01' ? 'Minutter' : 'Minutt'}</span>
             </div>
             <div className="countdown-item">
               {seconds}
-              <span>{seconds !== 1 ? 'Sekunder' : 'Sekund'}</span>
+              <span>{seconds !== '01' ? 'Sekunder' : 'Sekund'}</span>
             </div>
           </div>
         </div>
