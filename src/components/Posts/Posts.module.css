@@ -94,4 +94,8 @@
   .LinkText {
     width: 300px;
   }
+  .Organization {
+    font-size: 30px;
+    width: 260px;
+  }
 }

@@ -9,17 +9,21 @@ const Post = props => {
   let linkBox = null;
 
   function mouseEnter(evt) {
-    gsap.to(linkBox, 0.5, { scale: 1.1 });
-    gsap.to(year, 0.5, { top: '20%', scale: 0.6, color: '#c6a76a' });
-    gsap.to(organization, 0.5, { top: '35%' });
-    gsap.to(text, 1, { opacity: 1 });
+    if (window.innerWidth >= 1080 && year) {
+      gsap.to(linkBox, 0.5, { scale: 1.1 });
+      gsap.to(year, 0.5, { top: '20%', scale: 0.6, color: '#c6a76a' });
+      gsap.to(organization, 0.5, { top: '35%' });
+      gsap.to(text, 1, { opacity: 1 });
+    }
   }
 
   function mouseLeave(evt) {
-    gsap.to(linkBox, 0.5, { scale: 1 });
-    gsap.to(year, 0.5, { top: '40%', scale: 1, color: 'white' });
-    gsap.to(organization, 0.5, { top: '65%', color: 'white' });
-    gsap.to(text, 0.5, { opacity: 0 });
+    if (window.innerWidth >= 1080 && year) {
+      gsap.to(linkBox, 0.5, { scale: 1 });
+      gsap.to(year, 0.5, { top: '40%', scale: 1, color: 'white' });
+      gsap.to(organization, 0.5, { top: '65%', color: 'white' });
+      gsap.to(text, 0.5, { opacity: 0 });
+    }
   }
 
   return (
