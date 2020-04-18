@@ -8,7 +8,9 @@ import ImageCarousel from '../ImageCarousel/ImageCarousel';
 export const CompetitionView = () => {
   const { year } = useParams();
   const competition = competitions.find(c => c.year.toString() === year);
-
+  function ShowAll() {
+    console.log('Hell');
+  }
   return (
     <div className={styles.CompetitionView}>
       <h1>{competition.title}</h1>
@@ -43,11 +45,17 @@ export const CompetitionView = () => {
             <div className={styles.TopBoxParticipantsHeader}>Deltakere</div>
             <div className={styles.TopBoxParticipantsText}>
               {competition.attendees.sort().map(a => (
-                <div key={a}>{a}</div>
+                <div className={styles.ParticipantsName} key={a}>
+                  {a}
+                </div>
               ))}
+            </div>
+            <div onClick={ShowAll} className={styles.ParticipantButton}>
+              Se alle deltakere
             </div>
           </div>
         </div>
+
         <div className={styles.MiddleBox}>
           <div className={styles.AboutTournamentBox}>
             <h3>Hvordan gikk turneringen?</h3>
