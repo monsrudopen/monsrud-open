@@ -1,6 +1,5 @@
 import React from 'react';
 import PostRow from './Post';
-//import styles from './FrontPagePosts.module.css';
 
 const FrontPagePosts = () => {
   const postItems = [

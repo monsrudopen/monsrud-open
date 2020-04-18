@@ -59,7 +59,6 @@ const PostRow = ({ postItems }) => {
       {postItems.map((value, index) => (
         <div key={index} className={styles.LinkWrapper}>
           <Post
-            key={index}
             image={value.image}
             title={value.title}
             text={value.text}

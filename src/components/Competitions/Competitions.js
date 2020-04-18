@@ -91,7 +91,7 @@ export const CompetitionPage = () => {
   });
 
   return (
-    <div className={styles.CompentitionListContainer}>
+    <div className={styles.CompetitionListContainer}>
       <div className={styles.CompetitionListTile}>Tidligere turneringer</div>
       <div className={styles.ListWrapper}>
         <PostRow postItems={competitionsWithLinks}></PostRow>
