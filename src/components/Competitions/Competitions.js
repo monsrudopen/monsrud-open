@@ -4,12 +4,31 @@ import styles from './Competitions.module.css';
 import { competitions } from './../../database/dataloader';
 import { useParams } from 'react-router-dom';
 import ImageCarousel from '../ImageCarousel/ImageCarousel';
+import gsap from 'gsap';
 
 export const CompetitionView = () => {
   const { year } = useParams();
   const competition = competitions.find(c => c.year.toString() === year);
+  let buttonAnim = null;
+  let marginAnim = null;
+  let isOpen = false;
+  let marginDef;
+  let overflow = null;
+  let marginClass = null;
   function ShowAll() {
-    console.log('Hell');
+    let heightDef;
+    if (isOpen) {
+      heightDef = '250px';
+      marginDef = '30px';
+      isOpen = false;
+    } else {
+      heightDef = '100%';
+      marginDef = '80px';
+
+      isOpen = true;
+    }
+    marginAnim = gsap.to(marginClass, 0.5, { marginBottom: marginDef });
+    buttonAnim = gsap.to(overflow, 0.5, { height: heightDef });
   }
   return (
     <div className={styles.CompetitionView}>
@@ -40,22 +59,27 @@ export const CompetitionView = () => {
             </div>
           </div>
         </div>
-        <div className={styles.ParticipantsBox}>
+        <div
+          ref={div => (marginClass = div)}
+          className={styles.ParticipantsBox}
+        >
           <div className={styles.TopBoxText}>
             <div className={styles.TopBoxParticipantsHeader}>Deltakere</div>
-            <div className={styles.TopBoxParticipantsText}>
+            <div
+              ref={div => (overflow = div)}
+              className={styles.TopBoxParticipantsText}
+            >
               {competition.attendees.sort().map(a => (
                 <div className={styles.ParticipantsName} key={a}>
                   {a}
                 </div>
               ))}
             </div>
-            <div onClick={ShowAll} className={styles.ParticipantButton}>
-              Se alle deltakere
-            </div>
           </div>
         </div>
-
+        <div onClick={ShowAll} className={styles.ParticipantButton}>
+          {isOpen ? 'Skul deltakere' : 'Se alle deltakere'}
+        </div>
         <div className={styles.MiddleBox}>
           <div className={styles.AboutTournamentBox}>
             <h3>Hvordan gikk turneringen?</h3>

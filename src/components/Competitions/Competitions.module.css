@@ -1,5 +1,4 @@
 .CompetitionView {
-  margin: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,7 +18,7 @@
 
 .TopBoxImageContainer {
   justify-content: center;
-  width: 50%;
+  width: 40%;
 }
 
 .TopBoxImage {
@@ -43,6 +42,7 @@
   max-width: 100%;
   width: 80%;
   margin-bottom: 25px;
+  margin-top: 30px;
 }
 .ParticipantsName {
   width: 25%;
@@ -168,8 +168,10 @@ h3 {
 }
 .ParticipantButton {
   display: none;
+  height: 50px;
   width: 100%;
   background-color: #c6a76a;
+  text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
@@ -207,6 +209,9 @@ h3 {
   .CompetitionViewWrapper {
     margin-top: 20px;
   }
+  .ParticipantsBox {
+    margin-bottom: 30px;
+  }
 
   .BottomBox {
     width: 100%;
@@ -220,12 +225,17 @@ h3 {
     justify-content: center;
   }
   .TopBoxParticipantsText {
-    height: 300px;
+    height: 250px;
     overflow: hidden;
+    position: relative;
   }
 
   .ParticipantButton {
+    margin-bottom: 40px;
+    font-size: 24px;
     display: block;
+    padding: 3%;
+    color: white;
   }
   .TopBoxTextHeader {
     font-size: 20px;
@@ -265,6 +275,9 @@ h3 {
   }
   h1 {
     transform: scale(0.7);
+    width: 90%;
+  }
+  .CompetitionViewWrapper {
     width: 90%;
   }
 }
