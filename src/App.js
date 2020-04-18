@@ -15,7 +15,7 @@ import News from './components/News/News';
 function App() {
   return (
     <div className={styles.App}>
-      <BrowserRouter>
+      <BrowserRouter forceRefresh={true}>
         <Header />
         <div className={styles.AppContent}>
           <Route exact path="/" component={HomePage} />

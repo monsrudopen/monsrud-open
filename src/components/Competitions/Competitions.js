@@ -36,15 +36,15 @@ export const CompetitionView = () => {
                 </div>
               </div>
             </div>
-            <div className={styles.TopBoxParticipants}>
-              <div className={styles.TopBoxText}>
-                <div className={styles.TopBoxParticipantsHeader}>Deltakere</div>
-                <div className={styles.TopBoxParticipantsText}>
-                  {competition.attendees.sort().map(a => (
-                    <div key={a}>{a}</div>
-                  ))}
-                </div>
-              </div>
+          </div>
+        </div>
+        <div className={styles.ParticipantsBox}>
+          <div className={styles.TopBoxText}>
+            <div className={styles.TopBoxParticipantsHeader}>Deltakere</div>
+            <div className={styles.TopBoxParticipantsText}>
+              {competition.attendees.sort().map(a => (
+                <div key={a}>{a}</div>
+              ))}
             </div>
           </div>
         </div>
@@ -68,17 +68,15 @@ export const CompetitionView = () => {
               <h3>Om {competition.organization}</h3>
               <div>{competition.organizationInfo}</div>
             </div>
-          </div>{' '}
-          <div className={styles.BottomBoxSponsor}>
-            <div className={styles.BottomBoxSponsorText}>
-              {competition.spons}
-            </div>
-            <img
-              alt={competition.spons}
-              className={styles.BottomBoxSponsorImage}
-              src={competition.sponsimage}
-            ></img>
           </div>
+        </div>
+        <div className={styles.BottomBoxSponsor}>
+          <div className={styles.BottomBoxSponsorText}>{competition.spons}</div>
+          <img
+            alt={competition.spons}
+            className={styles.BottomBoxSponsorImage}
+            src={competition.sponsimage}
+          ></img>
         </div>
       </div>
     </div>
