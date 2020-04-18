@@ -45,7 +45,6 @@ const ImageCarousel = ({ year }) => {
       images = [];
   }
 
-  console.log(images);
   return (
     images.length > 0 && (
       <Carousel
@@ -54,6 +53,7 @@ const ImageCarousel = ({ year }) => {
         swipeable={true}
         emulateTouch={true}
         dynamicHeight={true}
+        showThumbs={false}
       >
         {images.map(image => (
           <div key={image}>
