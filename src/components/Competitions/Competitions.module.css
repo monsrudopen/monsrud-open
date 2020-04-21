@@ -173,6 +173,23 @@ h3 {
   background-color: #c6a76a;
   text-align: center;
 }
+.CompetitionListContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.ListWrapper {
+  width: 80%;
+  margin-top: 60px;
+}
+.CompetitionListTile {
+  margin-top: 40px;
+  font-size: calc(2em + 1vw);
+  color: #c6a76a;
+}
 
 @media only screen and (max-width: 768px) {
   .ParticipantsName {
