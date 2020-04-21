@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PostRow from './../Posts/Post';
 import styles from './Competitions.module.css';
 import { competitions } from './../../database/dataloader';
@@ -8,24 +8,23 @@ import gsap from 'gsap';
 
 export const CompetitionView = () => {
   const { year } = useParams();
+  const [isOpen, setIsOpen] = useState(false);
   const competition = competitions.find(c => c.year.toString() === year);
   let buttonAnim = null;
   let marginAnim = null;
-  let isOpen = false;
-  let marginDef;
-  let overflow = null;
   let marginClass = null;
+  let overflow = null;
+  let marginDef;
+  let heightDef;
   function ShowAll() {
-    let heightDef;
     if (isOpen) {
       heightDef = '250px';
       marginDef = '30px';
-      isOpen = false;
+      setIsOpen(false);
     } else {
       heightDef = '100%';
       marginDef = '80px';
-
-      isOpen = true;
+      setIsOpen(true);
     }
     marginAnim = gsap.to(marginClass, 0.5, { marginBottom: marginDef });
     buttonAnim = gsap.to(overflow, 0.5, { height: heightDef });
