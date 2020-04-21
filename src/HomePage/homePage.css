@@ -174,8 +174,8 @@ a.more-news-link {
   .NewsContainer {
     width: 100%;
   }
-  .news {
-    height: 900px;
+  .News {
+    margin-top: 60px;
   }
   .ButtonSlider {
     display: none;

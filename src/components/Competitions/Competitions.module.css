@@ -1,5 +1,4 @@
 .CompetitionView {
-  margin: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,6 +8,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  width: 30%;
 }
 
 .CompetitionViewWrapper {
@@ -17,7 +18,7 @@
 
 .TopBoxImageContainer {
   justify-content: center;
-  max-width: 40%;
+  width: 40%;
 }
 
 .TopBoxImage {
@@ -32,14 +33,25 @@
 .TopBoxWinnerDonation {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  height: 200px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 .TopBoxText {
   max-width: 100%;
-  margin-bottom: 30px;
+  width: 80%;
+  margin-bottom: 25px;
+  margin-top: 30px;
+}
+.ParticipantsName {
+  width: 25%;
+  color: #696969;
+  margin-bottom: 15px;
+  text-align: start;
 }
 .TopBoxTextWinner {
+  width: 100%;
   font-size: 46px;
   color: #c6a76a;
 }
@@ -51,6 +63,7 @@
   font-weight: bold;
   font-size: 25px;
   color: #696969;
+  margin-bottom: 5px;
 }
 .ParticipantsBox {
   max-width: 100%;
@@ -67,37 +80,48 @@
 .BottomBox {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 100px;
 }
 .BottomBoxOrganization {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  width: 80%;
+  justify-content: space-between;
   align-items: center;
 }
 .TopBoxParticipantsHeader {
   font-weight: bold;
   border-bottom-width: 1px;
-  border-bottom-color: black;
+  border-bottom-color: #696969;
   border-bottom-style: solid;
   font-size: 25px;
   color: #696969;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
 }
 .TopBoxParticipantsText {
-  columns: 3 auto;
   width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .TopBoxWrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .AboutTournamentBox {
   text-align: justify;
   text-align-last: left;
   word-wrap: break-word;
-  width: 68%;
+  width: 55%;
+  line-height: 2;
+}
+h3 {
+  color: #c6a76a;
 }
 .BottomBoxSponsor {
   display: flex;
@@ -112,7 +136,7 @@
   justify-content: center;
   display: flex;
   align-items: center;
-  margin-bottom: 1vh;
+  margin-bottom: 30px;
 }
 .BottomBoxSponsorImage {
   width: 12.5%;
@@ -126,10 +150,11 @@
   text-align-last: left;
   word-wrap: break-word;
   display: inline-block;
-  width: 68%;
+  width: 70%;
+  line-height: 2;
 }
 .OrganizationPicture {
-  width: 12%;
+  width: 15%;
   height: auto;
   margin: 2%;
 }
@@ -140,6 +165,13 @@
   margin-top: 100px;
   margin-bottom: 100px;
   max-width: 825px;
+}
+.ParticipantButton {
+  display: none;
+  height: 50px;
+  width: 100%;
+  background-color: #c6a76a;
+  text-align: center;
 }
 .CompetitionListContainer {
   width: 100%;
@@ -160,9 +192,15 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .ParticipantsName {
+    width: 225px;
+  }
   .ImageCarousel {
     margin-top: 50px;
     margin-bottom: 50px;
+  }
+  .TopBoxContainer {
+    width: 100%;
   }
 
   .ReturnButton {
@@ -172,9 +210,24 @@
     top: 4%;
     width: 90%;
   }
+  .TopBoxTextWinner {
+    font-size: 30px;
+  }
+  .TopBoxTextDonation {
+    font-size: 30px;
+  }
+  .TopBoxText {
+    width: 100%;
+  }
 
   .ReturnButtonSticky a {
     display: none;
+  }
+  .CompetitionViewWrapper {
+    margin-top: 20px;
+  }
+  .ParticipantsBox {
+    margin-bottom: 30px;
   }
 
   .BottomBox {
@@ -189,7 +242,20 @@
     justify-content: center;
   }
   .TopBoxParticipantsText {
-    columns: 2 auto;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .ParticipantButton {
+    margin-bottom: 40px;
+    font-size: 24px;
+    display: block;
+    padding: 3%;
+    color: white;
+  }
+  .TopBoxTextHeader {
+    font-size: 20px;
   }
   .YearButton {
     display: none;
@@ -208,6 +274,7 @@
 
   .BottomBoxOrganization {
     flex-direction: column;
+    width: 90%;
   }
   .AboutBox {
     width: 100%;
@@ -216,15 +283,19 @@
     width: 100%;
   }
   .TopBoxImageContainer {
-    margin-top: 100px;
-    max-width: 100%;
+    margin-top: 20px;
+    width: 100%;
   }
   .OrganizationPicture {
     width: 50%;
     padding: 1px;
   }
   h1 {
-    transform: scale(0.6);
+    transform: scale(0.7);
+    width: 90%;
+  }
+  .CompetitionViewWrapper {
+    width: 90%;
   }
 }
 

@@ -1,14 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PostRow from './../Posts/Post';
 import styles from './Competitions.module.css';
 import { competitions } from './../../database/dataloader';
 import { useParams } from 'react-router-dom';
 import ImageCarousel from '../ImageCarousel/ImageCarousel';
+import gsap from 'gsap';
 
 export const CompetitionView = () => {
   const { year } = useParams();
+  const [isOpen, setIsOpen] = useState(false);
   const competition = competitions.find(c => c.year.toString() === year);
-
+  let buttonAnim = null;
+  let marginAnim = null;
+  let marginClass = null;
+  let overflow = null;
+  let marginDef;
+  let heightDef;
+  function ShowAll() {
+    if (isOpen) {
+      heightDef = '250px';
+      marginDef = '30px';
+      setIsOpen(false);
+    } else {
+      heightDef = '100%';
+      marginDef = '80px';
+      setIsOpen(true);
+    }
+    marginAnim = gsap.to(marginClass, 0.5, { marginBottom: marginDef });
+    buttonAnim = gsap.to(overflow, 0.5, { height: heightDef });
+  }
   return (
     <div className={styles.CompetitionView}>
       <h1>{competition.title}</h1>
@@ -38,15 +58,26 @@ export const CompetitionView = () => {
             </div>
           </div>
         </div>
-        <div className={styles.ParticipantsBox}>
+        <div
+          ref={div => (marginClass = div)}
+          className={styles.ParticipantsBox}
+        >
           <div className={styles.TopBoxText}>
             <div className={styles.TopBoxParticipantsHeader}>Deltakere</div>
-            <div className={styles.TopBoxParticipantsText}>
+            <div
+              ref={div => (overflow = div)}
+              className={styles.TopBoxParticipantsText}
+            >
               {competition.attendees.sort().map(a => (
-                <div key={a}>{a}</div>
+                <div className={styles.ParticipantsName} key={a}>
+                  {a}
+                </div>
               ))}
             </div>
           </div>
+        </div>
+        <div onClick={ShowAll} className={styles.ParticipantButton}>
+          {isOpen ? 'Skul deltakere' : 'Se alle deltakere'}
         </div>
         <div className={styles.MiddleBox}>
           <div className={styles.AboutTournamentBox}>
