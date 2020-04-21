@@ -39,7 +39,6 @@ class Clock extends React.Component {
     const then = moment(timeTillDate, timeFormat);
     const now = moment();
 
-    console.log(typeof seconds);
     if (now <= then) {
       return (
         <div>
