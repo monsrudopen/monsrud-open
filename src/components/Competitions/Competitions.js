@@ -88,5 +88,12 @@ export const CompetitionPage = () => {
     return { ...c, link: 'Competitions/' + c.year };
   });
 
-  return <PostRow postItems={competitionsWithLinks}></PostRow>;
+  return (
+    <div className={styles.CompetitionListContainer}>
+      <div className={styles.CompetitionListTile}>Tidligere turneringer</div>
+      <div className={styles.ListWrapper}>
+        <PostRow postItems={competitionsWithLinks}></PostRow>
+      </div>
+    </div>
+  );
 };
