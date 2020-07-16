@@ -17,6 +17,7 @@ class Clock extends React.Component {
       const then = moment(timeTillDate, timeFormat);
       const now = moment();
       const Clock = moment(then - now);
+      console.log(Clock);
       const months = Clock.format('MM');
       const days = Clock.format('DD');
       const hours = Clock.format('HH');
@@ -67,7 +68,7 @@ class Clock extends React.Component {
         </div>
       );
     } else {
-      return <div className="finished">Monsurd Open er i gang!</div>;
+      return <div className="finished">Monsrud Open er i gang!</div>;
     }
   }
 }
