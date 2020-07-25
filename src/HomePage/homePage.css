@@ -133,7 +133,6 @@ h4 {
 .videobox {
   background-color: black;
   border-radius: 25px;
-  margin-right: 20px;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -175,10 +174,14 @@ a.more-news-link {
   .NewsContainer {
     width: 100%;
   }
-  .news {
-    height: 900px;
+  .News {
+    margin-top: 60px;
   }
   .ButtonSlider {
     display: none;
+  }
+  a.more-news-link {
+    align-self: center;
+    text-align: center;
   }
 }

@@ -206,16 +206,22 @@ export const competitions = [
 
 export const news = [
   {
-    title: 'Arrangementsdato for årets turnering',
-    date: '13. april 2020',
+    title: 'Mottakerorganisasjon 2020 - Leger uten grenser',
+    date: '16. juli 2020',
     text:
-      'Arrangementsdato for Monsrud Open 2020 er 15. august. Styret ønsker å presisere at det tas høyde for at årets arrangement kan bli berørt av regjeringens tiltak mot koronaviruset. Dersom det skulle skje vil vi komme tilbake angående hva som skjer med arrangementet.'
+      'Årets innsamling vil gå til Leger uten grenser. Styret begrunner valget med at når verdens grenser stenger ned er det ekstra viktig med Leger uten grenser!'
   },
   {
-    title: 'Lansering av ny nettside',
-    date: '13. april 2020',
+    title: 'Sponsor 2020 - KIWI',
+    date: '3. juli 2020',
     text:
-      'Vi har gleden av å lansere en ny nettside, med mange nye funksjoner. Den vil fortsette å få tilført komponenter frem mot årets turnering. Vi vil samtidig igjen beklage for at nettsiden ikke var fungerende under fjorårets turnering, men håper at den nye turneringen vil gjøre opp for det.'
+      'Vi er stole og glade over å kunne annonsere at Kiwi offesielt er sponsor av årets turnering. De har valgt å støtte oss med en betydelig sum som vil være til stor hjelp for å samle inn mest mulig penger til årets veldedige formål.'
+  },
+  {
+    title: 'Arrangementsdato for årets turnering',
+    date: '21. april 2020',
+    text:
+      'Arrangementsdato for Monsrud Open 2020 er 15. august. Styret ønsker å presisere at det tas høyde for at årets arrangement kan bli berørt av regjeringens tiltak mot koronaviruset. Dersom det skulle skje vil vi komme tilbake angående hva som skjer med arrangementet.'
   },
   {
     title: 'Endringer i styrets sammensetting',
