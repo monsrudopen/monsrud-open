@@ -215,7 +215,7 @@ export const news = [
     title: 'Sponsor 2020 - KIWI',
     date: '3. juli 2020',
     text:
-      'Vi er stole og glade over å kunne annonsere at Kiwi offesielt er sponsor av årets turnering. De har valgt å støtte oss med en betydelig sum som vil være til stor hjelp for å samle inn mest mulig penger til årets veldedige formål.'
+      'Vi er stolte og glade over å kunne annonsere at Kiwi offesielt er sponsor av årets turnering. De har valgt å støtte oss med en betydelig sum som vil være til stor hjelp for å samle inn mest mulig penger til årets veldedige formål.'
   },
   {
     title: 'Arrangementsdato for årets turnering',
@@ -227,7 +227,7 @@ export const news = [
     title: 'Endringer i styrets sammensetting',
     date: '7. april 2020',
     text:
-      ' Under styremøtet 7/4 fikk styremedlem Øystein Hammersland støtte i sitt forslag om å trekke seg fra styret. Styret består nå av styreleder Marius Monsrud, Erlend Solbakk Harbitz og Ferdinand Eide Rode'
+      'Under styremøtet 7/4 fikk styremedlem Øystein Hammersland støtte i sitt forslag om å trekke seg fra styret. Styret består nå av styreleder Marius Monsrud, Erlend Solbakk Harbitz og Ferdinand Eide Rode.'
   },
   {
     title: 'Endelig opptelling',
