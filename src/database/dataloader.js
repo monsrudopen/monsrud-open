@@ -206,6 +206,18 @@ export const competitions = [
 
 export const news = [
   {
+    title: 'Mottakerorganisasjon 2020 - Leger uten grenser',
+    date: '16. juli 2020',
+    text:
+      'Årets innsamling vil gå til Leger uten grenser. Styret begrunner valget med at når verdens grenser stenger ned er det ekstra viktig med Leger uten grenser!'
+  },
+  {
+    title: 'Sponsor 2020 - KIWI',
+    date: '3. juli 2020',
+    text:
+      'Vi er stole og glade over å kunne annonsere at Kiwi offesielt er sponsor av årets turnering. De har valgt å støtte oss med en betydelig sum som vil være til stor hjelp for å samle inn mest mulig penger til årets veldedige formål.'
+  },
+  {
     title: 'Arrangementsdato for årets turnering',
     date: '21. april 2020',
     text:

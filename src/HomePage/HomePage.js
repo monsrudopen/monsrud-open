@@ -43,7 +43,7 @@ class HomePage extends Component {
           <div className="frontPageBannerContainer">
             <h4>15. august 2020</h4>
             <Clock
-              timeTillDate="15 07 2020, 13:00"
+              timeTillDate="15 8 2020, 13:00"
               timeFormat="DD MM YYYY, HH:mm"
             />
             <div className="HomePageBox">
