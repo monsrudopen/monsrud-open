@@ -1,73 +1,101 @@
-.PostContainer {
-  width: 100vw;
+.LinkContainer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-}
-
-.PostsRow {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
   flex-wrap: wrap;
-  width: 80vw;
+  width: 100%;
 }
 
-.Post {
-  width: 330px;
-  height: 450px;
-  margin: 1%;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+.LinkWrapper {
+  width: 30%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.07);
+  margin-bottom: 60px;
+}
+
+.ImageContainer {
   display: flex;
+  justify-content: center;
   align-items: center;
-  flex-direction: column;
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-}
-.PostTitle {
-  width: 70%;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  margin: 5%;
-  margin-top: 10%;
-  text-align: left;
+  position: relative;
 }
 
-.PostTexter {
-  overflow: hidden;
+.LinkTitle {
+  font-weight: 900;
+  font-size: 40px;
+  color: white;
+  z-index: 10;
+  width: 300px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+.LinkText {
+  color: white;
+  z-index: 10;
+  margin-bottom: 15px;
+  position: absolute;
+  font-weight: 400;
+  font-size: 18px;
+  width: 330px;
+  left: 50%;
+  top: 68%;
+  transform: translate(-50%, -50%);
   text-align: justify;
-  color: #696969;
-  font-size: 15px;
-  line-height: 152.18%;
-  margin-top: 3%;
-  width: 70%;
+  opacity: 0;
+}
+.yearTitle {
+  position: absolute;
+  margin-bottom: 15px;
+  transform: translate(-50%, -50%);
+  font-weight: 600;
+  font-size: 40px;
+  color: white;
+  z-index: 10;
+  width: 200px;
+  left: 50%;
+  top: 40%;
+}
+.Organization {
+  position: absolute;
+  margin-bottom: 15px;
+  transform: translate(-50%, -50%);
+  font-weight: 900;
+  font-size: 35px;
+  color: white;
+  z-index: 10;
+  width: 400px;
+  left: 50%;
+  top: 65%;
+  text-align: center;
 }
 
 .PostImage {
   width: 100%;
-  height: 50%;
+  height: auto;
+  background-color: white;
+  border-radius: 5px 5px 5px 5px;
+  -webkit-filter: brightness(40%);
+  max-height: 240px;
 }
 
-.Post:link {
-  text-decoration: none;
-}
-
-.Post:visited {
-  text-decoration: none;
-}
-
-.Post:hover {
-  text-decoration: none;
-
-  transform: scale(1.05);
-}
-
-.Post:active {
-  text-decoration: none;
-}
-
-.Post:hover .PostImage {
-  opacity: 0.9;
+@media only screen and (max-width: 1080px) {
+  .LinkContainer {
+    flex-direction: column;
+  }
+  .LinkWrapper {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .LinkText {
+    width: 300px;
+  }
+  .Organization {
+    font-size: 30px;
+    width: 260px;
+  }
 }

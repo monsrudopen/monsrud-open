@@ -11,7 +11,7 @@ const FrontPagePosts = () => {
     },
     {
       title: 'Turneringer',
-      text: 'Les om de ulike årene og hvordan det gikk',
+      text: 'Les om de ulike årene',
       image: require('./../../img/images/postImage2.png'),
       link: '/Competitions'
     },

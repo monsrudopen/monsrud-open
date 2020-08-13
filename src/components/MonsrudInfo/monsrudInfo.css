@@ -1,39 +1,37 @@
 .infoMain {
-  width: 100vw;
-  display: block;
+  width: 100%;
+  display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
 }
 
 .infoContainer {
-  width: 100vw;
+  width: 80%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  flex-wrap: wrap;
 }
 .infoImgContainer {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.image {
-  width: 55%;
-  height: auto;
-  border-radius: 20px;
-}
-.infoTextContainer {
   width: 50%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
+.image {
+  width: 95%;
+  height: auto;
+}
+.infoTextContainer {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 .textAlignBox {
   display: flex;
-  width: 80%;
+  width: 100%;
   justify-content: center;
   align-items: flex-end;
   flex-direction: column;
@@ -57,12 +55,14 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 90%;
   }
   .infoTextContainer {
     width: 100%;
   }
   .infoImgContainer {
     width: 100%;
+    margin-top: 30px;
   }
   .infoTextContainer {
     justify-content: center;
