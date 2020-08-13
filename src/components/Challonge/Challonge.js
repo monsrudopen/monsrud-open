@@ -1,100 +1,228 @@
 import React, { useState, useEffect } from 'react';
-import challonge from 'challonge';
+import Tabletop from 'tabletop';
 
 import './Challonge.css';
-// Gikk over til å bare bruke sånn arrowfunksjon istedenfor klasse. Mye enklere.
 const Challonge = () => {
-  // Her setter jeg opp state. To forskjellige variabler. nextMatch og prevMatches holder verdiene. Det kan du
-  // bruke når du vil. setNextMatch og setPrevMatches er funksjoner du bruker for å oppdatere verdiene.
-  // Det som sendes inn til useState er initiell verdi på state.
-  const [allMatches, setAllMatches] = useState(undefined);
-  const [players, setPlayers] = useState([]);
-  const [prevMathces, setPrevMatches] = useState([]);
-  const [nextMatch, setNextMatch] = React.useState(undefined);
-
-  const client = challonge.createClient({
-    apiKey: process.env.REACT_APP_CHALLONGE_API_KEY
-  });
+  const [allMatches, setAllMatches] = useState([]);
+  const [groupA, setGroupA] = useState([]);
+  const [groupB, setGroupB] = useState([]);
+  const [groupC, setGroupC] = useState([]);
+  const [groupD, setGroupD] = useState([]);
 
   useEffect(() => {
-    client.participants.index({
-      id: '8305339',
-      callback: (err, playerData) => {
-        //setPlayers(data);
-        client.matches.index({
-          id: '8305339',
-          callback: (err, data) => {
-            UpdateMatchInfo(data, playerData);
-          }
-        });
-      }
+    var tabletop = Tabletop.init({
+      key: '1Gc9dCbF_QOC5WdEQ_ZtcnVm_drP3tJ2BR6Di3bCQpss',
+      callback: showInfo
     });
   }, []);
 
-  const GetPlayerName = (id, playerData) => {
-    let name = undefined;
-    Object.keys(playerData).forEach(function(key) {
-      if (playerData[key].participant.groupPlayerIds['0'] == id) {
-        name = playerData[key].participant.name;
-      }
-    });
-    return name;
-  };
-
-  const UpdateMatchInfo = (data, playerData) => {
-    let arr = [];
-    let match = [];
-    Object.keys(data).forEach(function(key) {
-      if (data[key].match.state === 'complete') {
-        if (prevMathces.length == 3) {
-          arr.shift();
-        }
-        arr.push({
-          player1: GetPlayerName(data[key].match.player1Id, playerData),
-          player2: GetPlayerName(data[key].match.player2Id, playerData),
-          score: data[key].match.scoresCsv
-        });
-      } else if (data[key].match.state == 'open' && !nextMatch) {
-        setNextMatch({
-          player1: GetPlayerName(data[key].match.player1Id, playerData),
-          player2: GetPlayerName(data[key].match.player2Id, playerData)
-        });
-      }
-    });
-    setPrevMatches(arr);
+  const showInfo = (data, tabletop) => {
+    setAllMatches(data.Kampoppsett.elements);
+    setGroupA(data.GruppeA.elements);
+    setGroupB(data.GruppeB.elements);
+    setGroupC(data.GruppeC.elements);
+    setGroupD(data.GruppeD.elements);
   };
 
   return (
     <div className="ChallongeContainer">
-      <div className="MatchTitle">KOMMENDE KAMP</div>
-      <div className="NextMatchWrapper">
-        {nextMatch && (
-          <div className="NextMatch">
-            <div className="Player">{nextMatch.player1}</div>
-            <div className="PlayerScore">VS</div>
-            <div className="Player">{nextMatch.player2}</div>
+      <div className="tableWrapper">
+        <div className="groupWrapper">
+          <div className="singleTableWrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>A</th>
+                  <th>Spiller</th>
+                  <th>Spilt</th>
+                  <th>Seier</th>
+                  <th>Tap</th>
+                  <th>For</th>
+                  <th>Mot</th>
+                  <th>Diff</th>
+                  <th>Poeng</th>
+                </tr>
+              </thead>
+              <tbody>
+                {groupA.length !== 0 ? (
+                  groupA.map((listValue, index) => {
+                    return (
+                      <tr key={index}>
+                        <td>{listValue.A}</td>
+                        <td>{listValue.Spiller}</td>
+                        <td>{listValue.Spilt}</td>
+                        <td>{listValue.Seier}</td>
+                        <td>{listValue.Tap}</td>
+                        <td>{listValue.For}</td>
+                        <td>{listValue.Mot}</td>
+                        <td>{listValue.Differanse}</td>
+                        <td>{listValue.Poeng}</td>
+                      </tr>
+                    );
+                  })
+                ) : (
+                  <tr>
+                    <td>Loading...</td>
+                  </tr>
+                )}
+              </tbody>
+            </table>
           </div>
-        )}
-        <div className="MatchLine" />
-      </div>
-      <div className="MatchTitle">TIDLIGERE KAMPER</div>
-      <div className="PreviousMatches">
-        {prevMathces.length !== 0 ? (
-          prevMathces.map((match, index) => {
-            return (
-              <div key={index} className="previousMatchWrapper">
-                <div className="prevMatch">
-                  <div className="Player">{match.player1}</div>
-                  <div className="PlayerScore">{match.score}</div>
-                  <div className="Player">{match.player2}</div>
-                </div>
-                <div className="MatchLine" />
-              </div>
-            );
-          })
-        ) : (
-          <div>No previous matches</div>
-        )}
+          <div className="singleTableWrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>B</th>
+                  <th>Spiller</th>
+                  <th>Spilt</th>
+                  <th>Seier</th>
+                  <th>Tap</th>
+                  <th>For</th>
+                  <th>Mot</th>
+                  <th>Diff</th>
+                  <th>Poeng</th>
+                </tr>
+              </thead>
+              <tbody>
+                {groupB.length !== 0 ? (
+                  groupB.map((listValue, index) => {
+                    return (
+                      <tr key={index}>
+                        <td>{listValue.B}</td>
+                        <td>{listValue.Spiller}</td>
+                        <td>{listValue.Spilt}</td>
+                        <td>{listValue.Seier}</td>
+                        <td>{listValue.Tap}</td>
+                        <td>{listValue.For}</td>
+                        <td>{listValue.Mot}</td>
+                        <td>{listValue.Differanse}</td>
+                        <td>{listValue.Poeng}</td>
+                      </tr>
+                    );
+                  })
+                ) : (
+                  <tr>
+                    <td>Loading...</td>
+                  </tr>
+                )}
+              </tbody>
+            </table>
+          </div>
+          <div className="singleTableWrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>C</th>
+                  <th>Spiller</th>
+                  <th>Spilt</th>
+                  <th>Seier</th>
+                  <th>Tap</th>
+                  <th>For</th>
+                  <th>Mot</th>
+                  <th>Diff</th>
+                  <th>Poeng</th>
+                </tr>
+              </thead>
+              <tbody>
+                {groupC.length !== 0 ? (
+                  groupC.map((listValue, index) => {
+                    return (
+                      <tr key={index}>
+                        <td>{listValue.C}</td>
+                        <td>{listValue.Spiller}</td>
+                        <td>{listValue.Spilt}</td>
+                        <td>{listValue.Seier}</td>
+                        <td>{listValue.Tap}</td>
+                        <td>{listValue.For}</td>
+                        <td>{listValue.Mot}</td>
+                        <td>{listValue.Differanse}</td>
+                        <td>{listValue.Poeng}</td>
+                      </tr>
+                    );
+                  })
+                ) : (
+                  <tr>
+                    <td>Loading...</td>
+                  </tr>
+                )}
+              </tbody>
+            </table>
+          </div>
+          <div className="singleTableWrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>D</th>
+                  <th>Spiller</th>
+                  <th>Spilt</th>
+                  <th>Seier</th>
+                  <th>Tap</th>
+                  <th>For</th>
+                  <th>Mot</th>
+                  <th>Diff</th>
+                  <th>Poeng</th>
+                </tr>
+              </thead>
+              <tbody>
+                {groupD.length !== 0 ? (
+                  groupD.map((listValue, index) => {
+                    return (
+                      <tr key={index}>
+                        <td>{listValue.D}</td>
+                        <td>{listValue.Spiller}</td>
+                        <td>{listValue.Spilt}</td>
+                        <td>{listValue.Seier}</td>
+                        <td>{listValue.Tap}</td>
+                        <td>{listValue.For}</td>
+                        <td>{listValue.Mot}</td>
+                        <td>{listValue.Differanse}</td>
+                        <td>{listValue.Poeng}</td>
+                      </tr>
+                    );
+                  })
+                ) : (
+                  <tr>
+                    <td>Loading...</td>
+                  </tr>
+                )}
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div className="allMatchesWrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>KampNr</th>
+                <th>Gruppe</th>
+                <th>Spiller 1</th>
+                <th></th>
+                <th></th>
+                <th>Spiller 2</th>
+              </tr>
+            </thead>
+            <tbody>
+              {allMatches.length !== 0 ? (
+                allMatches.map((listValue, index) => {
+                  return (
+                    <tr key={index}>
+                      <td>{listValue.Kampnr}</td>
+                      <td>{listValue.Gruppe}</td>
+                      <td>{listValue['Spiller 1']}</td>
+                      <td>{listValue['Poeng 1']}</td>
+                      <td>{listValue['Poeng 2']}</td>
+                      <td>{listValue['Spiller 2']}</td>
+                    </tr>
+                  );
+                })
+              ) : (
+                <tr>
+                  <td>Loading...</td>
+                </tr>
+              )}
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   );

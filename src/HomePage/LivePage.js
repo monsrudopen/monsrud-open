@@ -14,7 +14,7 @@ class LivePage extends Component {
             <div className="LiveCircle"></div>
           </div>
           <div className="Line" />
-          <div className="DonateButton">Doner til Lånekassen</div>
+          {/*<div className="DonateButton">Doner </div>*/}
           <div className="LiveInfoWrapper">
             <div className="ChallongeWrapper">
               <div className="ChallongeTitle">Kampoversikt</div>

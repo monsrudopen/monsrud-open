@@ -1,59 +1,44 @@
 .ChallongeContainer {
   display: flex;
-  flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  height: 450px;
 }
 
-.MatchTitle {
-  font-size: 23px;
-  font-weight: 400;
-  color: #696969;
-  margin-bottom: 40px;
-}
-.NextMatchWrapper {
-  margin-bottom: 10px;
+table {
+  border-collapse: collapse;
   width: 100%;
-}
-.NextMatch {
-  display: flex;
-  font-size: 20px;
-  margin-bottom: 10px;
-  color: #696969;
-  font-weight: 200;
-  width: 100%;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.PreviousMatches {
-  width: 100%;
-}
-.prevMatch {
-  display: flex;
-  font-size: 20px;
-  color: #696969;
-  font-weight: 200;
-  width: 100%;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-}
-.Player {
-  width: 100%;
-  text-align: start;
-}
-.MatchLine {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-  width: inherit;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+  font-size: 12px;
 }
 
-.PlayerScore {
+td,
+th {
+  border: 1px solid #dddddd;
   text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.tableWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
+}
+.groupWrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.singleTableWrap {
+  width: 45%;
+}
+.allMatchesWrapper {
+  width: 60%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -61,28 +46,19 @@
     justify-content: center;
     align-items: center;
   }
-  .NextMatch {
-    font-size: 15px;
-    padding-left: 20px;
-  }
-  .prevMatch {
-    font-size: 15px;
-    justify-content: space-evenly;
-    padding-left: 20px;
-  }
-  .NextMatchWrapper {
-    display: flex;
+  .groupWrapper {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .previousMatchWrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .singleTableWrap {
+    width: 350px;
   }
-  .MatchLine {
-    width: 90%;
+  .allMatchesWrapper {
+    width: 350px;
+  }
+  table {
+    font-size: 9px;
+    margin-bottom: 20px;
   }
 }
