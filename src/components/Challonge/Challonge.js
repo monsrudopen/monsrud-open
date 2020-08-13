@@ -8,25 +8,67 @@ const Challonge = () => {
   const [groupB, setGroupB] = useState([]);
   const [groupC, setGroupC] = useState([]);
   const [groupD, setGroupD] = useState([]);
+  const [name1, setName1] = useState();
+  const [name2, setName2] = useState();
+  const [nextName1, setNextName1] = useState();
+  const [nextName2, setNextName2] = useState();
 
   useEffect(() => {
+    UpdateMatchInfo();
+    setInterval(UpdateMatchInfo, 60 * 1000);
+  }, []);
+
+  const UpdateMatchInfo = () => {
     var tabletop = Tabletop.init({
       key: '1Gc9dCbF_QOC5WdEQ_ZtcnVm_drP3tJ2BR6Di3bCQpss',
       callback: showInfo
     });
-  }, []);
+  };
 
   const showInfo = (data, tabletop) => {
+    console.log('Running update!');
     setAllMatches(data.Kampoppsett.elements);
     setGroupA(data.GruppeA.elements);
     setGroupB(data.GruppeB.elements);
     setGroupC(data.GruppeC.elements);
     setGroupD(data.GruppeD.elements);
+    GetCurrentAndNextMatch(data.Kampoppsett.elements);
+  };
+
+  const GetCurrentAndNextMatch = matchData => {
+    console.log(matchData.length);
+    for (var i = 0; i < matchData.length; i++) {
+      if (matchData[i]['Poeng 2'] == '') {
+        setName1(matchData[i]['Spiller 1']);
+        setName2(matchData[i]['Spiller 2']);
+        setNextName1(matchData[i + 1]['Spiller 1']);
+        setNextName2(matchData[i + 1]['Spiller 2']);
+        return;
+      }
+    }
   };
 
   return (
     <div className="ChallongeContainer">
       <div className="tableWrapper">
+        <div className="currentMatch">
+          <div className="ChallongeTitle">Aktiv Kamp</div>
+          <div className="currentWrapper">
+            <div className="currentContent front">{name1}</div>
+            <div className="divider">-</div>
+            <div className="currentContent back">{name2}</div>
+          </div>
+        </div>
+        <div className="currentMatch">
+          <div className="nextMatchTitle">Neste Kamp</div>
+          <div className="nextWrapper">
+            <div className="nextContent front">{nextName1}</div>
+            <div className="divider">-</div>
+            <div className="nextContent back">{nextName2}</div>
+          </div>
+        </div>
+        <div className="ChallongeTitle">Gruppeoversikt</div>
+
         <div className="groupWrapper">
           <div className="singleTableWrap">
             <table>
@@ -189,6 +231,8 @@ const Challonge = () => {
             </table>
           </div>
         </div>
+        <div className="ChallongeTitle">Kampoversikt</div>
+
         <div className="allMatchesWrapper">
           <table>
             <thead>
