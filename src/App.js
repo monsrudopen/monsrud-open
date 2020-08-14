@@ -8,6 +8,7 @@ import {
 import About from './components/About/About';
 import Footer from './components/Footer/Footer';
 import HomePage from './HomePage/HomePage';
+import LivePage from './HomePage/LivePage';
 
 import { Route, BrowserRouter } from 'react-router-dom';
 import News from './components/News/News';
@@ -19,6 +20,7 @@ function App() {
         <Header />
         <div className={styles.AppContent}>
           <Route exact path="/" component={HomePage} />
+          <Route exact path="/Live" component={LivePage} />
           <Route exact path="/Competitions" component={CompetitionPage} />
           <Route exact path="/Competitions/:year" component={CompetitionView} />
           <Route exact path="/About" component={About} />

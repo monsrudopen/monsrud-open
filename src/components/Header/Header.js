@@ -75,6 +75,18 @@ const Header = () => {
               <Link
                 onClick={() => setMenuVisible(false)}
                 style={{ color: 'white', textDecoration: 'none' }}
+                to="/Live"
+                rel="noopener noreferrer"
+              >
+                <h6 className={styles.HeaderNumberSix}>Live</h6>
+              </Link>
+            </div>
+            <div
+              className={menuVisible ? styles.MenuLinkMobile : styles.MenuLink}
+            >
+              <Link
+                onClick={() => setMenuVisible(false)}
+                style={{ color: 'white', textDecoration: 'none' }}
                 to="/About"
                 rel="noopener noreferrer"
               >
