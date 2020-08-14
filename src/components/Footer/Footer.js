@@ -65,16 +65,16 @@ class Footer extends Component {
             <div className="FooterContentTitle">Kontakt</div>
             <div className="OrgInfoContainer">
               <div className="OrgInfoContent">
-                <div className="listTitle">Vipps nr:</div>
+                <div className="listTitle">Vipps nr:&nbsp;</div>
                 <div className="FooterLink">109417</div>
               </div>
               <div className="OrgInfoContent">
-                <div className="listTitle">Org.nr </div>
-                <div className="FooterLink"> 918 707 611</div>
+                <div className="listTitle">Org.nr.:&nbsp;</div>
+                <div className="FooterLink">918 707 611</div>
               </div>
 
               <div className="OrgInfoContent">
-                <div className="listTitle">Mail:</div>
+                <div className="listTitle">e-post:&nbsp;</div>
                 <div className="FooterLink">
                   <a
                     href="mailto:hello@monsrudopen.com"
@@ -86,7 +86,7 @@ class Footer extends Component {
                 </div>
               </div>
               <div className="OrgInfoContent address">
-                <div className="listTitle">Adresse: </div>
+                <div className="listTitle">Adresse:&nbsp;</div>
                 <div className="FooterLink address">
                   <a
                     href="https://goo.gl/maps/udc6qp4q9tMbrJYB7"
