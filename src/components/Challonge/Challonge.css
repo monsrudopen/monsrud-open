@@ -131,6 +131,12 @@ tr:nth-child(even) {
   .allMatchesWrapper {
     width: 350px;
   }
+  .currentContent {
+    font-size: 35px;
+  }
+  .nextContent {
+    font-size: 20px;
+  }
   table {
     font-size: 9px;
     margin-bottom: 20px;
