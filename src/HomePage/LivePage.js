@@ -3,10 +3,12 @@ import './LivePage.css';
 
 import Challonge from '../components/Challonge/Challonge';
 import Twitter from '../components/Twitter/Twitter';
+import Vipps from '../components/Vipps/Vipps';
 
 const LivePage = () => {
   return (
     <div className="LiveContainer">
+      <Vipps />
       <div className="InfoHeader">
         <div className="TitleText">Monsrud Open 2020</div>
         <div className="LiveTitleWrapper">

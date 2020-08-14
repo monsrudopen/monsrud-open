@@ -3,7 +3,7 @@ import Clock from '../components/Clock/Clock';
 import FrontPagePosts from '../components/Posts/FrontPagePosts';
 import MO2020promo169 from '../img/vid/MO2020promo169.mp4';
 import { Link } from 'react-router-dom';
-
+import Vipps from '../components/Vipps/Vipps';
 import './homePage.css';
 import { news } from '../database/dataloader';
 
@@ -39,6 +39,7 @@ class HomePage extends Component {
   render() {
     return (
       <div className="mainContainer">
+        <Vipps />
         <div className="main">
           <div className="frontPageBannerContainer">
             <h4>15. august 2020</h4>

@@ -1,0 +1,64 @@
+.vippsContent {
+  width: 90%;
+  height: 80px;
+  background-color: #f8f8f8;
+}
+.vippsWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vippsIcon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 20px;
+  color: #696969;
+}
+.vippsSum {
+}
+.sumText {
+  font-size: 15px;
+  font-weight: 200;
+  color: #696969;
+  text-transform: uppercase;
+}
+.sum {
+  font-size: 20px;
+  font-weight: bold;
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  color: #696969;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.update {
+  font-weight: 200;
+  font-style: italic;
+  color: #696969;
+  font-size: 15px;
+}
+@media only screen and (max-width: 768px) {
+  .vippsContent {
+    height: 120px;
+  }
+
+  .vippsWrapper {
+    flex-direction: column;
+  }
+}
