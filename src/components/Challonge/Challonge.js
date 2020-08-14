@@ -15,7 +15,7 @@ const Challonge = () => {
 
   useEffect(() => {
     UpdateMatchInfo();
-    setInterval(UpdateMatchInfo, 60 * 1000);
+    setInterval(UpdateMatchInfo, 15 * 1000);
   }, []);
 
   const UpdateMatchInfo = () => {
