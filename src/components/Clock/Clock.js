@@ -95,10 +95,10 @@ const Clock = ({ timeTillDate, timeFormat }) => {
     return (
       <div className="finished">
         {!winner && (
-          <div>
-            <div>Følg Monsrud Open 2020 er i gang!</div>
-            <div>
-              <a href="/Live">Følg live her</a>
+          <div className="finishedMainContent">
+            <div className="finishedTitle">Monsrud Open 2020 er i gang!</div>
+            <div className="liveButton">
+              <a href="/Live">Følg live her!</a>
             </div>
           </div>
         )}
