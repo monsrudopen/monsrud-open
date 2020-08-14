@@ -6,6 +6,7 @@ import Tabletop from 'tabletop';
 const Clock = ({ timeTillDate, timeFormat }) => {
   const competitionDate = moment(timeTillDate, timeFormat);
   const [now, setNow] = useState(moment());
+  const [dataLoaded, setDataLoaded] = useState(false);
 
   const [winner, setWinner] = useState(undefined);
 
@@ -16,7 +17,7 @@ const Clock = ({ timeTillDate, timeFormat }) => {
       setNow(moment());
     }, 1000);
 
-    const interval2 = setInterval(UpdateWinner, 5 * 1000);
+    const interval2 = setInterval(UpdateWinner, 60 * 1000);
     return () => {
       clearInterval(interval);
       clearInterval(interval2);
@@ -36,10 +37,15 @@ const Clock = ({ timeTillDate, timeFormat }) => {
     if (!finalMatch['Poeng 2'] == '') {
       if (parseInt(finalMatch['Poeng 1']) > parseInt(finalMatch['Poeng 2'])) {
         setWinner(finalMatch['Spiller 1']);
-      } else {
+      } else if (
+        parseInt(finalMatch['Poeng 1']) < parseInt(finalMatch['Poeng 2'])
+      ) {
         setWinner(finalMatch['Spiller 2']);
+      } else {
+        setWinner(undefined);
       }
     }
+    setDataLoaded(true);
   };
 
   if (competitionDate - now > 0) {
@@ -93,7 +99,7 @@ const Clock = ({ timeTillDate, timeFormat }) => {
     );
   } else {
     return (
-      <div className="finished">
+      <div className={dataLoaded ? 'finished data-loaded' : 'finished'}>
         {!winner && (
           <div className="finishedMainContent">
             <div className="finishedTitle">Monsrud Open 2020 er i gang!</div>
@@ -103,9 +109,11 @@ const Clock = ({ timeTillDate, timeFormat }) => {
           </div>
         )}
         {winner && (
-          <div>
-            <div>Vinner av Monsrud Open 2020: {winner}</div>
-            <div>
+          <div className="finishedMainContent">
+            <div className="finishedTitle">
+              Vinner av Monsrud Open 2020: {winner}
+            </div>
+            <div className="liveButton">
               <a href="/Live">Se resultatene her</a>
             </div>
           </div>
