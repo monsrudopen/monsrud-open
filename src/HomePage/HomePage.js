@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Clock from '../components/Clock/Clock';
 import FrontPagePosts from '../components/Posts/FrontPagePosts';
 import MO2020promo169 from '../img/vid/MO2020promo169.mp4';
+import image2020 from './../img/images/y2019.jpg';
 import { Link } from 'react-router-dom';
 import Vipps from '../components/Vipps/Vipps';
 import './homePage.css';
@@ -42,16 +43,19 @@ class HomePage extends Component {
         <Vipps />
         <div className="main">
           <div className="frontPageBannerContainer">
-            <h4>15. august 2020</h4>
+            <h4>7. august 2021</h4>
             <Clock
-              timeTillDate="15 08 2020, 13:00"
+              timeTillDate="07 08 2021, 13:00"
               timeFormat="DD MM YYYY, HH:mm"
             />
             <div className="HomePageBox">
-              <div className="videobox">
+              {/* <div className="videobox">
                 <video className="video" controls>
                   <source src={MO2020promo169} type="video/mp4"></source>
                 </video>
+              </div> */}
+              <div className="videobox">
+                <img alt="Hei" className="video" src={image2020}></img>
               </div>
               <div className="News">
                 <div className="NewsTitle">Nyheter</div>

@@ -15,12 +15,11 @@ const Vipps = () => {
   const UpdateVipps = () => {
     console.log('This is running');
     var tabletop = Tabletop.init({
-      key: '1Gc9dCbF_QOC5WdEQ_ZtcnVm_drP3tJ2BR6Di3bCQpss',
+      key: '1N9dhf99oMKfSRBOxc9uY2foMYB5SgZjRn3iUiWX2Lwk',
       callback: setVippsInfo
     });
   };
   const setVippsInfo = (data, tabletop) => {
-    console.log(data);
     setSum(data.Vipps.elements[0].Sum);
     setTime(data.Vipps.elements[0].Klokkeslett);
     setDate(data.Vipps.elements[0].Dato);
