@@ -130,3 +130,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### Error: Failed to get Firebase project {project-name}. Please make sure the project exists and your account has permission to access it
+
+This happened when trying to deploy after a year. Seems like the firebase-token had expired. In command line run `firebase login:ci`. Copy the token and add it to `Secrets` on the settings page for the Github project.
