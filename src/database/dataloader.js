@@ -1,5 +1,45 @@
 export const competitions = [
   {
+    year: 2020,
+    title: '2020 - Leger Uten Grenser',
+    text:
+      'I 2020 gikk innsamlingen til Leger Uten Grenser og det ble samlet inn hele 18 378,96 kroner.',
+    winner: 'Marius Monsrud',
+    donated: 18378.96,
+    attendees: [
+      'Ferdinand Eide Rode',
+      'Erlend Solbakk Harbitz',
+      'Jakob Hardersen Prydz',
+      'Thomas Matthew Brown',
+      'Tellef Bakken',
+      'Marius Jådd Monsrud',
+      'Ane Fürst Juul',
+      'Jonas Opedal',
+      'Frøydis Hanssen-Bauer',
+      'Marianne Haga Os',
+      'Lisa Victoria Bergman',
+      'Ingvild Vøllo Eliassen',
+      'Øystein Hammersland',
+      'Emma Haugen Rosland',
+      'Siri Skoglund',
+      'Vilde Johnsen',
+      'Ingrid Nelson Giæver',
+      'Kristine Hubert',
+      'Sarah Tomine Johannessen',
+      'Sondre Angard Siljehaug',
+      "Hanne L'Orsa",
+      'Mathias Grotli'
+    ],
+    tournamentText: 'Marius Monsrud gikk av med seieren.',
+    organization: 'Leger Uten Grenser',
+    organizationpicture: require('./../img/icons/leger-uten-grenser-logo-1.png'),
+    organizationInfo:
+      'I 2020 gikk innsamlingen til Leger Uten Grenser og det ble samlet inn hele 18 378,96 kroner.',
+    image: require('./../img/images/y2020.jpg'),
+    spons: 'Turneringen var sponset av',
+    sponsimage: require('./../img/icons/KIWILogo.png')
+  },
+  {
     year: 2019,
     title: '2019 - Plans Jentefond',
     text:
@@ -11,7 +51,7 @@ export const competitions = [
       'Marius Monsrud',
       'Jakob Hardersen Prydz',
       'Erlend Solbakk Harbitz',
-      'Hanne L‘Orsa',
+      "Hanne L'Orsa",
       'Eli Marie Sagedal Hindahl',
       'Daniel Milliam Müller',
       'Ingvild Vøllo Eliassen',
@@ -205,6 +245,18 @@ export const competitions = [
 ];
 
 export const news = [
+  {
+    title: 'Monsrud Open 2021 - Arregementsdato 7. august',
+    date: '1. september 2020',
+    text:
+      'Arrangementsdato for Monsrud Open 2021 er 7. august. Styret ønsker å presisere at det også i år tas høyde for at årets arrangement kan bli berørt av regjeringens tiltak mot koronaviruset.'
+  },
+  {
+    title: 'Monsrud Open 2020',
+    date: '1. september 2020',
+    text:
+      'Monsrud Open 2020 ble en stor suksess. Det ble samlet inn 18378,96 kroner til Leger Uten Grenser! Marius gikk av med seieren lørdag 15. august.'
+  },
   {
     title: 'Mottakerorganisasjon 2020 - Leger uten grenser',
     date: '16. juli 2020',

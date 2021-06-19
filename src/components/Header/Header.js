@@ -69,7 +69,7 @@ const Header = () => {
                 </div>
               </Link>
             </div>
-            <div
+            {/* <div
               className={menuVisible ? styles.MenuLinkMobile : styles.MenuLink}
             >
               <Link
@@ -80,7 +80,7 @@ const Header = () => {
               >
                 <h6 className={styles.HeaderNumberSix}>Live</h6>
               </Link>
-            </div>
+            </div> */}
             <div
               className={menuVisible ? styles.MenuLinkMobile : styles.MenuLink}
             >
