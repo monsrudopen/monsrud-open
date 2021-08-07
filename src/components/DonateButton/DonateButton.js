@@ -6,7 +6,7 @@ function Donatebutton(props) {
   return (
     <a
       className={styles.text}
-      href=""
+      href="https://minaksjon.unicef.no/team/monsrud-open-2021"
       target="_blank"
       rel="noopener noreferrer"
     >

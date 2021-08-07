@@ -247,8 +247,14 @@ export const competitions = [
 
 export const news = [
   {
+    title: 'Mottakerorganisasjon 2021 - UNICEF',
+    date: '3. august 2021',
+    text:
+      'I år ønsker vi å samle inn penger til COVAX og UNICEF. UNICEF har ansvaret for å kjøpe inn, lagre og transportere Covid-19 vaksiner ut til 92 lav- og mellominntektsland. Mange av disse landene opplever for tiden en stor vekst i smitte, og svært få har fått vaksiner. Vi håper derfor at du også ønsker å bidra til denne saken!'
+  },
+  {
     title: 'Monsrud Open 2021 - Arregementsdato 7. august',
-    date: '1. september 2020',
+    date: '15. juni 2020',
     text:
       'Arrangementsdato for Monsrud Open 2021 er 7. august. Styret ønsker å presisere at det også i år tas høyde for at årets arrangement kan bli berørt av regjeringens tiltak mot koronaviruset.'
   },

@@ -17,7 +17,7 @@ const Clock = ({ timeTillDate, timeFormat }) => {
       setNow(moment());
     }, 1000);
 
-    const interval2 = setInterval(UpdateWinner, 60 * 1000);
+    const interval2 = setInterval(UpdateWinner, 5 * 1000);
     return () => {
       clearInterval(interval);
       clearInterval(interval2);
@@ -26,7 +26,7 @@ const Clock = ({ timeTillDate, timeFormat }) => {
 
   const UpdateWinner = () => {
     var tabletop = Tabletop.init({
-      key: '1Gc9dCbF_QOC5WdEQ_ZtcnVm_drP3tJ2BR6Di3bCQpss',
+      key: '1N9dhf99oMKfSRBOxc9uY2foMYB5SgZjRn3iUiWX2Lwk',
       callback: findWinner
     });
   };
@@ -102,7 +102,7 @@ const Clock = ({ timeTillDate, timeFormat }) => {
       <div className={dataLoaded ? 'finished data-loaded' : 'finished'}>
         {!winner && (
           <div className="finishedMainContent">
-            <div className="finishedTitle">Monsrud Open 2020 er i gang!</div>
+            <div className="finishedTitle">Monsrud Open 2021 er i gang!</div>
             <div className="liveButton">
               <a href="/Live">Følg live her!</a>
             </div>
@@ -111,7 +111,7 @@ const Clock = ({ timeTillDate, timeFormat }) => {
         {winner && (
           <div className="finishedMainContent">
             <div className="finishedTitle">
-              Vinner av Monsrud Open 2020: {winner}
+              Vinner av Monsrud Open 2021: {winner}
             </div>
             <div className="liveButton">
               <a href="/Live">Se resultatene her</a>
@@ -120,7 +120,15 @@ const Clock = ({ timeTillDate, timeFormat }) => {
         )}
         <br></br>
         <div>
-          Gi ditt bidrag til Leger Uten Grenser. Vipps til Monsrud Open (109417)
+          Gi ditt bidrag til UNICEF. Vipps til Monsrud Open (109417) eller gi
+          direkte{' '}
+          <a
+            href="https://minaksjon.unicef.no/team/monsrud-open-2021"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <u>her</u>
+          </a>
         </div>
       </div>
     );

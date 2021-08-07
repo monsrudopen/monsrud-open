@@ -9,7 +9,7 @@ const Vipps = () => {
 
   useEffect(() => {
     UpdateVipps();
-    setInterval(UpdateVipps, 60 * 1000);
+    setInterval(UpdateVipps, 20 * 1000);
   }, []);
 
   const UpdateVipps = () => {

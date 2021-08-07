@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styles from './Header.module.css';
-// import DonateButton from '../DonateButton/DonateButton';
+import DonateButton from '../DonateButton/DonateButton';
 import { competitions } from './../../database/dataloader';
 
 const Header = () => {
@@ -23,9 +23,9 @@ const Header = () => {
                 />{' '}
               </a>
             </div>
-            {/* <div className={styles.HeaderDonateButton}>
+            <div className={styles.HeaderDonateButton}>
               <DonateButton />
-            </div> */}
+            </div>
           </div>
           {location[1] === 'Competitions' && location[2] > 0 && (
             <div className={styles.ReturnButtonSticky}>
@@ -69,7 +69,7 @@ const Header = () => {
                 </div>
               </Link>
             </div>
-            {/* <div
+            <div
               className={menuVisible ? styles.MenuLinkMobile : styles.MenuLink}
             >
               <Link
@@ -80,7 +80,7 @@ const Header = () => {
               >
                 <h6 className={styles.HeaderNumberSix}>Live</h6>
               </Link>
-            </div> */}
+            </div>
             <div
               className={menuVisible ? styles.MenuLinkMobile : styles.MenuLink}
             >

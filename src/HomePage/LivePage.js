@@ -10,7 +10,7 @@ const LivePage = () => {
     <div className="LiveContainer">
       <Vipps />
       <div className="InfoHeader">
-        <div className="TitleText">Monsrud Open 2020</div>
+        <div className="TitleText">Monsrud Open 2021</div>
         <div className="LiveTitleWrapper">
           <div className="SubTitle">LIVE FEED</div>
           <div className="LiveCircle"></div>
@@ -28,17 +28,17 @@ const LivePage = () => {
                 <img
                   width="300"
                   alt="Leger Uten Grenser logo"
-                  src={require('./../img/icons/leger-uten-grenser-logo-1.png')}
+                  src={require('./../img/icons/UnicefLogo.png')}
                 />{' '}
               </div>
-              <div className="donationTitle">Årets Sponsor</div>
+              {/* <div className="donationTitle">Årets Sponsor</div>
               <div className="kiwiContainer">
                 <img
                   width="200"
                   alt="Kiwi logo"
                   src={require('./../img/icons/KIWILogo.png')}
                 />{' '}
-              </div>
+              </div> */}
             </div>
             <div className="mainTwitterContainer">
               <Twitter />
