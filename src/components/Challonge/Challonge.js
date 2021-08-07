@@ -8,6 +8,8 @@ const Challonge = () => {
   const [groupB, setGroupB] = useState([]);
   const [groupC, setGroupC] = useState([]);
   const [groupD, setGroupD] = useState([]);
+  const [groupE, setGroupE] = useState([]);
+  const [groupF, setGroupF] = useState([]);
   const [name1, setName1] = useState();
   const [name2, setName2] = useState();
   const [nextName1, setNextName1] = useState();
@@ -20,7 +22,7 @@ const Challonge = () => {
 
   const UpdateMatchInfo = () => {
     var tabletop = Tabletop.init({
-      key: '1Gc9dCbF_QOC5WdEQ_ZtcnVm_drP3tJ2BR6Di3bCQpss',
+      key: '1N9dhf99oMKfSRBOxc9uY2foMYB5SgZjRn3iUiWX2Lwk',
       callback: showInfo
     });
   };
@@ -32,6 +34,8 @@ const Challonge = () => {
     setGroupB(data.GruppeB.elements);
     setGroupC(data.GruppeC.elements);
     setGroupD(data.GruppeD.elements);
+    setGroupE(data.GruppeE.elements);
+    setGroupF(data.GruppeF.elements);
     GetCurrentAndNextMatch(data.Kampoppsett.elements);
   };
 
@@ -211,6 +215,87 @@ const Challonge = () => {
                     return (
                       <tr key={index}>
                         <td>{listValue.D}</td>
+                        <td>{listValue.Spiller}</td>
+                        <td>{listValue.Spilt}</td>
+                        <td>{listValue.Seier}</td>
+                        <td>{listValue.Tap}</td>
+                        <td>{listValue.For}</td>
+                        <td>{listValue.Mot}</td>
+                        <td>{listValue.Differanse}</td>
+                        <td>{listValue.Poeng}</td>
+                      </tr>
+                    );
+                  })
+                ) : (
+                  <tr>
+                    <td>Loading...</td>
+                  </tr>
+                )}
+              </tbody>
+            </table>
+          </div>
+
+          <div className="singleTableWrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>E</th>
+                  <th>Spiller</th>
+                  <th>Spilt</th>
+                  <th>Seier</th>
+                  <th>Tap</th>
+                  <th>For</th>
+                  <th>Mot</th>
+                  <th>Diff</th>
+                  <th>Poeng</th>
+                </tr>
+              </thead>
+              <tbody>
+                {groupE.length !== 0 ? (
+                  groupE.map((listValue, index) => {
+                    return (
+                      <tr key={index}>
+                        <td>{listValue.E}</td>
+                        <td>{listValue.Spiller}</td>
+                        <td>{listValue.Spilt}</td>
+                        <td>{listValue.Seier}</td>
+                        <td>{listValue.Tap}</td>
+                        <td>{listValue.For}</td>
+                        <td>{listValue.Mot}</td>
+                        <td>{listValue.Differanse}</td>
+                        <td>{listValue.Poeng}</td>
+                      </tr>
+                    );
+                  })
+                ) : (
+                  <tr>
+                    <td>Loading...</td>
+                  </tr>
+                )}
+              </tbody>
+            </table>
+          </div>
+          <div className="singleTableWrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>F</th>
+                  <th>Spiller</th>
+                  <th>Spilt</th>
+                  <th>Seier</th>
+                  <th>Tap</th>
+                  <th>For</th>
+                  <th>Mot</th>
+                  <th>Diff</th>
+                  <th>Poeng</th>
+                </tr>
+              </thead>
+              <tbody>
+                {groupF.length !== 0 ? (
+                  groupF.map((listValue, index) => {
+                    return (
+                      <tr key={index}>
+                        <td>{listValue.F}</td>
                         <td>{listValue.Spiller}</td>
                         <td>{listValue.Spilt}</td>
                         <td>{listValue.Seier}</td>
