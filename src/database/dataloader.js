@@ -1,5 +1,45 @@
 export const competitions = [
   {
+    year: 2021,
+    title: '2021 - UNICEF og COVAX',
+    text:
+      'I 2021 gikk innsamlingen til UNICEF og COVAX og det ble samlet inn hele 21 686 kroner.',
+    winner: 'Jakob Hardersen Prydz',
+    donated: 21686,
+    attendees: [
+      'Sarah Tomine Johannessen',
+      'Lisa Victoria Bergman',
+      'Sondre Angard Siljehaug',
+      'Ane Fürst Juul',
+      'Frøydis Waage Hanssen-Bauer',
+      'Jonas Frium Opedal',
+      'Emma Haugen Rosland',
+      'Ingvild Vøllo Eliassen',
+      'Thomas Matthew Brown',
+      'Siri Skoglund',
+      'Erlend Solbakk Harbitz',
+      'Ferdinand Eide Rode',
+      'Tellef Bakken',
+      "Hanne L'Orsa",
+      'Kristine Huseby Hübert',
+      'Marius Monsrud',
+      'Jakob Hardersen Prydz',
+      'Tiril Kristine Tanum',
+      'Ingrid Nelson Giæver',
+      'Marianne Hage Os',
+      'Maren Kjelgaard Bredesen',
+      'Mathias Hanssen Grotli',
+      'Erik Bjørgum'
+    ],
+    tournamentText:
+      'Turneringen 2021 ble svært innholdsrik med mange tette og spennende kamper allerede i gruppespillet. Allerede første kamp ble spennende da Thomas vant en knepen seier over Ane. Både Kristines seier over Ingvild og Jakobs seier over Tellef måtte spilles langt utover normal kamplengde før en av dem klarte å vinne med to poeng. Da vi var klare for kvartfinalene var det åtte spente og klare badmintonspillere som stilte til start. Forsvarende mester Marius tok seieren mot Thomas, og ble dermed første spiller klar for semifinale. Andre kamp var kanskje den det var mest spenning knyttet til. For første gang var en spiller med tidligere meritter innen badminton med i turneringer. Tiril skulle møte flere ganger tidligere vinner Ferdinand. Det ble en dramatisk kamp med mye følelser, men Ferdinand stakk til slutt av med seieren. Den jevneste kvartfinalen var den tredje. Her skulle to duellanter som har møtt hverandre utallige ganger opp gjennom årene møtes igjen. I en svært jevn kamp stakk Erlend av med en knepen seier mot Sondre. Hele styret i Monsrud Open var dermed klare for semifinaler. I siste kvartfinalen ble det en relativt komfortabel seier for to ganger tidligere vinner og fjorårets tapende finalist Jakob over Jonas. Semifinalene ble spilt til tre sett der begge kampene ble vunnet 2-0. Marius slo Ferdinand i den første semifinalen, mens Jakob slo Erlend i den andre. To spennende kamper med mye dramatikk. Finalen ble dermed en kopi av året før. Nivået var skyhøyt i en kamp som bølget fram og tilbake. Etter tre lange sett kunne Jakob endelig strekke hendene i været og konstatere revansj fra det sure tapet fra året før. Vandretrofeet vil dermed befinne seg på Grønland det neste året før det igjen skal konkurreres om trofeet, heder og ære i 2022.',
+    organization: 'UNICEF og COVAX',
+    organizationpicture: require('./../img/icons/UnicefLogo.png'),
+    organizationInfo:
+      'Monsrud Open ønsket i 2021 å støtte UNICEF og COVAX. UNICEF har ansvaret for å kjøpe inn, lagre og transportere vaksinene mot COVID-19 ut til 92 lav- og mellominntektsland. Mange av disse landene har lenge hatt mye smitte samtidig som de har hatt svært liten tilgang til vaksiner. Vi er ekstremt stolte over at vi klarte å samle inn kroner 21 686. Vi vil takke alle som bidro.',
+    image: require('./../img/images/y2021.jpg')
+  },
+  {
     year: 2020,
     title: '2020 - Leger Uten Grenser',
     text:
@@ -246,6 +286,24 @@ export const competitions = [
 ];
 
 export const news = [
+  {
+    title: 'Mottakerorganisasjon 2022 - Redd Barna',
+    date: '11. august 2022',
+    text:
+      'I år ønsker vi å samle inn penger til Redd Barna. I verden er over 100 millioner mennesker på flukt og halvparten av disse er barn. Barn på flukt er ekstra sårbare. Vår støtte vil bidra med mat, medisiner, rent vann, varme tepper, telt, trygge lekeplasser, gjenforening av barn med foreldre samt skole og utdanning.'
+  },
+  {
+    title: 'Monsrud Open 2022 - Arregementsdato 13. august',
+    date: '17. april 2022',
+    text:
+      'Arrangementsdato for Monsrud Open 2022 er 13. august. Hold av datoen og kryss fingrene for godt vær!'
+  },
+  {
+    title: 'Monsrud Open 2021',
+    date: '15. september 2021',
+    text:
+      'Monsrud Open 2021 ble nok en suksess. Det ble samlet inn svimlende 21 686 kroner til UNICEF og COVAX! Jakob fikk det gjeve trofeet med seg hjem etter seier i finalen mot Ferdinand lørdag 7. august.'
+  },
   {
     title: 'Mottakerorganisasjon 2021 - UNICEF',
     date: '3. august 2021',
