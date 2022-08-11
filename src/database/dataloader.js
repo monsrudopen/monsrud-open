@@ -247,6 +247,24 @@ export const competitions = [
 
 export const news = [
   {
+    title: 'Mottakerorganisasjon 2022 - Redd Barna',
+    date: '11. august 2022',
+    text:
+      'I år ønsker vi å samle inn penger til Redd Barna. I verden er over 100 millioner mennesker på flukt og halvparten av disse er barn. Barn på flukt er ekstra sårbare. Vår støtte vil bidra med mat, medisiner, rent vann, varme tepper, telt, trygge lekeplasser, gjenforening av barn med foreldre samt skole og utdanning.'
+  },
+  {
+    title: 'Monsrud Open 2022 - Arregementsdato 13. august',
+    date: '17. april 2022',
+    text:
+      'Arrangementsdato for Monsrud Open 2022 er 13. august. Hold av datoen og kryss fingrene for godt vær!'
+  },
+  {
+    title: 'Monsrud Open 2021',
+    date: '15. september 2021',
+    text:
+      'Monsrud Open 2021 ble nok en suksess. Det ble samlet inn svimlende 21 686 kroner til UNICEF og COVAX! Marius gikk av med seieren lørdag 15. august.'
+  },
+  {
     title: 'Mottakerorganisasjon 2021 - UNICEF',
     date: '3. august 2021',
     text:
