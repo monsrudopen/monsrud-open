@@ -16,7 +16,7 @@ const Challonge = () => {
 
   useEffect(() => {
     updateEverything();
-    setInterval(updateEverything, 15 * 1000);
+    setInterval(updateEverything, 5 * 1000);
   }, []);
 
   const updateEverything = () => {
