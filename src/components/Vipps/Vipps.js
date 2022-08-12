@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import Tabletop from 'tabletop';
 import './Vipps.css';
+import Papa from 'papaparse';
 
 const Vipps = () => {
   const [sum, setSum] = useState();
@@ -13,16 +13,20 @@ const Vipps = () => {
   }, []);
 
   const UpdateVipps = () => {
-    console.log('This is running');
-    var tabletop = Tabletop.init({
-      key: '1N9dhf99oMKfSRBOxc9uY2foMYB5SgZjRn3iUiWX2Lwk',
-      callback: setVippsInfo
-    });
+    Papa.parse(
+      'https://docs.google.com/spreadsheets/d/e/2PACX-1vSGNG5fMJkDLSQzE0MLFYhJO4LATHBj6WOLRxjqFPNzHiQ1IOZOy43xmJEB8zhx3VFvKD-ItUzJpb3-/pub?gid=1279119526&single=true&output=csv',
+      {
+        download: true,
+        header: true,
+        complete: results => setVippsInfo(results.data)
+      }
+    );
   };
-  const setVippsInfo = (data, tabletop) => {
-    setSum(data.Vipps.elements[0].Sum);
-    setTime(data.Vipps.elements[0].Klokkeslett);
-    setDate(data.Vipps.elements[0].Dato);
+
+  const setVippsInfo = data => {
+    setSum(data[0].Sum);
+    setTime(data[0].Klokkeslett);
+    setDate(data[0].Dato);
   };
   return (
     <div className="vippsContent">
@@ -30,7 +34,7 @@ const Vipps = () => {
         <div className="vippsIcon">
           <img
             width="150"
-            alt="Kiwi logo"
+            alt="Vipps logo"
             src={require('./../../img/icons/vipps_logo_rgb.png')}
           />{' '}
           <div className="vippsNumber">

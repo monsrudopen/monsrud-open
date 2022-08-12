@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Tabletop from 'tabletop';
+import Papa from 'papaparse';
 
 import './Challonge.css';
 const Challonge = () => {
@@ -9,38 +9,101 @@ const Challonge = () => {
   const [groupC, setGroupC] = useState([]);
   const [groupD, setGroupD] = useState([]);
   const [groupE, setGroupE] = useState([]);
-  const [groupF, setGroupF] = useState([]);
   const [name1, setName1] = useState();
   const [name2, setName2] = useState();
   const [nextName1, setNextName1] = useState();
   const [nextName2, setNextName2] = useState();
 
   useEffect(() => {
-    UpdateMatchInfo();
-    setInterval(UpdateMatchInfo, 15 * 1000);
+    updateEverything();
+    setInterval(updateEverything, 15 * 1000);
   }, []);
 
-  const UpdateMatchInfo = () => {
-    var tabletop = Tabletop.init({
-      key: '1N9dhf99oMKfSRBOxc9uY2foMYB5SgZjRn3iUiWX2Lwk',
-      callback: showInfo
-    });
+  const updateEverything = () => {
+    console.log('Updating...');
+    UpdateMatchInfo();
+    UpdateGroupA();
+    UpdateGroupB();
+    UpdateGroupC();
+    UpdateGroupD();
+    UpdateGroupE();
   };
 
-  const showInfo = (data, tabletop) => {
-    console.log('Running update!');
-    setAllMatches(data.Kampoppsett.elements);
-    setGroupA(data.GruppeA.elements);
-    setGroupB(data.GruppeB.elements);
-    setGroupC(data.GruppeC.elements);
-    setGroupD(data.GruppeD.elements);
-    setGroupE(data.GruppeE.elements);
-    setGroupF(data.GruppeF.elements);
-    GetCurrentAndNextMatch(data.Kampoppsett.elements);
+  const UpdateMatchInfo = () => {
+    Papa.parse(
+      'https://docs.google.com/spreadsheets/d/e/2PACX-1vSGNG5fMJkDLSQzE0MLFYhJO4LATHBj6WOLRxjqFPNzHiQ1IOZOy43xmJEB8zhx3VFvKD-ItUzJpb3-/pub?gid=614059474&single=true&output=csv',
+      {
+        download: true,
+        header: true,
+        complete: results => {
+          GetCurrentAndNextMatch(results.data);
+          setAllMatches(results.data);
+        }
+      }
+    );
+  };
+
+  const cleanGroup = data => {
+    const cutOff = data.findIndex(e => e.Spiller === '');
+    return data.slice(0, cutOff);
+  };
+
+  const UpdateGroupA = () => {
+    Papa.parse(
+      'https://docs.google.com/spreadsheets/d/e/2PACX-1vSGNG5fMJkDLSQzE0MLFYhJO4LATHBj6WOLRxjqFPNzHiQ1IOZOy43xmJEB8zhx3VFvKD-ItUzJpb3-/pub?gid=574837797&single=true&output=csv',
+      {
+        download: true,
+        header: true,
+        complete: results => setGroupA(cleanGroup(results.data))
+      }
+    );
+  };
+
+  const UpdateGroupB = () => {
+    Papa.parse(
+      'https://docs.google.com/spreadsheets/d/e/2PACX-1vSGNG5fMJkDLSQzE0MLFYhJO4LATHBj6WOLRxjqFPNzHiQ1IOZOy43xmJEB8zhx3VFvKD-ItUzJpb3-/pub?gid=286070142&single=true&output=csv',
+      {
+        download: true,
+        header: true,
+        complete: results => setGroupB(cleanGroup(results.data))
+      }
+    );
+  };
+
+  const UpdateGroupC = () => {
+    Papa.parse(
+      'https://docs.google.com/spreadsheets/d/e/2PACX-1vSGNG5fMJkDLSQzE0MLFYhJO4LATHBj6WOLRxjqFPNzHiQ1IOZOy43xmJEB8zhx3VFvKD-ItUzJpb3-/pub?gid=904760152&single=true&output=csv',
+      {
+        download: true,
+        header: true,
+        complete: results => setGroupC(cleanGroup(results.data))
+      }
+    );
+  };
+
+  const UpdateGroupD = () => {
+    Papa.parse(
+      'https://docs.google.com/spreadsheets/d/e/2PACX-1vSGNG5fMJkDLSQzE0MLFYhJO4LATHBj6WOLRxjqFPNzHiQ1IOZOy43xmJEB8zhx3VFvKD-ItUzJpb3-/pub?gid=464459248&single=true&output=csv',
+      {
+        download: true,
+        header: true,
+        complete: results => setGroupD(cleanGroup(results.data))
+      }
+    );
+  };
+
+  const UpdateGroupE = () => {
+    Papa.parse(
+      'https://docs.google.com/spreadsheets/d/e/2PACX-1vSGNG5fMJkDLSQzE0MLFYhJO4LATHBj6WOLRxjqFPNzHiQ1IOZOy43xmJEB8zhx3VFvKD-ItUzJpb3-/pub?gid=1391285964&single=true&output=csv',
+      {
+        download: true,
+        header: true,
+        complete: results => setGroupE(cleanGroup(results.data))
+      }
+    );
   };
 
   const GetCurrentAndNextMatch = matchData => {
-    console.log(matchData.length);
     for (var i = 0; i < matchData.length; i++) {
       if (matchData[i]['Poeng 2'] == '') {
         setName1(matchData[i]['Spiller 1']);
@@ -275,46 +338,6 @@ const Challonge = () => {
               </tbody>
             </table>
           </div>
-          <div className="singleTableWrap">
-            <table>
-              <thead>
-                <tr>
-                  <th>F</th>
-                  <th>Spiller</th>
-                  <th>Spilt</th>
-                  <th>Seier</th>
-                  <th>Tap</th>
-                  <th>For</th>
-                  <th>Mot</th>
-                  <th>Diff</th>
-                  <th>Poeng</th>
-                </tr>
-              </thead>
-              <tbody>
-                {groupF.length !== 0 ? (
-                  groupF.map((listValue, index) => {
-                    return (
-                      <tr key={index}>
-                        <td>{listValue.F}</td>
-                        <td>{listValue.Spiller}</td>
-                        <td>{listValue.Spilt}</td>
-                        <td>{listValue.Seier}</td>
-                        <td>{listValue.Tap}</td>
-                        <td>{listValue.For}</td>
-                        <td>{listValue.Mot}</td>
-                        <td>{listValue.Differanse}</td>
-                        <td>{listValue.Poeng}</td>
-                      </tr>
-                    );
-                  })
-                ) : (
-                  <tr>
-                    <td>Loading...</td>
-                  </tr>
-                )}
-              </tbody>
-            </table>
-          </div>
         </div>
         <div className="ChallongeTitle">Kampoversikt</div>
 
@@ -332,18 +355,20 @@ const Challonge = () => {
             </thead>
             <tbody>
               {allMatches.length !== 0 ? (
-                allMatches.map((listValue, index) => {
-                  return (
-                    <tr key={index}>
-                      <td>{listValue.Kampnr}</td>
-                      <td>{listValue.Gruppe}</td>
-                      <td>{listValue['Spiller 1']}</td>
-                      <td>{listValue['Poeng 1']}</td>
-                      <td>{listValue['Poeng 2']}</td>
-                      <td>{listValue['Spiller 2']}</td>
-                    </tr>
-                  );
-                })
+                allMatches
+                  .filter(m => m.Kampnr)
+                  .map((listValue, index) => {
+                    return (
+                      <tr key={index}>
+                        <td>{listValue.Kampnr}</td>
+                        <td>{listValue.Gruppe}</td>
+                        <td>{listValue['Spiller 1']}</td>
+                        <td>{listValue['Poeng 1']}</td>
+                        <td>{listValue['Poeng 2']}</td>
+                        <td>{listValue['Spiller 2']}</td>
+                      </tr>
+                    );
+                  })
               ) : (
                 <tr>
                   <td>Loading...</td>
