@@ -15,6 +15,7 @@ const Challonge = () => {
   const [nextName2, setNextName2] = useState();
 
   useEffect(() => {
+    updateEverything();
     setInterval(updateEverything, 15 * 1000);
   }, []);
 

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Clock.css';
 import moment from 'moment';
-import Tabletop from 'tabletop';
+import Papa from 'papaparse';
 
 const Clock = ({ timeTillDate, timeFormat }) => {
   const competitionDate = moment(timeTillDate, timeFormat);
@@ -25,14 +25,18 @@ const Clock = ({ timeTillDate, timeFormat }) => {
   }, []);
 
   const UpdateWinner = () => {
-    var tabletop = Tabletop.init({
-      key: '1N9dhf99oMKfSRBOxc9uY2foMYB5SgZjRn3iUiWX2Lwk',
-      callback: findWinner
-    });
+    Papa.parse(
+      'https://docs.google.com/spreadsheets/d/e/2PACX-1vSGNG5fMJkDLSQzE0MLFYhJO4LATHBj6WOLRxjqFPNzHiQ1IOZOy43xmJEB8zhx3VFvKD-ItUzJpb3-/pub?gid=614059474&single=true&output=csv',
+      {
+        download: true,
+        header: true,
+        complete: results => findWinner(results.data)
+      }
+    );
   };
 
-  const findWinner = (data, tabletop) => {
-    const matchData = data.Kampoppsett.elements;
+  const findWinner = data => {
+    const matchData = data.filter(m => m.Kampnr);
     const finalMatch = matchData[matchData.length - 1];
     if (!finalMatch['Poeng 2'] == '') {
       if (parseInt(finalMatch['Poeng 1']) > parseInt(finalMatch['Poeng 2'])) {
@@ -102,7 +106,7 @@ const Clock = ({ timeTillDate, timeFormat }) => {
       <div className={dataLoaded ? 'finished data-loaded' : 'finished'}>
         {!winner && (
           <div className="finishedMainContent">
-            <div className="finishedTitle">Monsrud Open 2021 er i gang!</div>
+            <div className="finishedTitle">Monsrud Open 2022 er i gang!</div>
             <div className="liveButton">
               <a href="/Live">Følg live her!</a>
             </div>
@@ -111,7 +115,7 @@ const Clock = ({ timeTillDate, timeFormat }) => {
         {winner && (
           <div className="finishedMainContent">
             <div className="finishedTitle">
-              Vinner av Monsrud Open 2021: {winner}
+              Vinner av Monsrud Open 2022: {winner}
             </div>
             <div className="liveButton">
               <a href="/Live">Se resultatene her</a>
@@ -120,10 +124,10 @@ const Clock = ({ timeTillDate, timeFormat }) => {
         )}
         <br></br>
         <div>
-          Gi ditt bidrag til UNICEF. Vipps til Monsrud Open (109417) eller gi
-          direkte{' '}
+          Gi ditt bidrag til Redd Barna. Vipps til Monsrud Open (109417) eller
+          gi direkte{' '}
           <a
-            href="https://minaksjon.unicef.no/team/monsrud-open-2021"
+            href="https://innsamling.reddbarna.no/participant/monsrud-open-2022"
             target="_blank"
             rel="noopener noreferrer"
           >
