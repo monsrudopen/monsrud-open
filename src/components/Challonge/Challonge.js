@@ -297,47 +297,6 @@ const Challonge = () => {
               </tbody>
             </table>
           </div>
-
-          <div className="singleTableWrap">
-            <table>
-              <thead>
-                <tr>
-                  <th>E</th>
-                  <th>Spiller</th>
-                  <th>Spilt</th>
-                  <th>Seier</th>
-                  <th>Tap</th>
-                  <th>For</th>
-                  <th>Mot</th>
-                  <th>Diff</th>
-                  <th>Poeng</th>
-                </tr>
-              </thead>
-              <tbody>
-                {groupE.length !== 0 ? (
-                  groupE.map((listValue, index) => {
-                    return (
-                      <tr key={index}>
-                        <td>{listValue.E}</td>
-                        <td>{listValue.Spiller}</td>
-                        <td>{listValue.Spilt}</td>
-                        <td>{listValue.Seier}</td>
-                        <td>{listValue.Tap}</td>
-                        <td>{listValue.For}</td>
-                        <td>{listValue.Mot}</td>
-                        <td>{listValue.Differanse}</td>
-                        <td>{listValue.Poeng}</td>
-                      </tr>
-                    );
-                  })
-                ) : (
-                  <tr>
-                    <td>Loading...</td>
-                  </tr>
-                )}
-              </tbody>
-            </table>
-          </div>
         </div>
         <div className="ChallongeTitle">Kampoversikt</div>
 
