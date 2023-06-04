@@ -14,7 +14,7 @@ const Vipps = () => {
 
   const UpdateVipps = () => {
     Papa.parse(
-      'https://docs.google.com/spreadsheets/d/e/2PACX-1vSGNG5fMJkDLSQzE0MLFYhJO4LATHBj6WOLRxjqFPNzHiQ1IOZOy43xmJEB8zhx3VFvKD-ItUzJpb3-/pub?gid=1279119526&single=true&output=csv',
+      'https://docs.google.com/spreadsheets/d/e/2PACX-1vToSNHK1ByiCZuIR_CnxS3pn29qYKQOUgNhp4DFH3SMn9EjvCMOhL1aFGlEiB9ryt2HpSpgVdA1YKgu/pub?gid=1279119526&single=true&output=csv',
       {
         download: true,
         header: true,

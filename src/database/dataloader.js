@@ -1,5 +1,40 @@
 export const competitions = [
   {
+    year: 2022,
+    title: '2022 - Redd Barna',
+    text:
+      'I 2022 gikk innsamlingen til Redd Barna og det ble samlet inn 21 005 kroner.',
+    winner: 'Thomas Broch Brantsæter',
+    donated: 21686,
+    attendees: [
+      'Sarah Tomine Johannessen',
+      'Lisa Victoria Bergman',
+      'Sondre Angard Siljehaug',
+      'Thomas Broch Brantsæter',
+      'Øystein Hammersland',
+      'Kaja Gustafson',
+      'Emma Haugen Rosland',
+      'Ingvild Vøllo Eliassen',
+      'Thomas Matthew Brown',
+      'Erlend Solbakk Harbitz',
+      'Ferdinand Eide Rode',
+      'Tellef Bakken',
+      "Hanne L'Orsa",
+      'Kristine Huseby Hübert',
+      'Marius Monsrud',
+      'Kristine Nielsen',
+      'Ingrid Nelson Giæver',
+      'Marianne Hage Os',
+      'Maren Kjelgaard Bredesen',
+      'Mathias Hanssen Grotli'
+    ],
+    tournamentText: 'Tekst kommer...',
+    organization: 'Redd Barna',
+    organizationpicture: require('./../img/icons/ReddBarnaLogo.png'),
+    organizationInfo: 'Monsrud Open ønsket i 2022 å støtte Redd Barna.',
+    image: require('./../img/images/y2022.jpg')
+  },
+  {
     year: 2021,
     title: '2021 - UNICEF og COVAX',
     text:
@@ -286,6 +321,11 @@ export const competitions = [
 ];
 
 export const news = [
+  {
+    title: 'Monsrud Open 2023 - Arregementsdato 19. august',
+    date: '4. juni 2023',
+    text: 'Hold av datoen!'
+  },
   {
     title: 'Mottakerorganisasjon 2022 - Redd Barna',
     date: '11. august 2022',

@@ -3,12 +3,12 @@ import PostRow from './Post';
 
 const FrontPagePosts = () => {
   const postItems = [
-    {
-      title: 'Live',
-      text: 'Kommer snart',
-      image: require('./../../img/images/postImage.png'),
-      link: '/Live'
-    },
+    // {
+    //   title: 'Live',
+    //   text: 'Kommer snart',
+    //   image: require('./../../img/images/postImage.png'),
+    //   link: '/Live'
+    // },
     {
       title: 'Turneringer',
       text: 'Les om de ulike årene',
