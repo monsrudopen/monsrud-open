@@ -23,9 +23,9 @@ const Header = () => {
                 />{' '}
               </a>
             </div>
-            <div className={styles.HeaderDonateButton}>
+            {/* <div className={styles.HeaderDonateButton}>
               <DonateButton />
-            </div>
+            </div> */}
           </div>
           {location[1] === 'Competitions' && location[2] > 0 && (
             <div className={styles.ReturnButtonSticky}>
@@ -72,14 +72,14 @@ const Header = () => {
             <div
               className={menuVisible ? styles.MenuLinkMobile : styles.MenuLink}
             >
-              <Link
+              {/* <Link
                 onClick={() => setMenuVisible(false)}
                 style={{ color: 'white', textDecoration: 'none' }}
                 to="/Live"
                 rel="noopener noreferrer"
               >
                 <h6 className={styles.HeaderNumberSix}>Live</h6>
-              </Link>
+              </Link> */}
             </div>
             <div
               className={menuVisible ? styles.MenuLinkMobile : styles.MenuLink}

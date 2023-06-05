@@ -43,9 +43,9 @@ class HomePage extends Component {
         <Vipps />
         <div className="main">
           <div className="frontPageBannerContainer">
-            <h4>13. august 2022</h4>
+            <h4>19. august 2023</h4>
             <Clock
-              timeTillDate="13 08 2022, 12:00"
+              timeTillDate="19 08 2023, 12:00"
               timeFormat="DD MM YYYY, HH:mm"
             />
             <div className="HomePageBox">

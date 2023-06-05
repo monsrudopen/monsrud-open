@@ -10,7 +10,7 @@ const LivePage = () => {
     <div className="LiveContainer">
       <Vipps />
       <div className="InfoHeader">
-        <div className="TitleText">Monsrud Open 2022</div>
+        <div className="TitleText">Monsrud Open 2023</div>
         <div className="LiveTitleWrapper">
           <div className="SubTitle">LIVE FEED</div>
           <div className="LiveCircle"></div>
