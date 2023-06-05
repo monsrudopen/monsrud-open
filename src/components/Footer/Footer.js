@@ -23,6 +23,11 @@ class Footer extends Component {
                 </Link>
               </div>
               <div className="FooterLink">
+                <Link to="/Live" rel="noopener noreferrer">
+                  <div className="LinkText">Live</div>
+                </Link>
+              </div>
+              <div className="FooterLink">
                 <Link to="/About" rel="noopener noreferrer">
                   <div className="LinkText">Om Oss</div>
                 </Link>
