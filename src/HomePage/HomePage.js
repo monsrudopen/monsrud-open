@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Clock from '../components/Clock/Clock';
 import FrontPagePosts from '../components/Posts/FrontPagePosts';
 import MO2020promo169 from '../img/vid/MO2020promo169.mp4';
-import image2020 from './../img/images/y2019.jpg';
+import coverImage from './../img/images/y2022.jpg';
 import { Link } from 'react-router-dom';
 import Vipps from '../components/Vipps/Vipps';
 import './homePage.css';

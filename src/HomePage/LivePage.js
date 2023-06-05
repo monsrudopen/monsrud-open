@@ -23,14 +23,14 @@ const LivePage = () => {
           </div>
           <div className="TwitterContainer">
             <div className="logoContainer">
-              <div className="donationTitle">Årets Mottaker</div>
+              {/* <div className="donationTitle">Årets Mottaker</div> // TODO
               <div className="legerUtenGrenserContainer">
                 <img
                   width="300"
                   alt="Redd Barna logo"
                   src={require('./../img/icons/ReddBarnaLogo.png')}
                 />{' '}
-              </div>
+              </div> */}
               {/* <div className="donationTitle">Årets Sponsor</div>
               <div className="kiwiContainer">
                 <img
