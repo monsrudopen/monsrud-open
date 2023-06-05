@@ -55,7 +55,7 @@ class HomePage extends Component {
                 </video>
               </div> */}
               <div className="videobox">
-                <img alt="Hei" className="video" src={image2020}></img>
+                <img alt="Hei" className="video" src={coverImage}></img>
               </div>
               <div className="News">
                 <div className="NewsTitle">Nyheter</div>

@@ -50,6 +50,10 @@ const ImageCarousel = ({ year }) => {
       images = importAll(
         require.context('./../../img/slider/2021', false, /\.(png|jpe?g|svg)$/i)
       );
+    case '2022':
+      images = importAll(
+        require.context('./../../img/slider/2022', false, /\.(png|jpe?g|svg)$/i)
+      );
       break;
     default:
       images = [];
