@@ -26,7 +26,7 @@ const Clock = ({ timeTillDate, timeFormat }) => {
 
   const UpdateWinner = () => {
     Papa.parse(
-      'https://docs.google.com/spreadsheets/d/e/2PACX-1vSGNG5fMJkDLSQzE0MLFYhJO4LATHBj6WOLRxjqFPNzHiQ1IOZOy43xmJEB8zhx3VFvKD-ItUzJpb3-/pub?gid=614059474&single=true&output=csv',
+      'https://docs.google.com/spreadsheets/d/e/2PACX-1vToSNHK1ByiCZuIR_CnxS3pn29qYKQOUgNhp4DFH3SMn9EjvCMOhL1aFGlEiB9ryt2HpSpgVdA1YKgu/pub?gid=614059474&single=true&output=csv',
       {
         download: true,
         header: true,
@@ -106,7 +106,7 @@ const Clock = ({ timeTillDate, timeFormat }) => {
       <div className={dataLoaded ? 'finished data-loaded' : 'finished'}>
         {!winner && (
           <div className="finishedMainContent">
-            <div className="finishedTitle">Monsrud Open 2022 er i gang!</div>
+            <div className="finishedTitle">Monsrud Open 2023 er i gang!</div>
             <div className="liveButton">
               <a href="/Live">Følg live her!</a>
             </div>
@@ -115,7 +115,7 @@ const Clock = ({ timeTillDate, timeFormat }) => {
         {winner && (
           <div className="finishedMainContent">
             <div className="finishedTitle">
-              Vinner av Monsrud Open 2022: {winner}
+              Vinner av Monsrud Open 2023: {winner}
             </div>
             <div className="liveButton">
               <a href="/Live">Se resultatene her</a>

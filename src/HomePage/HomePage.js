@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Clock from '../components/Clock/Clock';
 import FrontPagePosts from '../components/Posts/FrontPagePosts';
 import MO2020promo169 from '../img/vid/MO2020promo169.mp4';
-import image2020 from './../img/images/y2019.jpg';
+import coverImage from './../img/images/y2022.jpg';
 import { Link } from 'react-router-dom';
 import Vipps from '../components/Vipps/Vipps';
 import './homePage.css';
@@ -55,7 +55,7 @@ class HomePage extends Component {
                 </video>
               </div> */}
               <div className="videobox">
-                <img alt="Hei" className="video" src={image2020}></img>
+                <img alt="Hei" className="video" src={coverImage}></img>
               </div>
               <div className="News">
                 <div className="NewsTitle">Nyheter</div>
