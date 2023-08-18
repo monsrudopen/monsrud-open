@@ -5,7 +5,7 @@ export const competitions = [
     text:
       'I 2022 gikk innsamlingen til Redd Barna og det ble samlet inn 21 005 kroner.',
     winner: 'Thomas Broch Brantsæter',
-    donated: 21686,
+    donated: 21005,
     attendees: [
       'Sarah Tomine Johannessen',
       'Lisa Victoria Bergman',
