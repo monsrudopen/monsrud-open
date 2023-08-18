@@ -322,6 +322,12 @@ export const competitions = [
 
 export const news = [
   {
+    title: 'Mottakerorganisasjon 2023 - WWF',
+    date: '16. august 2023',
+    text:
+      'I år ønsker vi å sette fokus på dyr og natur. På bare 50 år har verdens dyrebestander stupt med gjennomsnittlig 69 prosent. Halvparten av våre utrydningstruede arter lever i skog. WWF jobbe med å ta vare på mangfoldet og artenes leveområder i norsk og internasjonal skog.'
+  },
+  {
     title: 'Monsrud Open 2023 - Arregementsdato 19. august',
     date: '4. juni 2023',
     text: 'Hold av datoen!'

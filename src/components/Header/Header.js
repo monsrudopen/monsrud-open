@@ -23,9 +23,9 @@ const Header = () => {
                 />{' '}
               </a>
             </div>
-            {/* <div className={styles.HeaderDonateButton}> // TODO
+            <div className={styles.HeaderDonateButton}>
               <DonateButton />
-            </div> */}
+            </div>
           </div>
           {location[1] === 'Competitions' && location[2] > 0 && (
             <div className={styles.ReturnButtonSticky}>
