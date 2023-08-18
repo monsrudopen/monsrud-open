@@ -122,6 +122,14 @@ export const CompetitionPage = () => {
   return (
     <div className={styles.CompetitionListContainer}>
       <div className={styles.CompetitionListTile}>Tidligere turneringer</div>
+      <div>
+        Totalt samlet inn:{' '}
+        {competitions
+          .reduce((acc, c) => acc + c.donated, 0)
+          .toLocaleString('nb')}{' '}
+        kr
+      </div>
+
       <div className={styles.ListWrapper}>
         <PostRow postItems={competitionsWithLinks}></PostRow>
       </div>
