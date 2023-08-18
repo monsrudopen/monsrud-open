@@ -124,14 +124,13 @@ const Clock = ({ timeTillDate, timeFormat }) => {
         )}
         <br></br>
         <div>
-          Gi ditt bidrag til Redd Barna. Vipps til Monsrud Open (109417) eller
-          gi direkte{' '}
+          Gi ditt bidrag til WWF. Vipps til Monsrud Open (109417) eller {''}
           <a
-            href="https://innsamling.reddbarna.no/participant/monsrud-open-2022"
+            href="https://qr.vipps.no/28/2/05/031/-PlVzDcjp"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <u>her</u>
+            <u>trykk her</u>
           </a>
         </div>
       </div>

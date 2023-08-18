@@ -6,16 +6,16 @@ function Donatebutton(props) {
   return (
     <a
       className={styles.text}
-      href="https://innsamling.reddbarna.no/participant/monsrud-open-2022"
+      href="https://qr.vipps.no/28/2/05/031/-PlVzDcjp"
       target="_blank"
       rel="noopener noreferrer"
     >
       <div className={styles.Boxed}>
         <b>
-          <span>Doner </span>
-          <span className={styles.LongerTextForBigScreens}>
+          <span>Doner med Vipps</span>
+          {/* <span className={styles.LongerTextForBigScreens}>
             til årets formål
-          </span>
+          </span> */}
         </b>
       </div>
     </a>
