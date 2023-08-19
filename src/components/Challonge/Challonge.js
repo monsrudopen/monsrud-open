@@ -31,7 +31,7 @@ const Challonge = () => {
 
   const UpdateMatchInfo = () => {
     Papa.parse(
-      'https://docs.google.com/spreadsheets/d/e/2PACX-1vToSNHK1ByiCZuIR_CnxS3pn29qYKQOUgNhp4DFH3SMn9EjvCMOhL1aFGlEiB9ryt2HpSpgVdA1YKgu/pub?gid=1279119526&single=true&output=csv',
+      'https://docs.google.com/spreadsheets/d/e/2PACX-1vToSNHK1ByiCZuIR_CnxS3pn29qYKQOUgNhp4DFH3SMn9EjvCMOhL1aFGlEiB9ryt2HpSpgVdA1YKgu/pub?gid=614059474&single=true&output=csv',
       {
         download: true,
         header: true,
@@ -278,6 +278,46 @@ const Challonge = () => {
                     return (
                       <tr key={index}>
                         <td>{listValue.D}</td>
+                        <td>{listValue.Spiller}</td>
+                        <td>{listValue.Spilt}</td>
+                        <td>{listValue.Seier}</td>
+                        <td>{listValue.Tap}</td>
+                        <td>{listValue.For}</td>
+                        <td>{listValue.Mot}</td>
+                        <td>{listValue.Differanse}</td>
+                        <td>{listValue.Poeng}</td>
+                      </tr>
+                    );
+                  })
+                ) : (
+                  <tr>
+                    <td>Loading...</td>
+                  </tr>
+                )}
+              </tbody>
+            </table>
+          </div>
+          <div className="singleTableWrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>E</th>
+                  <th>Spiller</th>
+                  <th>Spilt</th>
+                  <th>Seier</th>
+                  <th>Tap</th>
+                  <th>For</th>
+                  <th>Mot</th>
+                  <th>Diff</th>
+                  <th>Poeng</th>
+                </tr>
+              </thead>
+              <tbody>
+                {groupE.length !== 0 ? (
+                  groupE.map((listValue, index) => {
+                    return (
+                      <tr key={index}>
+                        <td>{listValue.E}</td>
                         <td>{listValue.Spiller}</td>
                         <td>{listValue.Spilt}</td>
                         <td>{listValue.Seier}</td>
